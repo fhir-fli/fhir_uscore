@@ -1,3 +1,5 @@
+// ignore_for_file: sort_unnamed_constructors_first
+
 // Package imports:
 import 'package:fhir/r4.dart';
 

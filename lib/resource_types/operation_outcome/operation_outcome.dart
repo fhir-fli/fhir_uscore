@@ -1,3 +1,5 @@
+// ignore_for_file: sort_unnamed_constructors_first
+
 // Package imports:
 import 'package:fhir/r4.dart';
 
@@ -26,10 +28,15 @@ class OperationOutcomeUsCore extends Resource {
 
   OperationOutcome _operationOutcome;
   OperationOutcome get value => _operationOutcome;
+  @override
   String? get id => _operationOutcome.id;
+  @override
   FhirMeta? get meta => _operationOutcome.meta;
+  @override
   Narrative? get text => _operationOutcome.text;
+  @override
   FhirCode? get language => _operationOutcome.language;
+  @override
   List<Resource>? get contained => _operationOutcome.contained;
   List<OperationOutcomeIssue> get issue => _operationOutcome.issue;
 }

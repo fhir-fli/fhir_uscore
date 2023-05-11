@@ -1,3 +1,5 @@
+// ignore_for_file: sort_unnamed_constructors_first
+
 // Package imports:
 import 'package:fhir/r4.dart';
 
@@ -56,7 +58,7 @@ class DocumentReferenceUsCore extends Resource {
     category ??= <CodeableConcept>[];
     category.add(
       CodeableConcept(
-        coding: [
+        coding: <Coding>[
           Coding(
             system: FhirUri(
                 'http://hl7.org/fhir/us/core/CodeSystem/us-core-documentreference-category'),

@@ -27,9 +27,11 @@ enum ProvenanceAgentParticipantType {
   composer,
 }
 
-final codeableConceptFromProvenanceAgentParticipantType = {
+final Map<ProvenanceAgentParticipantType, CodeableConcept>
+    codeableConceptFromProvenanceAgentParticipantType =
+    <ProvenanceAgentParticipantType, CodeableConcept>{
   ProvenanceAgentParticipantType.transmitter: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri(
             'http://terminology.hl7.org/CodeSystem/provenance-participant-type'),
@@ -39,7 +41,7 @@ final codeableConceptFromProvenanceAgentParticipantType = {
     ],
   ),
   ProvenanceAgentParticipantType.enterer: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri(
             'http://terminology.hl7.org/CodeSystem/provenance-participant-type'),
@@ -49,7 +51,7 @@ final codeableConceptFromProvenanceAgentParticipantType = {
     ],
   ),
   ProvenanceAgentParticipantType.performer: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri(
             'http://terminology.hl7.org/CodeSystem/provenance-participant-type'),
@@ -59,7 +61,7 @@ final codeableConceptFromProvenanceAgentParticipantType = {
     ],
   ),
   ProvenanceAgentParticipantType.author: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri(
             'http://terminology.hl7.org/CodeSystem/provenance-participant-type'),
@@ -69,7 +71,7 @@ final codeableConceptFromProvenanceAgentParticipantType = {
     ],
   ),
   ProvenanceAgentParticipantType.verifier: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri(
             'http://terminology.hl7.org/CodeSystem/provenance-participant-type'),
@@ -79,7 +81,7 @@ final codeableConceptFromProvenanceAgentParticipantType = {
     ],
   ),
   ProvenanceAgentParticipantType.legal: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri(
             'http://terminology.hl7.org/CodeSystem/provenance-participant-type'),
@@ -89,7 +91,7 @@ final codeableConceptFromProvenanceAgentParticipantType = {
     ],
   ),
   ProvenanceAgentParticipantType.attester: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri(
             'http://terminology.hl7.org/CodeSystem/provenance-participant-type'),
@@ -99,7 +101,7 @@ final codeableConceptFromProvenanceAgentParticipantType = {
     ],
   ),
   ProvenanceAgentParticipantType.informant: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri(
             'http://terminology.hl7.org/CodeSystem/provenance-participant-type'),
@@ -109,7 +111,7 @@ final codeableConceptFromProvenanceAgentParticipantType = {
     ],
   ),
   ProvenanceAgentParticipantType.custodian: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri(
             'http://terminology.hl7.org/CodeSystem/provenance-participant-type'),
@@ -119,7 +121,7 @@ final codeableConceptFromProvenanceAgentParticipantType = {
     ],
   ),
   ProvenanceAgentParticipantType.assembler: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri(
             'http://terminology.hl7.org/CodeSystem/provenance-participant-type'),
@@ -129,7 +131,7 @@ final codeableConceptFromProvenanceAgentParticipantType = {
     ],
   ),
   ProvenanceAgentParticipantType.composer: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri(
             'http://terminology.hl7.org/CodeSystem/provenance-participant-type'),

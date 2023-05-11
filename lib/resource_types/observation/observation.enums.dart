@@ -37,7 +37,7 @@ enum ObservationDataAbsentReason {
 
 final codeableConceptFromObservationDataAbsentReason = {
   ObservationDataAbsentReason.unknown: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system:
             FhirUri('http://terminology.hl7.org/CodeSystem/data-absent-reason'),
@@ -47,7 +47,7 @@ final codeableConceptFromObservationDataAbsentReason = {
     ],
   ),
   ObservationDataAbsentReason.asked_unknown: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system:
             FhirUri('http://terminology.hl7.org/CodeSystem/data-absent-reason'),
@@ -57,7 +57,7 @@ final codeableConceptFromObservationDataAbsentReason = {
     ],
   ),
   ObservationDataAbsentReason.temp_unknown: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system:
             FhirUri('http://terminology.hl7.org/CodeSystem/data-absent-reason'),
@@ -67,7 +67,7 @@ final codeableConceptFromObservationDataAbsentReason = {
     ],
   ),
   ObservationDataAbsentReason.not_asked: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system:
             FhirUri('http://terminology.hl7.org/CodeSystem/data-absent-reason'),
@@ -77,7 +77,7 @@ final codeableConceptFromObservationDataAbsentReason = {
     ],
   ),
   ObservationDataAbsentReason.asked_declined: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system:
             FhirUri('http://terminology.hl7.org/CodeSystem/data-absent-reason'),
@@ -87,7 +87,7 @@ final codeableConceptFromObservationDataAbsentReason = {
     ],
   ),
   ObservationDataAbsentReason.masked: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system:
             FhirUri('http://terminology.hl7.org/CodeSystem/data-absent-reason'),
@@ -97,7 +97,7 @@ final codeableConceptFromObservationDataAbsentReason = {
     ],
   ),
   ObservationDataAbsentReason.not_applicable: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system:
             FhirUri('http://terminology.hl7.org/CodeSystem/data-absent-reason'),
@@ -107,7 +107,7 @@ final codeableConceptFromObservationDataAbsentReason = {
     ],
   ),
   ObservationDataAbsentReason.unsupported: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system:
             FhirUri('http://terminology.hl7.org/CodeSystem/data-absent-reason'),
@@ -117,7 +117,7 @@ final codeableConceptFromObservationDataAbsentReason = {
     ],
   ),
   ObservationDataAbsentReason.as_text: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system:
             FhirUri('http://terminology.hl7.org/CodeSystem/data-absent-reason'),
@@ -127,7 +127,7 @@ final codeableConceptFromObservationDataAbsentReason = {
     ],
   ),
   ObservationDataAbsentReason.error: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system:
             FhirUri('http://terminology.hl7.org/CodeSystem/data-absent-reason'),
@@ -137,7 +137,7 @@ final codeableConceptFromObservationDataAbsentReason = {
     ],
   ),
   ObservationDataAbsentReason.not_a_number: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system:
             FhirUri('http://terminology.hl7.org/CodeSystem/data-absent-reason'),
@@ -147,7 +147,7 @@ final codeableConceptFromObservationDataAbsentReason = {
     ],
   ),
   ObservationDataAbsentReason.negative_infinity: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system:
             FhirUri('http://terminology.hl7.org/CodeSystem/data-absent-reason'),
@@ -157,7 +157,7 @@ final codeableConceptFromObservationDataAbsentReason = {
     ],
   ),
   ObservationDataAbsentReason.positive_infinity: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system:
             FhirUri('http://terminology.hl7.org/CodeSystem/data-absent-reason'),
@@ -167,7 +167,7 @@ final codeableConceptFromObservationDataAbsentReason = {
     ],
   ),
   ObservationDataAbsentReason.not_performed: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system:
             FhirUri('http://terminology.hl7.org/CodeSystem/data-absent-reason'),
@@ -177,7 +177,7 @@ final codeableConceptFromObservationDataAbsentReason = {
     ],
   ),
   ObservationDataAbsentReason.not_permitted: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system:
             FhirUri('http://terminology.hl7.org/CodeSystem/data-absent-reason'),
@@ -209,7 +209,7 @@ enum SmokingStatus {
 
 final codeableConceptFromSmokingStatus = {
   SmokingStatus.current_every_day_smoker: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('current_every_day_smoker'),
@@ -219,7 +219,7 @@ final codeableConceptFromSmokingStatus = {
     text: 'Current every day smoker',
   ),
   SmokingStatus.current_some_day_smoker: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('current_some_day_smoker'),
@@ -229,7 +229,7 @@ final codeableConceptFromSmokingStatus = {
     text: 'Current some day smoker',
   ),
   SmokingStatus.former_smoker: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('former_smoker'),
@@ -239,7 +239,7 @@ final codeableConceptFromSmokingStatus = {
     text: 'Former smoker',
   ),
   SmokingStatus.never_smoker: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('never_smoker'),
@@ -249,7 +249,7 @@ final codeableConceptFromSmokingStatus = {
     text: 'Never smoker',
   ),
   SmokingStatus.smoker_current_status_unknown: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('smoker_current_status_unknown'),
@@ -259,7 +259,7 @@ final codeableConceptFromSmokingStatus = {
     text: 'Smoker, current status unknown',
   ),
   SmokingStatus.unknown_if_ever_smoked: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('unknown_if_ever_smoked'),
@@ -269,7 +269,7 @@ final codeableConceptFromSmokingStatus = {
     text: 'Unknown if ever smoked',
   ),
   SmokingStatus.current_heavy_tobacco_smoker: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('current_heavy_tobacco_smoker'),
@@ -279,7 +279,7 @@ final codeableConceptFromSmokingStatus = {
     text: 'Current Heavy tobacco smoker',
   ),
   SmokingStatus.current_light_tobacco_smoker: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('current_light_tobacco_smoker'),
@@ -310,56 +310,56 @@ enum BodySiteForBp {
 }
 
 final codeableConceptFromBodySiteForBp = {
-  BodySiteForBp.right_arm: CodeableConcept(coding: [
+  BodySiteForBp.right_arm: CodeableConcept(coding: <Coding>[
     Coding(
       system: FhirUri('http://snomed.info/sct'),
       code: FhirCode('368209003'),
       display: 'Right upper arm structure (body structure)',
     ),
   ], text: 'Right Arm'),
-  BodySiteForBp.right_forearm: CodeableConcept(coding: [
+  BodySiteForBp.right_forearm: CodeableConcept(coding: <Coding>[
     Coding(
       system: FhirUri('http://snomed.info/sct'),
       code: FhirCode('64262003'),
       display: 'Structure of right forearm (body structure)',
     ),
   ], text: 'Right Forearm'),
-  BodySiteForBp.left_arm: CodeableConcept(coding: [
+  BodySiteForBp.left_arm: CodeableConcept(coding: <Coding>[
     Coding(
       system: FhirUri('http://snomed.info/sct'),
       code: FhirCode('368208006'),
       display: 'Left upper arm structure (body structure)',
     ),
   ], text: 'Left Arm'),
-  BodySiteForBp.left_forearm: CodeableConcept(coding: [
+  BodySiteForBp.left_forearm: CodeableConcept(coding: <Coding>[
     Coding(
       system: FhirUri('http://snomed.info/sct'),
       code: FhirCode('66480008'),
       display: 'Structure of left forearm (body structure)',
     ),
   ], text: 'Left Forearm'),
-  BodySiteForBp.right_thigh: CodeableConcept(coding: [
+  BodySiteForBp.right_thigh: CodeableConcept(coding: <Coding>[
     Coding(
       system: FhirUri('http://snomed.info/sct'),
       code: FhirCode('11207009'),
       display: 'Structure of right thigh (body structure)',
     ),
   ], text: 'Right Thigh'),
-  BodySiteForBp.right_calf: CodeableConcept(coding: [
+  BodySiteForBp.right_calf: CodeableConcept(coding: <Coding>[
     Coding(
       system: FhirUri('http://snomed.info/sct'),
       code: FhirCode('32696007'),
       display: 'Structure of right lower leg (body structure)',
     ),
   ], text: 'Right Calf'),
-  BodySiteForBp.left_thigh: CodeableConcept(coding: [
+  BodySiteForBp.left_thigh: CodeableConcept(coding: <Coding>[
     Coding(
       system: FhirUri('http://snomed.info/sct'),
       code: FhirCode('61396006'),
       display: 'Structure of left thigh (body structure)',
     ),
   ], text: 'Left Thigh'),
-  BodySiteForBp.left_calf: CodeableConcept(coding: [
+  BodySiteForBp.left_calf: CodeableConcept(coding: <Coding>[
     Coding(
       system: FhirUri('http://snomed.info/sct'),
       code: FhirCode('48979004'),

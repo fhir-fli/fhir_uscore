@@ -1,3 +1,5 @@
+// ignore_for_file: sort_unnamed_constructors_first
+
 // Package imports:
 import 'package:fhir/r4.dart';
 
@@ -60,14 +62,17 @@ class PractitionerUsCore extends Resource {
     required HumanName practitionerName,
   }) =>
       PractitionerUsCore(
-        identifier: [agentIdentifier],
-        name: [practitionerName],
+        identifier: <Identifier>[agentIdentifier],
+        name: <HumanName>[practitionerName],
       );
 
   Practitioner _practitioner;
   Practitioner get value => _practitioner;
+  @override
   String? get id => _practitioner.id;
+  @override
   FhirMeta? get meta => _practitioner.meta;
+  @override
   Narrative? get text => _practitioner.text;
   List<Identifier>? get identifier => _practitioner.identifier;
   List<HumanName>? get name => _practitioner.name;

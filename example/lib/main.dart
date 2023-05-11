@@ -22,7 +22,7 @@ void main() {
   final condition = Condition(
     subject: Reference(reference: 'Patient/12345'),
     clinicalStatus: CodeableConcept(
-      coding: [
+      coding: <Coding>[
         Coding(
           system: FhirUri(
               'http://terminology.hl7.org/CodeSystem/condition-clinical'),
@@ -32,7 +32,7 @@ void main() {
       ],
     ),
     verificationStatus: CodeableConcept(
-      coding: [
+      coding: <Coding>[
         Coding(
             system: FhirUri(
                 'http://terminology.hl7.org/CodeSystem/condition-ver-status'),
@@ -42,7 +42,7 @@ void main() {
     ),
     category: [
       CodeableConcept(
-        coding: [
+        coding: <Coding>[
           Coding(
             system: FhirUri(
                 'http://hl7.org/fhir/us/core/CodeSystem/condition-category'),
@@ -52,7 +52,7 @@ void main() {
       )
     ],
     code: CodeableConcept(
-      coding: [
+      coding: <Coding>[
         Coding(
           system: FhirUri('http://factor.info/sct'),
           code: FhirCode('32911000'),
@@ -79,7 +79,7 @@ void main() {
     status: FhirCode('final'),
     category: [
       CodeableConcept(
-        coding: [
+        coding: <Coding>[
           Coding(
             system: FhirUri(
                 'http://hl7.org/fhir/us/core/CodeSystem/condition-category'),
@@ -89,7 +89,7 @@ void main() {
         ],
       ),
       CodeableConcept(
-        coding: [
+        coding: <Coding>[
           Coding(
             system: FhirUri(
                 'http://hl7.org/fhir/us/core/CodeSystem/condition-category'),
@@ -100,7 +100,7 @@ void main() {
       ),
     ],
     code: CodeableConcept(
-      coding: [
+      coding: <Coding>[
         Coding(
           system: FhirUri('http://loinc.org'),
           code: FhirCode('LA19952-3'),
@@ -119,7 +119,7 @@ void main() {
       ),
     ),
     valueCodeableConcept: CodeableConcept(
-      coding: [
+      coding: <Coding>[
         Coding(
           system: FhirUri('http://loinc.org'),
           code: FhirCode('LA17956-6'),

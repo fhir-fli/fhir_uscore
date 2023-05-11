@@ -48,7 +48,7 @@ const diagnosticReportStatusToCode = {
 
 final codeableConceptFromDiagnosticReportCategory = {
   DiagnosticReportCategory.radiology: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
           system: FhirUri('http://loinc.org'),
           code: FhirCode('LP29684-5'),
@@ -56,7 +56,7 @@ final codeableConceptFromDiagnosticReportCategory = {
     ],
   ),
   DiagnosticReportCategory.cardiology: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
           system: FhirUri('http://loinc.org'),
           code: FhirCode('LP29708-2'),
@@ -64,7 +64,7 @@ final codeableConceptFromDiagnosticReportCategory = {
     ],
   ),
   DiagnosticReportCategory.pathology: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
           system: FhirUri('http://loinc.org'),
           code: FhirCode('LP7839-6'),

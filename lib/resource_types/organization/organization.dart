@@ -1,3 +1,5 @@
+// ignore_for_file: sort_unnamed_constructors_first
+
 // Package imports:
 import 'package:fhir/r4.dart';
 
@@ -66,9 +68,13 @@ class OrganizationUsCore extends Resource {
 
   Organization _organization;
   Organization get value => _organization;
+  @override
   String? get id => _organization.id;
+  @override
   FhirMeta? get meta => _organization.meta;
+  @override
   Narrative? get text => _organization.text;
+  @override
   List<Resource>? get contained => _organization.contained;
   List<Identifier>? get identifier => _organization.identifier;
   FhirBoolean? get active => _organization.active;

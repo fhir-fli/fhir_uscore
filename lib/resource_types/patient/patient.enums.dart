@@ -19,7 +19,7 @@ enum PatientUsCoreRace {
   asked_but_no_answer,
 }
 
-final codeconept = CodeableConcept(coding: [
+final codeconept = CodeableConcept(coding: <Coding>[
   Coding(
       system: FhirUri(
           'http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical'),
@@ -149,7 +149,7 @@ enum PatientUsCoreDetailedRace {
   chumash,
   @JsonValue('Clear Lake')
   clear_lake,
-  @JsonValue('Coeur D\'Alene')
+  @JsonValue("Coeur D'Alene")
   coeur_dalene,
   @JsonValue('Coharie')
   coharie,
@@ -383,7 +383,7 @@ enum PatientUsCoreDetailedRace {
   stockbridge,
   @JsonValue('Susanville')
   susanville,
-  @JsonValue('Tohono O\'Odham')
+  @JsonValue("Tohono O'Odham")
   tohono_oodham,
   @JsonValue('Tolowa')
   tolowa,
@@ -613,7 +613,7 @@ enum PatientUsCoreDetailedRace {
   turtle_mountain,
   @JsonValue('White Earth')
   white_earth,
-  @JsonValue('Rocky Boy\'s Chippewa Cree')
+  @JsonValue("Rocky Boy's Chippewa Cree")
   rocky_boys_chippewa_cree,
   @JsonValue('Clifton Choctaw')
   clifton_choctaw,
@@ -1485,7 +1485,7 @@ enum PatientUsCoreDetailedRace {
   white_mountain,
   @JsonValue('White Mountain Inupiat')
   white_mountain_inupiat,
-  @JsonValue('Mary\'s Igloo')
+  @JsonValue("Mary's Igloo")
   marys_igloo,
   @JsonValue('Gambell')
   gambell,
@@ -1509,7 +1509,7 @@ enum PatientUsCoreDetailedRace {
   atmautluak,
   @JsonValue('Bethel')
   bethel,
-  @JsonValue('Bill Moore\'s Slough')
+  @JsonValue("Bill Moore's Slough")
   bill_moores_slough,
   @JsonValue('Bristol Bay Yupik')
   bristol_bay_yupik,
@@ -1521,7 +1521,7 @@ enum PatientUsCoreDetailedRace {
   chevak,
   @JsonValue('Chuathbaluk')
   chuathbaluk,
-  @JsonValue('Clark\'s Point')
+  @JsonValue("Clark's Point")
   clarks_point,
   @JsonValue('Crooked Creek')
   crooked_creek,
@@ -1605,7 +1605,7 @@ enum PatientUsCoreDetailedRace {
   st_michael,
   @JsonValue('Scammon Bay')
   scammon_bay,
-  @JsonValue('Sheldon\'s Point')
+  @JsonValue("Sheldon's Point")
   sheldons_point,
   @JsonValue('Sleetmute')
   sleetmute,
@@ -1625,7 +1625,7 @@ enum PatientUsCoreDetailedRace {
   twin_hills,
   @JsonValue('Georgetown (Yupik-Eskimo)')
   georgetown_yupik_eskimo,
-  @JsonValue('St. Mary\'s')
+  @JsonValue("St. Mary's")
   st_marys,
   @JsonValue('Umkumiate')
   umkumiate,
@@ -2129,7 +2129,7 @@ final extensionFromDetailedRace = {
       valueCoding: Coding(
           system: FhirUri('urn:oid:2.16.840.1.113883.6.238'),
           code: FhirCode('1167-6'),
-          display: 'Coeur D\'Alene')),
+          display: "Coeur D'Alene")),
   PatientUsCoreDetailedRace.coharie: FhirExtension(
       url: FhirUri('detailed'),
       valueCoding: Coding(
@@ -2831,7 +2831,7 @@ final extensionFromDetailedRace = {
       valueCoding: Coding(
           system: FhirUri('urn:oid:2.16.840.1.113883.6.238'),
           code: FhirCode('1653-5'),
-          display: 'Tohono O\'Odham')),
+          display: "Tohono O'Odham")),
   PatientUsCoreDetailedRace.tolowa: FhirExtension(
       url: FhirUri('detailed'),
       valueCoding: Coding(
@@ -3522,7 +3522,7 @@ final extensionFromDetailedRace = {
       valueCoding: Coding(
           system: FhirUri('urn:oid:2.16.840.1.113883.6.238'),
           code: FhirCode('1151-0'),
-          display: 'Rocky Boy\'s Chippewa Cree')),
+          display: "Rocky Boy's Chippewa Cree")),
   PatientUsCoreDetailedRace.clifton_choctaw: FhirExtension(
       url: FhirUri('detailed'),
       valueCoding: Coding(
@@ -6139,7 +6139,7 @@ final extensionFromDetailedRace = {
       valueCoding: Coding(
           system: FhirUri('urn:oid:2.16.840.1.113883.6.238'),
           code: FhirCode('1889-5'),
-          display: 'Mary\'s Igloo')),
+          display: "Mary's Igloo")),
   PatientUsCoreDetailedRace.gambell: FhirExtension(
       url: FhirUri('detailed'),
       valueCoding: Coding(
@@ -6211,7 +6211,7 @@ final extensionFromDetailedRace = {
       valueCoding: Coding(
           system: FhirUri('urn:oid:2.16.840.1.113883.6.238'),
           code: FhirCode('1905-9'),
-          display: 'Bill Moore\'s Slough')),
+          display: "Bill Moore's Slough")),
   PatientUsCoreDetailedRace.bristol_bay_yupik: FhirExtension(
       url: FhirUri('detailed'),
       valueCoding: Coding(
@@ -6247,7 +6247,7 @@ final extensionFromDetailedRace = {
       valueCoding: Coding(
           system: FhirUri('urn:oid:2.16.840.1.113883.6.238'),
           code: FhirCode('1911-7'),
-          display: 'Clark\'s Point')),
+          display: "Clark's Point")),
   PatientUsCoreDetailedRace.crooked_creek: FhirExtension(
       url: FhirUri('detailed'),
       valueCoding: Coding(
@@ -6499,7 +6499,7 @@ final extensionFromDetailedRace = {
       valueCoding: Coding(
           system: FhirUri('urn:oid:2.16.840.1.113883.6.238'),
           code: FhirCode('1953-9'),
-          display: 'Sheldon\'s Point')),
+          display: "Sheldon's Point")),
   PatientUsCoreDetailedRace.sleetmute: FhirExtension(
       url: FhirUri('detailed'),
       valueCoding: Coding(
@@ -6559,7 +6559,7 @@ final extensionFromDetailedRace = {
       valueCoding: Coding(
           system: FhirUri('urn:oid:2.16.840.1.113883.6.238'),
           code: FhirCode('1963-8'),
-          display: 'St. Mary\'s')),
+          display: "St. Mary's")),
   PatientUsCoreDetailedRace.umkumiate: FhirExtension(
       url: FhirUri('detailed'),
       valueCoding: Coding(
@@ -7421,7 +7421,8 @@ enum PatientUsCoreEthnicity {
   non_hispanic_or_latino,
 }
 
-final extensionFromEthnicity = {
+final Map<PatientUsCoreEthnicity, FhirExtension> extensionFromEthnicity =
+    <PatientUsCoreEthnicity, FhirExtension>{
   PatientUsCoreEthnicity.hispanic_or_latino: FhirExtension(
       url: FhirUri('ombCategory'),
       valueCoding: Coding(
@@ -7521,7 +7522,9 @@ enum PatientUsCoreDetailedEthnicity {
   criollo,
 }
 
-final extensionFromDetailedEthnicity = {
+final Map<PatientUsCoreDetailedEthnicity, FhirExtension>
+    extensionFromDetailedEthnicity =
+    <PatientUsCoreDetailedEthnicity, FhirExtension>{
   PatientUsCoreDetailedEthnicity.spaniard: FhirExtension(
       url: FhirUri('detailed'),
       valueCoding: Coding(
@@ -7779,7 +7782,8 @@ enum PatientUsCoreBirthSex {
   unknown,
 }
 
-final extensionFromBirthSex = {
+final Map<PatientUsCoreBirthSex, FhirExtension> extensionFromBirthSex =
+    <PatientUsCoreBirthSex, FhirExtension>{
   PatientUsCoreBirthSex.female: FhirExtension(
       url: FhirUri(
           'http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex'),

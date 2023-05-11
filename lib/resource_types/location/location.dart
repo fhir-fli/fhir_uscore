@@ -1,3 +1,5 @@
+// ignore_for_file: sort_unnamed_constructors_first
+
 // Package imports:
 import 'package:fhir/r4.dart';
 
@@ -49,7 +51,9 @@ class LocationUsCore extends Resource {
 
   Location _location;
   Location get value => _location;
+  @override
   FhirMeta? get meta => _location.meta;
+  @override
   Narrative? get text => _location.text;
   List<Identifier>? get identifier => _location.identifier;
   FhirCode? get status => _location.status;

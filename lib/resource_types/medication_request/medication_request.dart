@@ -1,3 +1,5 @@
+// ignore_for_file: sort_unnamed_constructors_first
+
 // Package imports:
 import 'package:fhir/r4.dart';
 
@@ -94,12 +96,16 @@ class MedicationRequestUsCore extends Resource {
 
   MedicationRequest _medicationRequest;
   MedicationRequest get value => _medicationRequest;
+  @override
   String? get id => _medicationRequest.id;
+  @override
   FhirMeta? get meta => _medicationRequest.meta;
+  @override
   Narrative? get text => _medicationRequest.text;
   List<Identifier>? get identifier => _medicationRequest.identifier;
   FhirCode? get status => _medicationRequest.status;
   FhirCode? get intent => _medicationRequest.intent;
+  @override
   List<Resource>? get contained => _medicationRequest.contained;
   FhirBoolean? get reportedBoolean => _medicationRequest.reportedBoolean;
   Reference? get reportedReference => _medicationRequest.reportedReference;

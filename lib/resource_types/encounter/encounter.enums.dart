@@ -1,3 +1,5 @@
+// ignore_for_file: sort_unnamed_constructors_first
+
 // Package imports:
 import 'package:fhir/r4.dart';
 import 'package:json_annotation/json_annotation.dart';
@@ -338,7 +340,7 @@ enum EncounterType {
 
 final codeableConceptFromEncounterType = {
   EncounterType.patient_encounter_procedure: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('308335008'),
@@ -347,7 +349,7 @@ final codeableConceptFromEncounterType = {
     ],
   ),
   EncounterType.radiation_physics_consultation: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('680007'),
@@ -358,7 +360,7 @@ final codeableConceptFromEncounterType = {
   EncounterType
           .pathology_consultation_comprehensive_records_and_specimen_with_report:
       CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('726007'),
@@ -368,7 +370,7 @@ final codeableConceptFromEncounterType = {
     ],
   ),
   EncounterType.chiropractic_visit: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('2530001'),
@@ -377,7 +379,7 @@ final codeableConceptFromEncounterType = {
     ],
   ),
   EncounterType.emergency_department_patient_visit: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('4525004'),
@@ -386,7 +388,7 @@ final codeableConceptFromEncounterType = {
     ],
   ),
   EncounterType.consultation_for_hearing_and_or_speech_problem: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('5947002'),
@@ -396,7 +398,7 @@ final codeableConceptFromEncounterType = {
   ),
   EncounterType.radiation_physics_consultation_with_therapeutic_radiologist:
       CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('8502007'),
@@ -405,7 +407,7 @@ final codeableConceptFromEncounterType = {
     ],
   ),
   EncounterType.consultation: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('11429006'),
@@ -416,7 +418,7 @@ final codeableConceptFromEncounterType = {
   EncounterType
           .consultation_in_computer_dosimetry_and_isodose_chart_teletherapy:
       CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('12566000'),
@@ -426,7 +428,7 @@ final codeableConceptFromEncounterType = {
     ],
   ),
   EncounterType.subsequent_hospital_visit_by_physician: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('12843005'),
@@ -435,7 +437,7 @@ final codeableConceptFromEncounterType = {
     ],
   ),
   EncounterType.patient_evaluation_and_management: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('14736009'),
@@ -444,7 +446,7 @@ final codeableConceptFromEncounterType = {
     ],
   ),
   EncounterType.consultation_in_chemotherapy: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('15301000'),
@@ -453,7 +455,7 @@ final codeableConceptFromEncounterType = {
     ],
   ),
   EncounterType.subsequent_nursing_facility_visit: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('18170008'),
@@ -462,7 +464,7 @@ final codeableConceptFromEncounterType = {
     ],
   ),
   EncounterType.nursing_evaluation_of_patient_and_report: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('19681004'),
@@ -471,7 +473,7 @@ final codeableConceptFromEncounterType = {
     ],
   ),
   EncounterType.medical_consultation_on_hospital_inpatient: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('24882007'),
@@ -481,7 +483,7 @@ final codeableConceptFromEncounterType = {
   ),
   EncounterType.dermatology_consultation_and_report_comprehensive:
       CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('25028003'),
@@ -490,7 +492,7 @@ final codeableConceptFromEncounterType = {
     ],
   ),
   EncounterType.consultation_and_report_by_radiologist: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('28191001'),
@@ -499,7 +501,7 @@ final codeableConceptFromEncounterType = {
     ],
   ),
   EncounterType.dermatology_consultation_and_report_brief: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('30078008'),
@@ -508,7 +510,7 @@ final codeableConceptFromEncounterType = {
     ],
   ),
   EncounterType.chiropractic_consultation: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('30274002'),
@@ -517,7 +519,7 @@ final codeableConceptFromEncounterType = {
     ],
   ),
   EncounterType.consultation_for_laboratory_medicine: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('31108002'),
@@ -526,7 +528,7 @@ final codeableConceptFromEncounterType = {
     ],
   ),
   EncounterType.dental_consultation_and_report: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('34043003'),
@@ -537,7 +539,7 @@ final codeableConceptFromEncounterType = {
   EncounterType
           .consultation_in_computer_dosimetry_and_isodose_chart_for_brachytherapy:
       CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('35437002'),
@@ -547,7 +549,7 @@ final codeableConceptFromEncounterType = {
     ],
   ),
   EncounterType.chiropractic_interpretation_of_x_rays: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('35755007'),
@@ -557,7 +559,7 @@ final codeableConceptFromEncounterType = {
   ),
   EncounterType.chiropractic_consultation_history_and_examination:
       CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('42423000'),
@@ -566,7 +568,7 @@ final codeableConceptFromEncounterType = {
     ],
   ),
   EncounterType.prosthodontic_dental_consultation_and_report: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('44340006'),
@@ -576,7 +578,7 @@ final codeableConceptFromEncounterType = {
   ),
   EncounterType.medical_consultation_on_nursing_facility_inpatient:
       CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('48550003'),
@@ -585,7 +587,7 @@ final codeableConceptFromEncounterType = {
     ],
   ),
   EncounterType.consultation_for_paternity_case: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('49463003'),
@@ -594,7 +596,7 @@ final codeableConceptFromEncounterType = {
     ],
   ),
   EncounterType.consultation_in_teletherapy: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('49569001'),
@@ -603,7 +605,7 @@ final codeableConceptFromEncounterType = {
     ],
   ),
   EncounterType.evaluation_and_management_of_patient_at_home: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('50357006'),
@@ -612,7 +614,7 @@ final codeableConceptFromEncounterType = {
     ],
   ),
   EncounterType.digestive_tract_consultation_and_report: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('50687007'),
@@ -621,7 +623,7 @@ final codeableConceptFromEncounterType = {
     ],
   ),
   EncounterType.medical_consultation_on_inpatient: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('53923005'),
@@ -630,7 +632,7 @@ final codeableConceptFromEncounterType = {
     ],
   ),
   EncounterType.chiropractic_examination: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('58400001'),
@@ -641,7 +643,7 @@ final codeableConceptFromEncounterType = {
   EncounterType
           .surgical_pathology_consultation_and_report_on_referred_slides_prepared_elsewhere:
       CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('59000001'),
@@ -652,7 +654,7 @@ final codeableConceptFromEncounterType = {
   ),
   EncounterType.consultation_in_laboratory_medicine_for_test_interpretation:
       CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('65981005'),
@@ -661,7 +663,7 @@ final codeableConceptFromEncounterType = {
     ],
   ),
   EncounterType.hemodialysis_supervision_at_home: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('68341005'),
@@ -670,7 +672,7 @@ final codeableConceptFromEncounterType = {
     ],
   ),
   EncounterType.initial_hospital_visit_by_physician: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('69399002'),
@@ -679,7 +681,7 @@ final codeableConceptFromEncounterType = {
     ],
   ),
   EncounterType.limited_consultation: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('70495004'),
@@ -688,7 +690,7 @@ final codeableConceptFromEncounterType = {
     ],
   ),
   EncounterType.physical_medicine_consultation_and_report: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('71318009'),
@@ -697,7 +699,7 @@ final codeableConceptFromEncounterType = {
     ],
   ),
   EncounterType.endodontic_dental_consultation_and_report: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('71387007'),
@@ -706,7 +708,7 @@ final codeableConceptFromEncounterType = {
     ],
   ),
   EncounterType.dermatology_consultation_and_report: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('73007006'),
@@ -715,7 +717,7 @@ final codeableConceptFromEncounterType = {
     ],
   ),
   EncounterType.chiropractic_consultation_with_history: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('73575006'),
@@ -724,7 +726,7 @@ final codeableConceptFromEncounterType = {
     ],
   ),
   EncounterType.confirmatory_medical_consultation: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('77406008'),
@@ -733,7 +735,7 @@ final codeableConceptFromEncounterType = {
     ],
   ),
   EncounterType.consultation_in_brachytherapy: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('77965002'),
@@ -743,7 +745,7 @@ final codeableConceptFromEncounterType = {
   ),
   EncounterType.final_inpatient_visit_with_instructions_at_discharge:
       CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('83362003'),
@@ -752,7 +754,7 @@ final codeableConceptFromEncounterType = {
     ],
   ),
   EncounterType.comprehensive_consultation: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('84251009'),
@@ -762,7 +764,7 @@ final codeableConceptFromEncounterType = {
   ),
   EncounterType.periodic_reevaluation_and_management_of_healthy_individual:
       CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('86013001'),
@@ -771,7 +773,7 @@ final codeableConceptFromEncounterType = {
     ],
   ),
   EncounterType.evaluation_and_management_of_inpatient: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('86181006'),
@@ -780,7 +782,7 @@ final codeableConceptFromEncounterType = {
     ],
   ),
   EncounterType.follow_up_inpatient_consultation_visit: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('87790002'),
@@ -789,7 +791,7 @@ final codeableConceptFromEncounterType = {
     ],
   ),
   EncounterType.orthodontic_dental_consultation_and_report: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('89291005'),
@@ -799,7 +801,7 @@ final codeableConceptFromEncounterType = {
   ),
   EncounterType.initial_evaluation_and_management_of_healthy_individual:
       CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('90526000'),
@@ -809,7 +811,7 @@ final codeableConceptFromEncounterType = {
   ),
   EncounterType.physician_visit_with_evaluation_and_or_management_service:
       CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('108219001'),
@@ -818,7 +820,7 @@ final codeableConceptFromEncounterType = {
     ],
   ),
   EncounterType.evaluation_and_or_management_new_patient: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('108220007'),
@@ -828,7 +830,7 @@ final codeableConceptFromEncounterType = {
   ),
   EncounterType.evaluation_and_or_management_established_patient:
       CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('108221006'),
@@ -837,7 +839,7 @@ final codeableConceptFromEncounterType = {
     ],
   ),
   EncounterType.indirect_encounter: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('185316007'),
@@ -846,7 +848,7 @@ final codeableConceptFromEncounterType = {
     ],
   ),
   EncounterType.telephone_encounter: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('185317003'),
@@ -855,7 +857,7 @@ final codeableConceptFromEncounterType = {
     ],
   ),
   EncounterType.third_party_encounter: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('185318008'),
@@ -864,7 +866,7 @@ final codeableConceptFromEncounterType = {
     ],
   ),
   EncounterType.encounter_by_computer_link: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('185320006'),
@@ -873,7 +875,7 @@ final codeableConceptFromEncounterType = {
     ],
   ),
   EncounterType.letter_encounter_to_patient: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('185321005'),
@@ -882,7 +884,7 @@ final codeableConceptFromEncounterType = {
     ],
   ),
   EncounterType.encounter_for_symptom: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('185345009'),
@@ -891,7 +893,7 @@ final codeableConceptFromEncounterType = {
     ],
   ),
   EncounterType.encounter_for_sign: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('185346005'),
@@ -900,7 +902,7 @@ final codeableConceptFromEncounterType = {
     ],
   ),
   EncounterType.encounter_for_problem: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('185347001'),
@@ -909,7 +911,7 @@ final codeableConceptFromEncounterType = {
     ],
   ),
   EncounterType.encounter_for_fear: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('185348006'),
@@ -918,7 +920,7 @@ final codeableConceptFromEncounterType = {
     ],
   ),
   EncounterType.encounter_for_check_up: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('185349003'),
@@ -927,7 +929,7 @@ final codeableConceptFromEncounterType = {
     ],
   ),
   EncounterType.new_patient_consultation: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('185387006'),
@@ -936,7 +938,7 @@ final codeableConceptFromEncounterType = {
     ],
   ),
   EncounterType.follow_up_visit: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('185389009'),
@@ -945,7 +947,7 @@ final codeableConceptFromEncounterType = {
     ],
   ),
   EncounterType.home_visit_request_by_relative: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('185462000'),
@@ -954,7 +956,7 @@ final codeableConceptFromEncounterType = {
     ],
   ),
   EncounterType.visit_out_of_hours: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('185463005'),
@@ -963,7 +965,7 @@ final codeableConceptFromEncounterType = {
     ],
   ),
   EncounterType.out_of_hours_visit_not_night_visit: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('185464004'),
@@ -972,7 +974,7 @@ final codeableConceptFromEncounterType = {
     ],
   ),
   EncounterType.weekend_visit: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('185465003'),
@@ -981,7 +983,7 @@ final codeableConceptFromEncounterType = {
     ],
   ),
   EncounterType.home_visit_for_urgent_condition: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('185466002'),
@@ -990,7 +992,7 @@ final codeableConceptFromEncounterType = {
     ],
   ),
   EncounterType.home_visit_for_acute_condition: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('185467006'),
@@ -999,7 +1001,7 @@ final codeableConceptFromEncounterType = {
     ],
   ),
   EncounterType.home_visit_for_chronic_condition: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('185468001'),
@@ -1008,7 +1010,7 @@ final codeableConceptFromEncounterType = {
     ],
   ),
   EncounterType.district_nurse_visit: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('185469009'),
@@ -1017,7 +1019,7 @@ final codeableConceptFromEncounterType = {
     ],
   ),
   EncounterType.home_visit_elderly_assessment: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('185470005'),
@@ -1028,7 +1030,7 @@ final codeableConceptFromEncounterType = {
   EncounterType
           .history_and_physical_examination_with_evaluation_and_management_of_nursing_facility_patient:
       CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('207195004'),
@@ -1040,7 +1042,7 @@ final codeableConceptFromEncounterType = {
   EncounterType
           .history_and_physical_examination_with_management_of_domiciliary_or_rest_home_patient:
       CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('209099002'),
@@ -1051,7 +1053,7 @@ final codeableConceptFromEncounterType = {
   ),
   EncounterType.domiciliary_or_rest_home_patient_evaluation_and_management:
       CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('210098006'),
@@ -1060,7 +1062,7 @@ final codeableConceptFromEncounterType = {
     ],
   ),
   EncounterType.joint_home_visit: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('225929007'),
@@ -1069,7 +1071,7 @@ final codeableConceptFromEncounterType = {
     ],
   ),
   EncounterType.letter_encounter_from_patient: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('270424005'),
@@ -1078,7 +1080,7 @@ final codeableConceptFromEncounterType = {
     ],
   ),
   EncounterType.letter_from_specialist: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('270425006'),
@@ -1087,7 +1089,7 @@ final codeableConceptFromEncounterType = {
     ],
   ),
   EncounterType.patient_initiated_encounter: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('270427003'),
@@ -1096,7 +1098,7 @@ final codeableConceptFromEncounterType = {
     ],
   ),
   EncounterType.provider_initiated_encounter: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('270430005'),
@@ -1105,7 +1107,7 @@ final codeableConceptFromEncounterType = {
     ],
   ),
   EncounterType.letter_from_consultant: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('275693003'),
@@ -1114,7 +1116,7 @@ final codeableConceptFromEncounterType = {
     ],
   ),
   EncounterType.follow_up_consultation: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('281036007'),
@@ -1123,7 +1125,7 @@ final codeableConceptFromEncounterType = {
     ],
   ),
   EncounterType.agreeing_on_elements_of_the_care_plan: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('288836004'),
@@ -1132,7 +1134,7 @@ final codeableConceptFromEncounterType = {
     ],
   ),
   EncounterType.letter_encounter: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('308720009'),
@@ -1141,7 +1143,7 @@ final codeableConceptFromEncounterType = {
     ],
   ),
   EncounterType.first_annual_visit_by_district_nurse: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('310587004'),
@@ -1150,7 +1152,7 @@ final codeableConceptFromEncounterType = {
     ],
   ),
   EncounterType.visit_by_health_visitor: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('310588009'),
@@ -1159,7 +1161,7 @@ final codeableConceptFromEncounterType = {
     ],
   ),
   EncounterType.inappropriate_use_of_out_of_hours_service: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('313183009'),
@@ -1168,7 +1170,7 @@ final codeableConceptFromEncounterType = {
     ],
   ),
   EncounterType.telephone_contact_by_consultant: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('314849005'),
@@ -1177,7 +1179,7 @@ final codeableConceptFromEncounterType = {
     ],
   ),
   EncounterType.bank_holiday_home_visit: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('315205008'),
@@ -1186,7 +1188,7 @@ final codeableConceptFromEncounterType = {
     ],
   ),
   EncounterType.telephone_consultation: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('386472008'),
@@ -1195,7 +1197,7 @@ final codeableConceptFromEncounterType = {
     ],
   ),
   EncounterType.telephone_follow_up: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('386473003'),
@@ -1204,7 +1206,7 @@ final codeableConceptFromEncounterType = {
     ],
   ),
   EncounterType.weight_maintenance_consultation: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('388970003'),
@@ -1213,7 +1215,7 @@ final codeableConceptFromEncounterType = {
     ],
   ),
   EncounterType.weight_reduction_consultation: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('388975008'),
@@ -1222,7 +1224,7 @@ final codeableConceptFromEncounterType = {
     ],
   ),
   EncounterType.weight_increase_consultation: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('388977000'),
@@ -1231,7 +1233,7 @@ final codeableConceptFromEncounterType = {
     ],
   ),
   EncounterType.follow_up_encounter: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('390906007'),
@@ -1240,7 +1242,7 @@ final codeableConceptFromEncounterType = {
     ],
   ),
   EncounterType.anesthesia_consultation: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('398228004'),
@@ -1249,7 +1251,7 @@ final codeableConceptFromEncounterType = {
     ],
   ),
   EncounterType.homeopathic_consultation: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('400979004'),
@@ -1258,7 +1260,7 @@ final codeableConceptFromEncounterType = {
     ],
   ),
   EncounterType.telephone_triage_encounter: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('401267002'),
@@ -1267,7 +1269,7 @@ final codeableConceptFromEncounterType = {
     ],
   ),
   EncounterType.e_mail_sent_to_patient: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('401271004'),
@@ -1276,7 +1278,7 @@ final codeableConceptFromEncounterType = {
     ],
   ),
   EncounterType.urgent_follow_up: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('406547006'),
@@ -1285,7 +1287,7 @@ final codeableConceptFromEncounterType = {
     ],
   ),
   EncounterType.district_nurse_follow_up: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('408482001'),
@@ -1294,7 +1296,7 @@ final codeableConceptFromEncounterType = {
     ],
   ),
   EncounterType.district_nurse_initial_visit: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('408483006'),
@@ -1303,7 +1305,7 @@ final codeableConceptFromEncounterType = {
     ],
   ),
   EncounterType.health_visitor_follow_up: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('408487007'),
@@ -1312,7 +1314,7 @@ final codeableConceptFromEncounterType = {
     ],
   ),
   EncounterType.consultation_for_unaccompanied_minor: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('416520008'),
@@ -1321,7 +1323,7 @@ final codeableConceptFromEncounterType = {
     ],
   ),
   EncounterType.consultation_for_chronic_pain: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('420454001'),
@@ -1330,7 +1332,7 @@ final codeableConceptFromEncounterType = {
     ],
   ),
   EncounterType.consultation_for_pain: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('420650002'),
@@ -1339,7 +1341,7 @@ final codeableConceptFromEncounterType = {
     ],
   ),
   EncounterType.consultation_for_acute_pain: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('421946003'),
@@ -1348,7 +1350,7 @@ final codeableConceptFromEncounterType = {
     ],
   ),
   EncounterType.provision_of_continuity_of_care: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('423215004'),
@@ -1357,7 +1359,7 @@ final codeableConceptFromEncounterType = {
     ],
   ),
   EncounterType.consultation_for_restraint_debriefing: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('423861007'),
@@ -1366,7 +1368,7 @@ final codeableConceptFromEncounterType = {
     ],
   ),
   EncounterType.case_management_follow_up: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('425604002'),
@@ -1375,7 +1377,7 @@ final codeableConceptFromEncounterType = {
     ],
   ),
   EncounterType.e_mail_encounter_from_carer: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('438515009'),
@@ -1384,7 +1386,7 @@ final codeableConceptFromEncounterType = {
     ],
   ),
   EncounterType.e_mail_encounter_to_carer: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('438516005'),
@@ -1394,7 +1396,7 @@ final codeableConceptFromEncounterType = {
   ),
   EncounterType.home_visit_for_care_and_maintenance_of_urinary_catheter:
       CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('439058005'),
@@ -1403,7 +1405,7 @@ final codeableConceptFromEncounterType = {
     ],
   ),
   EncounterType.home_visit: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('439708006'),
@@ -1412,7 +1414,7 @@ final codeableConceptFromEncounterType = {
     ],
   ),
   EncounterType.postoperative_follow_up_visit: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('439740005'),
@@ -1421,7 +1423,7 @@ final codeableConceptFromEncounterType = {
     ],
   ),
   EncounterType.home_visit_for_mechanical_ventilation_care: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('439887005'),
@@ -1430,7 +1432,7 @@ final codeableConceptFromEncounterType = {
     ],
   ),
   EncounterType.home_visit_for_newborn_care_and_assessment: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('440068009'),
@@ -1439,7 +1441,7 @@ final codeableConceptFromEncounterType = {
     ],
   ),
   EncounterType.home_visit_for_postpartum_care_and_assessment: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('440085006'),
@@ -1449,7 +1451,7 @@ final codeableConceptFromEncounterType = {
   ),
   EncounterType.home_visit_for_care_and_maintenance_of_colostomy:
       CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('440146002'),
@@ -1459,7 +1461,7 @@ final codeableConceptFromEncounterType = {
   ),
   EncounterType.provision_of_copy_of_letter_from_specialist_to_patient:
       CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('440168007'),
@@ -1468,7 +1470,7 @@ final codeableConceptFromEncounterType = {
     ],
   ),
   EncounterType.visit_with_nurse_at_next_appointment_requested: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('440568002'),
@@ -1477,7 +1479,7 @@ final codeableConceptFromEncounterType = {
     ],
   ),
   EncounterType.home_visit_for_marriage_counseling: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('440611006'),
@@ -1486,7 +1488,7 @@ final codeableConceptFromEncounterType = {
     ],
   ),
   EncounterType.home_visit_for_intramuscular_injection: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('440696002'),
@@ -1495,7 +1497,7 @@ final codeableConceptFromEncounterType = {
     ],
   ),
   EncounterType.home_visit_for_cystostomy_care_and_maintenance: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('441244001'),
@@ -1505,7 +1507,7 @@ final codeableConceptFromEncounterType = {
   ),
   EncounterType.encounter_by_short_message_service_text_messaging:
       CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('445450000'),
@@ -1514,7 +1516,7 @@ final codeableConceptFromEncounterType = {
     ],
   ),
   EncounterType.telemedicine_consultation_with_patient: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('448337001'),
@@ -1523,7 +1525,7 @@ final codeableConceptFromEncounterType = {
     ],
   ),
   EncounterType.consultation_for_benign_neoplasm_disease: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('698307003'),
@@ -1532,7 +1534,7 @@ final codeableConceptFromEncounterType = {
     ],
   ),
   EncounterType.consultation_for_malignant_neoplasm_disease: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('698308008'),
@@ -1541,7 +1543,7 @@ final codeableConceptFromEncounterType = {
     ],
   ),
   EncounterType.consultation_for_endoscopic_procedure: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('698309000'),
@@ -1550,7 +1552,7 @@ final codeableConceptFromEncounterType = {
     ],
   ),
   EncounterType.consultation_for_colposcopy_related_procedure: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('698310005'),
@@ -1560,7 +1562,7 @@ final codeableConceptFromEncounterType = {
   ),
   EncounterType.consultation_for_assisted_reproductive_procedure:
       CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('698311009'),
@@ -1569,7 +1571,7 @@ final codeableConceptFromEncounterType = {
     ],
   ),
   EncounterType.consultation_for_minor_abdominal_procedure: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('698312002'),
@@ -1578,7 +1580,7 @@ final codeableConceptFromEncounterType = {
     ],
   ),
   EncounterType.consultation_for_minor_operation: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('698313007'),
@@ -1587,7 +1589,7 @@ final codeableConceptFromEncounterType = {
     ],
   ),
   EncounterType.consultation_for_treatment: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('698314001'),
@@ -1596,7 +1598,7 @@ final codeableConceptFromEncounterType = {
     ],
   ),
   EncounterType.home_visit_for_rheumatology_service: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('698704008'),
@@ -1605,7 +1607,7 @@ final codeableConceptFromEncounterType = {
     ],
   ),
   EncounterType.home_visit_for_anticoagulation_monitoring: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('704126008'),
@@ -1614,7 +1616,7 @@ final codeableConceptFromEncounterType = {
     ],
   ),
   EncounterType.x_ray_consultation: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('711420002'),
@@ -1623,7 +1625,7 @@ final codeableConceptFromEncounterType = {
     ],
   ),
   EncounterType.encounter_for_fitness_for_duty_exam: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('711458003'),
@@ -1634,7 +1636,7 @@ final codeableConceptFromEncounterType = {
   EncounterType
           .surgical_pathology_consultation_on_slides_with_comprehensive_review_and_interpretation:
       CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('711532000'),
@@ -1644,7 +1646,7 @@ final codeableConceptFromEncounterType = {
     ],
   ),
   EncounterType.consultation_for_palliative_care: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('713281006'),
@@ -1653,7 +1655,7 @@ final codeableConceptFromEncounterType = {
     ],
   ),
   EncounterType.email_encounter_from_third_party: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('713776001'),
@@ -1662,7 +1664,7 @@ final codeableConceptFromEncounterType = {
     ],
   ),
   EncounterType.remote_non_verbal_consultation: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('719407002'),
@@ -1671,7 +1673,7 @@ final codeableConceptFromEncounterType = {
     ],
   ),
   EncounterType.consultation_via_video_conference: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('719410009'),
@@ -1680,7 +1682,7 @@ final codeableConceptFromEncounterType = {
     ],
   ),
   EncounterType.telepractice_consultation: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('763184009'),
@@ -1689,7 +1691,7 @@ final codeableConceptFromEncounterType = {
     ],
   ),
   EncounterType.trauma_dental_consultation_and_report: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('773298008'),
@@ -1698,7 +1700,7 @@ final codeableConceptFromEncounterType = {
     ],
   ),
   EncounterType.genetic_consultation: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('788339009'),
@@ -1707,7 +1709,7 @@ final codeableConceptFromEncounterType = {
     ],
   ),
   EncounterType.consultation_by_acupuncturist: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('788542004'),
@@ -1716,7 +1718,7 @@ final codeableConceptFromEncounterType = {
     ],
   ),
   EncounterType.consultation_by_ergotherapist: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('788543009'),
@@ -1725,7 +1727,7 @@ final codeableConceptFromEncounterType = {
     ],
   ),
   EncounterType.office_visit_for_pediatric_care_and_assessment: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('3391000175108'),
@@ -1734,7 +1736,7 @@ final codeableConceptFromEncounterType = {
     ],
   ),
   EncounterType.encounter_for_blood_donation: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('4141000175103'),
@@ -1743,7 +1745,7 @@ final codeableConceptFromEncounterType = {
     ],
   ),
   EncounterType.pharmacokinetic_consultation: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('6051000124107'),
@@ -1753,7 +1755,7 @@ final codeableConceptFromEncounterType = {
   ),
   EncounterType.risk_evaluation_and_mitigation_strategy_consultation:
       CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('6061000124109'),
@@ -1762,7 +1764,7 @@ final codeableConceptFromEncounterType = {
     ],
   ),
   EncounterType.consultation_for_transition_of_care: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('428921000124100'),
@@ -1771,7 +1773,7 @@ final codeableConceptFromEncounterType = {
     ],
   ),
   EncounterType.pharmacogenetic_consultation: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('428931000124102'),
@@ -1780,7 +1782,7 @@ final codeableConceptFromEncounterType = {
     ],
   ),
   EncounterType.annual_wellness_visit: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('444971000124105'),
@@ -1789,7 +1791,7 @@ final codeableConceptFromEncounterType = {
     ],
   ),
   EncounterType.health_evaluation_of_new_immigrant: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('452081000124104'),
@@ -1798,7 +1800,7 @@ final codeableConceptFromEncounterType = {
     ],
   ),
   EncounterType.videotelephony_encounter: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('453131000124105'),
@@ -1807,7 +1809,7 @@ final codeableConceptFromEncounterType = {
     ],
   ),
   EncounterType.in_person_encounter: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('453701000124103'),
@@ -1816,7 +1818,7 @@ final codeableConceptFromEncounterType = {
     ],
   ),
   EncounterType.medicare_annual_wellness_visit: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('456201000124103'),
@@ -1825,7 +1827,7 @@ final codeableConceptFromEncounterType = {
     ],
   ),
   EncounterType.consultation_for_suicide_risk_management: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('461231000124109'),

@@ -19,7 +19,7 @@ enum ConditionClinicalStatus {
 
 final codeableConceptFromConditionClinicalStatus = {
   ConditionClinicalStatus.active: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system:
             FhirUri('http://terminology.hl7.org/CodeSystem/condition-clinical'),
@@ -29,7 +29,7 @@ final codeableConceptFromConditionClinicalStatus = {
     ],
   ),
   ConditionClinicalStatus.recurrence: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system:
             FhirUri('http://terminology.hl7.org/CodeSystem/condition-clinical'),
@@ -39,7 +39,7 @@ final codeableConceptFromConditionClinicalStatus = {
     ],
   ),
   ConditionClinicalStatus.relapse: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system:
             FhirUri('http://terminology.hl7.org/CodeSystem/condition-clinical'),
@@ -49,7 +49,7 @@ final codeableConceptFromConditionClinicalStatus = {
     ],
   ),
   ConditionClinicalStatus.inactive: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system:
             FhirUri('http://terminology.hl7.org/CodeSystem/condition-clinical'),
@@ -59,7 +59,7 @@ final codeableConceptFromConditionClinicalStatus = {
     ],
   ),
   ConditionClinicalStatus.remission: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system:
             FhirUri('http://terminology.hl7.org/CodeSystem/condition-clinical'),
@@ -69,7 +69,7 @@ final codeableConceptFromConditionClinicalStatus = {
     ],
   ),
   ConditionClinicalStatus.resolved: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system:
             FhirUri('http://terminology.hl7.org/CodeSystem/condition-clinical'),
@@ -97,7 +97,7 @@ enum ConditionVerificationStatus {
 
 final codeableConceptFromConditionVerificationStatus = {
   ConditionVerificationStatus.unconfirmed: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri(
             'http://terminology.hl7.org/CodeSystem/condition-ver-status'),
@@ -107,7 +107,7 @@ final codeableConceptFromConditionVerificationStatus = {
     ],
   ),
   ConditionVerificationStatus.provisional: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri(
             'http://terminology.hl7.org/CodeSystem/condition-ver-status'),
@@ -117,7 +117,7 @@ final codeableConceptFromConditionVerificationStatus = {
     ],
   ),
   ConditionVerificationStatus.differential: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri(
             'http://terminology.hl7.org/CodeSystem/condition-ver-status'),
@@ -127,7 +127,7 @@ final codeableConceptFromConditionVerificationStatus = {
     ],
   ),
   ConditionVerificationStatus.confirmed: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri(
             'http://terminology.hl7.org/CodeSystem/condition-ver-status'),
@@ -137,7 +137,7 @@ final codeableConceptFromConditionVerificationStatus = {
     ],
   ),
   ConditionVerificationStatus.refuted: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri(
             'http://terminology.hl7.org/CodeSystem/condition-ver-status'),
@@ -147,7 +147,7 @@ final codeableConceptFromConditionVerificationStatus = {
     ],
   ),
   ConditionVerificationStatus.entered_in_error: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri(
             'http://terminology.hl7.org/CodeSystem/condition-ver-status'),
@@ -169,7 +169,7 @@ enum ConditionCategory {
 
 final codeableConceptFromConditionCategory = {
   ConditionCategory.problem_list_item: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system:
             FhirUri('http://terminology.hl7.org/CodeSystem/condition-category'),
@@ -179,7 +179,7 @@ final codeableConceptFromConditionCategory = {
     ],
   ),
   ConditionCategory.encounter_diagnosis: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system:
             FhirUri('http://terminology.hl7.org/CodeSystem/condition-category'),
@@ -189,7 +189,7 @@ final codeableConceptFromConditionCategory = {
     ],
   ),
   ConditionCategory.health_concern: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri(
             'http://hl7.org/fhir/us/core/CodeSystem/condition-category'),

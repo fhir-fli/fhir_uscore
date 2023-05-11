@@ -1,3 +1,5 @@
+// ignore_for_file: sort_unnamed_constructors_first
+
 // Package imports:
 import 'package:fhir/r4.dart';
 
@@ -18,8 +20,11 @@ class MedicationUsCore extends Resource {
 
   Medication _medication;
   Medication get value => _medication;
+  @override
   String? get id => _medication.id;
+  @override
   FhirMeta? get meta => _medication.meta;
+  @override
   Narrative? get text => _medication.text;
   CodeableConcept? get code => _medication.code;
 }

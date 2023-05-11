@@ -1,3 +1,5 @@
+// ignore_for_file: sort_unnamed_constructors_first
+
 // Package imports:
 import 'package:fhir/r4.dart';
 
@@ -53,7 +55,7 @@ class DiagnosticReportUsCore extends Resource {
       DiagnosticReportUsCore(
         status: status,
         category: [
-          CodeableConcept(coding: [
+          CodeableConcept(coding: <Coding>[
             Coding(
                 system:
                     FhirUri('http://terminology.hl7.org/CodeSystem/v2-0074'),

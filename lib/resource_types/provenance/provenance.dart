@@ -1,3 +1,5 @@
+// ignore_for_file: sort_unnamed_constructors_first
+
 // Package imports:
 import 'package:fhir/r4.dart';
 
@@ -36,8 +38,11 @@ class ProvenanceUsCore extends Resource {
 
   Provenance _provenance;
   Provenance get value => _provenance;
+  @override
   String? get id => _provenance.id;
+  @override
   FhirMeta? get meta => _provenance.meta;
+  @override
   Narrative? get text => _provenance.text;
   List<Reference> get target => _provenance.target;
   FhirInstant? get recorded => _provenance.recorded;

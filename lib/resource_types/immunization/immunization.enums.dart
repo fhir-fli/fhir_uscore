@@ -77,7 +77,7 @@ enum ImmunizationStatusReason {
 
 final codeableConceptFromImmunizationStatusReason = {
   ImmunizationStatusReason.immunity: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://terminology.hl7.org/CodeSystem/v3-ActReason'),
         code: FhirCode('IMMUNE'),
@@ -86,7 +86,7 @@ final codeableConceptFromImmunizationStatusReason = {
     ],
   ),
   ImmunizationStatusReason.medical_precaution: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://terminology.hl7.org/CodeSystem/v3-ActReason'),
         code: FhirCode('MEDPREC'),
@@ -95,7 +95,7 @@ final codeableConceptFromImmunizationStatusReason = {
     ],
   ),
   ImmunizationStatusReason.product_out_of_stock: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://terminology.hl7.org/CodeSystem/v3-ActReason'),
         code: FhirCode('OSTOCK'),
@@ -104,7 +104,7 @@ final codeableConceptFromImmunizationStatusReason = {
     ],
   ),
   ImmunizationStatusReason.patient_objection: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://terminology.hl7.org/CodeSystem/v3-ActReason'),
         code: FhirCode('PATOBJ'),
@@ -114,7 +114,7 @@ final codeableConceptFromImmunizationStatusReason = {
   ),
   ImmunizationStatusReason.no_consent_tetanus_low_dose_diphtheria_vaccine:
       CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('171257003'),
@@ -123,7 +123,7 @@ final codeableConceptFromImmunizationStatusReason = {
     ],
   ),
   ImmunizationStatusReason.pertussis_vaccine_refused: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('171265000'),
@@ -132,7 +132,7 @@ final codeableConceptFromImmunizationStatusReason = {
     ],
   ),
   ImmunizationStatusReason.no_consent_diphtheria_immunization: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('171266004'),
@@ -141,7 +141,7 @@ final codeableConceptFromImmunizationStatusReason = {
     ],
   ),
   ImmunizationStatusReason.no_consent_tetanus_immunization: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('171267008'),
@@ -150,7 +150,7 @@ final codeableConceptFromImmunizationStatusReason = {
     ],
   ),
   ImmunizationStatusReason.polio_immunization_refused: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('171268003'),
@@ -159,7 +159,7 @@ final codeableConceptFromImmunizationStatusReason = {
     ],
   ),
   ImmunizationStatusReason.no_consent_measles_immunization: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('171269006'),
@@ -168,7 +168,7 @@ final codeableConceptFromImmunizationStatusReason = {
     ],
   ),
   ImmunizationStatusReason.no_consent_rubella_immunization: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('171270007'),
@@ -177,7 +177,7 @@ final codeableConceptFromImmunizationStatusReason = {
     ],
   ),
   ImmunizationStatusReason.no_consent_bcg: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('171271006'),
@@ -186,7 +186,7 @@ final codeableConceptFromImmunizationStatusReason = {
     ],
   ),
   ImmunizationStatusReason.no_consent_influenza_immunization: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('171272004'),
@@ -195,7 +195,7 @@ final codeableConceptFromImmunizationStatusReason = {
     ],
   ),
   ImmunizationStatusReason.no_consent_for_mmr: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('171280006'),
@@ -205,7 +205,7 @@ final codeableConceptFromImmunizationStatusReason = {
   ),
   ImmunizationStatusReason.no_consent_for_any_primary_immunization:
       CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('171283008'),
@@ -214,7 +214,7 @@ final codeableConceptFromImmunizationStatusReason = {
     ],
   ),
   ImmunizationStatusReason.no_consent_pre_school_vaccinations: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('171285001'),
@@ -223,7 +223,7 @@ final codeableConceptFromImmunizationStatusReason = {
     ],
   ),
   ImmunizationStatusReason.no_consent_school_exit_vaccinations: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('171286000'),
@@ -233,7 +233,7 @@ final codeableConceptFromImmunizationStatusReason = {
   ),
   ImmunizationStatusReason
       .no_consent_haemophilus_influenzae_type_b_immunization: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('171291004'),
@@ -243,7 +243,7 @@ final codeableConceptFromImmunizationStatusReason = {
   ),
   ImmunizationStatusReason.no_consent_pneumococcal_immunization:
       CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('171292006'),
@@ -253,7 +253,7 @@ final codeableConceptFromImmunizationStatusReason = {
   ),
   ImmunizationStatusReason.no_consent_for_mr_measles_rubella_vaccine:
       CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('171293001'),
@@ -262,7 +262,7 @@ final codeableConceptFromImmunizationStatusReason = {
     ],
   ),
   ImmunizationStatusReason.no_consent_for_any_immunization: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('268559007'),
@@ -271,7 +271,7 @@ final codeableConceptFromImmunizationStatusReason = {
     ],
   ),
   ImmunizationStatusReason.no_consent_for_mmr1: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('310839003'),
@@ -281,7 +281,7 @@ final codeableConceptFromImmunizationStatusReason = {
   ),
   ImmunizationStatusReason
       .no_consent_for_second_measles_mumps_and_rubella_vaccine: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('310840001'),
@@ -291,7 +291,7 @@ final codeableConceptFromImmunizationStatusReason = {
   ),
   ImmunizationStatusReason.no_consent_diphtheria_tetanus_pertussis_immunization:
       CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('314768003'),
@@ -301,7 +301,7 @@ final codeableConceptFromImmunizationStatusReason = {
   ),
   ImmunizationStatusReason.no_consent_tetanus_plus_diphtheria_immunization:
       CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('314769006'),
@@ -311,7 +311,7 @@ final codeableConceptFromImmunizationStatusReason = {
   ),
   ImmunizationStatusReason.no_consent_for_meningitis_c_immunization:
       CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('314936001'),
@@ -320,7 +320,7 @@ final codeableConceptFromImmunizationStatusReason = {
     ],
   ),
   ImmunizationStatusReason.no_consent_for_3rd_hib_booster: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('407598009'),
@@ -679,7 +679,7 @@ enum ImmunizationVaccineCode {
 
 final codeableConceptFromImmunizationVaccineCode = {
   ImmunizationVaccineCode.cvx01: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://hl7.org/fhir/sid/cvx'),
         code: FhirCode('01'),
@@ -688,7 +688,7 @@ final codeableConceptFromImmunizationVaccineCode = {
     ],
   ),
   ImmunizationVaccineCode.cvx02: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://hl7.org/fhir/sid/cvx'),
         code: FhirCode('02'),
@@ -697,7 +697,7 @@ final codeableConceptFromImmunizationVaccineCode = {
     ],
   ),
   ImmunizationVaccineCode.cvx03: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://hl7.org/fhir/sid/cvx'),
         code: FhirCode('03'),
@@ -706,7 +706,7 @@ final codeableConceptFromImmunizationVaccineCode = {
     ],
   ),
   ImmunizationVaccineCode.cvx04: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://hl7.org/fhir/sid/cvx'),
         code: FhirCode('04'),
@@ -715,7 +715,7 @@ final codeableConceptFromImmunizationVaccineCode = {
     ],
   ),
   ImmunizationVaccineCode.cvx05: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://hl7.org/fhir/sid/cvx'),
         code: FhirCode('05'),
@@ -724,7 +724,7 @@ final codeableConceptFromImmunizationVaccineCode = {
     ],
   ),
   ImmunizationVaccineCode.cvx06: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://hl7.org/fhir/sid/cvx'),
         code: FhirCode('06'),
@@ -733,7 +733,7 @@ final codeableConceptFromImmunizationVaccineCode = {
     ],
   ),
   ImmunizationVaccineCode.cvx07: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://hl7.org/fhir/sid/cvx'),
         code: FhirCode('07'),
@@ -742,7 +742,7 @@ final codeableConceptFromImmunizationVaccineCode = {
     ],
   ),
   ImmunizationVaccineCode.cvx08: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://hl7.org/fhir/sid/cvx'),
         code: FhirCode('08'),
@@ -751,7 +751,7 @@ final codeableConceptFromImmunizationVaccineCode = {
     ],
   ),
   ImmunizationVaccineCode.cvx09: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://hl7.org/fhir/sid/cvx'),
         code: FhirCode('09'),
@@ -760,7 +760,7 @@ final codeableConceptFromImmunizationVaccineCode = {
     ],
   ),
   ImmunizationVaccineCode.cvx10: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://hl7.org/fhir/sid/cvx'),
         code: FhirCode('10'),
@@ -769,7 +769,7 @@ final codeableConceptFromImmunizationVaccineCode = {
     ],
   ),
   ImmunizationVaccineCode.cvx100: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://hl7.org/fhir/sid/cvx'),
         code: FhirCode('100'),
@@ -778,7 +778,7 @@ final codeableConceptFromImmunizationVaccineCode = {
     ],
   ),
   ImmunizationVaccineCode.cvx101: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://hl7.org/fhir/sid/cvx'),
         code: FhirCode('101'),
@@ -787,7 +787,7 @@ final codeableConceptFromImmunizationVaccineCode = {
     ],
   ),
   ImmunizationVaccineCode.cvx102: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://hl7.org/fhir/sid/cvx'),
         code: FhirCode('102'),
@@ -796,7 +796,7 @@ final codeableConceptFromImmunizationVaccineCode = {
     ],
   ),
   ImmunizationVaccineCode.cvx103: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://hl7.org/fhir/sid/cvx'),
         code: FhirCode('103'),
@@ -805,7 +805,7 @@ final codeableConceptFromImmunizationVaccineCode = {
     ],
   ),
   ImmunizationVaccineCode.cvx104: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://hl7.org/fhir/sid/cvx'),
         code: FhirCode('104'),
@@ -814,7 +814,7 @@ final codeableConceptFromImmunizationVaccineCode = {
     ],
   ),
   ImmunizationVaccineCode.cvx105: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://hl7.org/fhir/sid/cvx'),
         code: FhirCode('105'),
@@ -823,7 +823,7 @@ final codeableConceptFromImmunizationVaccineCode = {
     ],
   ),
   ImmunizationVaccineCode.cvx106: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://hl7.org/fhir/sid/cvx'),
         code: FhirCode('106'),
@@ -832,7 +832,7 @@ final codeableConceptFromImmunizationVaccineCode = {
     ],
   ),
   ImmunizationVaccineCode.cvx107: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://hl7.org/fhir/sid/cvx'),
         code: FhirCode('107'),
@@ -841,7 +841,7 @@ final codeableConceptFromImmunizationVaccineCode = {
     ],
   ),
   ImmunizationVaccineCode.cvx108: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://hl7.org/fhir/sid/cvx'),
         code: FhirCode('108'),
@@ -850,7 +850,7 @@ final codeableConceptFromImmunizationVaccineCode = {
     ],
   ),
   ImmunizationVaccineCode.cvx109: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://hl7.org/fhir/sid/cvx'),
         code: FhirCode('109'),
@@ -859,7 +859,7 @@ final codeableConceptFromImmunizationVaccineCode = {
     ],
   ),
   ImmunizationVaccineCode.cvx11: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://hl7.org/fhir/sid/cvx'),
         code: FhirCode('11'),
@@ -868,7 +868,7 @@ final codeableConceptFromImmunizationVaccineCode = {
     ],
   ),
   ImmunizationVaccineCode.cvx110: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://hl7.org/fhir/sid/cvx'),
         code: FhirCode('110'),
@@ -877,7 +877,7 @@ final codeableConceptFromImmunizationVaccineCode = {
     ],
   ),
   ImmunizationVaccineCode.cvx111: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://hl7.org/fhir/sid/cvx'),
         code: FhirCode('111'),
@@ -886,7 +886,7 @@ final codeableConceptFromImmunizationVaccineCode = {
     ],
   ),
   ImmunizationVaccineCode.cvx112: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://hl7.org/fhir/sid/cvx'),
         code: FhirCode('112'),
@@ -895,7 +895,7 @@ final codeableConceptFromImmunizationVaccineCode = {
     ],
   ),
   ImmunizationVaccineCode.cvx113: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://hl7.org/fhir/sid/cvx'),
         code: FhirCode('113'),
@@ -904,7 +904,7 @@ final codeableConceptFromImmunizationVaccineCode = {
     ],
   ),
   ImmunizationVaccineCode.cvx114: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://hl7.org/fhir/sid/cvx'),
         code: FhirCode('114'),
@@ -913,7 +913,7 @@ final codeableConceptFromImmunizationVaccineCode = {
     ],
   ),
   ImmunizationVaccineCode.cvx115: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://hl7.org/fhir/sid/cvx'),
         code: FhirCode('115'),
@@ -922,7 +922,7 @@ final codeableConceptFromImmunizationVaccineCode = {
     ],
   ),
   ImmunizationVaccineCode.cvx116: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://hl7.org/fhir/sid/cvx'),
         code: FhirCode('116'),
@@ -931,7 +931,7 @@ final codeableConceptFromImmunizationVaccineCode = {
     ],
   ),
   ImmunizationVaccineCode.cvx117: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://hl7.org/fhir/sid/cvx'),
         code: FhirCode('117'),
@@ -940,7 +940,7 @@ final codeableConceptFromImmunizationVaccineCode = {
     ],
   ),
   ImmunizationVaccineCode.cvx118: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://hl7.org/fhir/sid/cvx'),
         code: FhirCode('118'),
@@ -949,7 +949,7 @@ final codeableConceptFromImmunizationVaccineCode = {
     ],
   ),
   ImmunizationVaccineCode.cvx119: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://hl7.org/fhir/sid/cvx'),
         code: FhirCode('119'),
@@ -958,7 +958,7 @@ final codeableConceptFromImmunizationVaccineCode = {
     ],
   ),
   ImmunizationVaccineCode.cvx12: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://hl7.org/fhir/sid/cvx'),
         code: FhirCode('12'),
@@ -967,7 +967,7 @@ final codeableConceptFromImmunizationVaccineCode = {
     ],
   ),
   ImmunizationVaccineCode.cvx120: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://hl7.org/fhir/sid/cvx'),
         code: FhirCode('120'),
@@ -976,7 +976,7 @@ final codeableConceptFromImmunizationVaccineCode = {
     ],
   ),
   ImmunizationVaccineCode.cvx121: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://hl7.org/fhir/sid/cvx'),
         code: FhirCode('121'),
@@ -985,7 +985,7 @@ final codeableConceptFromImmunizationVaccineCode = {
     ],
   ),
   ImmunizationVaccineCode.cvx122: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://hl7.org/fhir/sid/cvx'),
         code: FhirCode('122'),
@@ -994,7 +994,7 @@ final codeableConceptFromImmunizationVaccineCode = {
     ],
   ),
   ImmunizationVaccineCode.cvx123: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://hl7.org/fhir/sid/cvx'),
         code: FhirCode('123'),
@@ -1003,7 +1003,7 @@ final codeableConceptFromImmunizationVaccineCode = {
     ],
   ),
   ImmunizationVaccineCode.cvx125: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://hl7.org/fhir/sid/cvx'),
         code: FhirCode('125'),
@@ -1012,7 +1012,7 @@ final codeableConceptFromImmunizationVaccineCode = {
     ],
   ),
   ImmunizationVaccineCode.cvx126: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://hl7.org/fhir/sid/cvx'),
         code: FhirCode('126'),
@@ -1021,7 +1021,7 @@ final codeableConceptFromImmunizationVaccineCode = {
     ],
   ),
   ImmunizationVaccineCode.cvx127: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://hl7.org/fhir/sid/cvx'),
         code: FhirCode('127'),
@@ -1030,7 +1030,7 @@ final codeableConceptFromImmunizationVaccineCode = {
     ],
   ),
   ImmunizationVaccineCode.cvx128: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://hl7.org/fhir/sid/cvx'),
         code: FhirCode('128'),
@@ -1039,7 +1039,7 @@ final codeableConceptFromImmunizationVaccineCode = {
     ],
   ),
   ImmunizationVaccineCode.cvx129: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://hl7.org/fhir/sid/cvx'),
         code: FhirCode('129'),
@@ -1048,7 +1048,7 @@ final codeableConceptFromImmunizationVaccineCode = {
     ],
   ),
   ImmunizationVaccineCode.cvx13: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://hl7.org/fhir/sid/cvx'),
         code: FhirCode('13'),
@@ -1057,7 +1057,7 @@ final codeableConceptFromImmunizationVaccineCode = {
     ],
   ),
   ImmunizationVaccineCode.cvx130: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://hl7.org/fhir/sid/cvx'),
         code: FhirCode('130'),
@@ -1066,7 +1066,7 @@ final codeableConceptFromImmunizationVaccineCode = {
     ],
   ),
   ImmunizationVaccineCode.cvx131: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://hl7.org/fhir/sid/cvx'),
         code: FhirCode('131'),
@@ -1075,7 +1075,7 @@ final codeableConceptFromImmunizationVaccineCode = {
     ],
   ),
   ImmunizationVaccineCode.cvx132: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://hl7.org/fhir/sid/cvx'),
         code: FhirCode('132'),
@@ -1084,7 +1084,7 @@ final codeableConceptFromImmunizationVaccineCode = {
     ],
   ),
   ImmunizationVaccineCode.cvx133: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://hl7.org/fhir/sid/cvx'),
         code: FhirCode('133'),
@@ -1093,7 +1093,7 @@ final codeableConceptFromImmunizationVaccineCode = {
     ],
   ),
   ImmunizationVaccineCode.cvx134: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://hl7.org/fhir/sid/cvx'),
         code: FhirCode('134'),
@@ -1102,7 +1102,7 @@ final codeableConceptFromImmunizationVaccineCode = {
     ],
   ),
   ImmunizationVaccineCode.cvx135: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://hl7.org/fhir/sid/cvx'),
         code: FhirCode('135'),
@@ -1111,7 +1111,7 @@ final codeableConceptFromImmunizationVaccineCode = {
     ],
   ),
   ImmunizationVaccineCode.cvx136: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://hl7.org/fhir/sid/cvx'),
         code: FhirCode('136'),
@@ -1120,7 +1120,7 @@ final codeableConceptFromImmunizationVaccineCode = {
     ],
   ),
   ImmunizationVaccineCode.cvx137: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://hl7.org/fhir/sid/cvx'),
         code: FhirCode('137'),
@@ -1129,7 +1129,7 @@ final codeableConceptFromImmunizationVaccineCode = {
     ],
   ),
   ImmunizationVaccineCode.cvx138: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://hl7.org/fhir/sid/cvx'),
         code: FhirCode('138'),
@@ -1138,7 +1138,7 @@ final codeableConceptFromImmunizationVaccineCode = {
     ],
   ),
   ImmunizationVaccineCode.cvx139: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://hl7.org/fhir/sid/cvx'),
         code: FhirCode('139'),
@@ -1147,7 +1147,7 @@ final codeableConceptFromImmunizationVaccineCode = {
     ],
   ),
   ImmunizationVaccineCode.cvx14: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://hl7.org/fhir/sid/cvx'),
         code: FhirCode('14'),
@@ -1156,7 +1156,7 @@ final codeableConceptFromImmunizationVaccineCode = {
     ],
   ),
   ImmunizationVaccineCode.cvx140: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://hl7.org/fhir/sid/cvx'),
         code: FhirCode('140'),
@@ -1165,7 +1165,7 @@ final codeableConceptFromImmunizationVaccineCode = {
     ],
   ),
   ImmunizationVaccineCode.cvx141: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://hl7.org/fhir/sid/cvx'),
         code: FhirCode('141'),
@@ -1174,7 +1174,7 @@ final codeableConceptFromImmunizationVaccineCode = {
     ],
   ),
   ImmunizationVaccineCode.cvx142: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://hl7.org/fhir/sid/cvx'),
         code: FhirCode('142'),
@@ -1183,7 +1183,7 @@ final codeableConceptFromImmunizationVaccineCode = {
     ],
   ),
   ImmunizationVaccineCode.cvx143: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://hl7.org/fhir/sid/cvx'),
         code: FhirCode('143'),
@@ -1192,7 +1192,7 @@ final codeableConceptFromImmunizationVaccineCode = {
     ],
   ),
   ImmunizationVaccineCode.cvx144: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://hl7.org/fhir/sid/cvx'),
         code: FhirCode('144'),
@@ -1201,7 +1201,7 @@ final codeableConceptFromImmunizationVaccineCode = {
     ],
   ),
   ImmunizationVaccineCode.cvx147: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://hl7.org/fhir/sid/cvx'),
         code: FhirCode('147'),
@@ -1210,7 +1210,7 @@ final codeableConceptFromImmunizationVaccineCode = {
     ],
   ),
   ImmunizationVaccineCode.cvx148: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://hl7.org/fhir/sid/cvx'),
         code: FhirCode('148'),
@@ -1219,7 +1219,7 @@ final codeableConceptFromImmunizationVaccineCode = {
     ],
   ),
   ImmunizationVaccineCode.cvx149: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://hl7.org/fhir/sid/cvx'),
         code: FhirCode('149'),
@@ -1228,7 +1228,7 @@ final codeableConceptFromImmunizationVaccineCode = {
     ],
   ),
   ImmunizationVaccineCode.cvx15: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://hl7.org/fhir/sid/cvx'),
         code: FhirCode('15'),
@@ -1237,7 +1237,7 @@ final codeableConceptFromImmunizationVaccineCode = {
     ],
   ),
   ImmunizationVaccineCode.cvx150: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://hl7.org/fhir/sid/cvx'),
         code: FhirCode('150'),
@@ -1246,7 +1246,7 @@ final codeableConceptFromImmunizationVaccineCode = {
     ],
   ),
   ImmunizationVaccineCode.cvx151: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://hl7.org/fhir/sid/cvx'),
         code: FhirCode('151'),
@@ -1255,7 +1255,7 @@ final codeableConceptFromImmunizationVaccineCode = {
     ],
   ),
   ImmunizationVaccineCode.cvx152: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://hl7.org/fhir/sid/cvx'),
         code: FhirCode('152'),
@@ -1264,7 +1264,7 @@ final codeableConceptFromImmunizationVaccineCode = {
     ],
   ),
   ImmunizationVaccineCode.cvx153: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://hl7.org/fhir/sid/cvx'),
         code: FhirCode('153'),
@@ -1273,7 +1273,7 @@ final codeableConceptFromImmunizationVaccineCode = {
     ],
   ),
   ImmunizationVaccineCode.cvx155: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://hl7.org/fhir/sid/cvx'),
         code: FhirCode('155'),
@@ -1282,7 +1282,7 @@ final codeableConceptFromImmunizationVaccineCode = {
     ],
   ),
   ImmunizationVaccineCode.cvx156: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://hl7.org/fhir/sid/cvx'),
         code: FhirCode('156'),
@@ -1291,7 +1291,7 @@ final codeableConceptFromImmunizationVaccineCode = {
     ],
   ),
   ImmunizationVaccineCode.cvx157: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://hl7.org/fhir/sid/cvx'),
         code: FhirCode('157'),
@@ -1300,7 +1300,7 @@ final codeableConceptFromImmunizationVaccineCode = {
     ],
   ),
   ImmunizationVaccineCode.cvx158: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://hl7.org/fhir/sid/cvx'),
         code: FhirCode('158'),
@@ -1309,7 +1309,7 @@ final codeableConceptFromImmunizationVaccineCode = {
     ],
   ),
   ImmunizationVaccineCode.cvx159: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://hl7.org/fhir/sid/cvx'),
         code: FhirCode('159'),
@@ -1318,7 +1318,7 @@ final codeableConceptFromImmunizationVaccineCode = {
     ],
   ),
   ImmunizationVaccineCode.cvx16: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://hl7.org/fhir/sid/cvx'),
         code: FhirCode('16'),
@@ -1327,7 +1327,7 @@ final codeableConceptFromImmunizationVaccineCode = {
     ],
   ),
   ImmunizationVaccineCode.cvx160: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://hl7.org/fhir/sid/cvx'),
         code: FhirCode('160'),
@@ -1336,7 +1336,7 @@ final codeableConceptFromImmunizationVaccineCode = {
     ],
   ),
   ImmunizationVaccineCode.cvx161: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://hl7.org/fhir/sid/cvx'),
         code: FhirCode('161'),
@@ -1345,7 +1345,7 @@ final codeableConceptFromImmunizationVaccineCode = {
     ],
   ),
   ImmunizationVaccineCode.cvx162: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://hl7.org/fhir/sid/cvx'),
         code: FhirCode('162'),
@@ -1354,7 +1354,7 @@ final codeableConceptFromImmunizationVaccineCode = {
     ],
   ),
   ImmunizationVaccineCode.cvx163: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://hl7.org/fhir/sid/cvx'),
         code: FhirCode('163'),
@@ -1363,7 +1363,7 @@ final codeableConceptFromImmunizationVaccineCode = {
     ],
   ),
   ImmunizationVaccineCode.cvx164: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://hl7.org/fhir/sid/cvx'),
         code: FhirCode('164'),
@@ -1372,7 +1372,7 @@ final codeableConceptFromImmunizationVaccineCode = {
     ],
   ),
   ImmunizationVaccineCode.cvx165: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://hl7.org/fhir/sid/cvx'),
         code: FhirCode('165'),
@@ -1381,7 +1381,7 @@ final codeableConceptFromImmunizationVaccineCode = {
     ],
   ),
   ImmunizationVaccineCode.cvx166: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://hl7.org/fhir/sid/cvx'),
         code: FhirCode('166'),
@@ -1390,7 +1390,7 @@ final codeableConceptFromImmunizationVaccineCode = {
     ],
   ),
   ImmunizationVaccineCode.cvx167: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://hl7.org/fhir/sid/cvx'),
         code: FhirCode('167'),
@@ -1399,7 +1399,7 @@ final codeableConceptFromImmunizationVaccineCode = {
     ],
   ),
   ImmunizationVaccineCode.cvx168: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://hl7.org/fhir/sid/cvx'),
         code: FhirCode('168'),
@@ -1408,7 +1408,7 @@ final codeableConceptFromImmunizationVaccineCode = {
     ],
   ),
   ImmunizationVaccineCode.cvx169: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://hl7.org/fhir/sid/cvx'),
         code: FhirCode('169'),
@@ -1417,7 +1417,7 @@ final codeableConceptFromImmunizationVaccineCode = {
     ],
   ),
   ImmunizationVaccineCode.cvx17: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://hl7.org/fhir/sid/cvx'),
         code: FhirCode('17'),
@@ -1426,7 +1426,7 @@ final codeableConceptFromImmunizationVaccineCode = {
     ],
   ),
   ImmunizationVaccineCode.cvx170: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://hl7.org/fhir/sid/cvx'),
         code: FhirCode('170'),
@@ -1435,7 +1435,7 @@ final codeableConceptFromImmunizationVaccineCode = {
     ],
   ),
   ImmunizationVaccineCode.cvx171: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://hl7.org/fhir/sid/cvx'),
         code: FhirCode('171'),
@@ -1444,7 +1444,7 @@ final codeableConceptFromImmunizationVaccineCode = {
     ],
   ),
   ImmunizationVaccineCode.cvx172: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://hl7.org/fhir/sid/cvx'),
         code: FhirCode('172'),
@@ -1453,7 +1453,7 @@ final codeableConceptFromImmunizationVaccineCode = {
     ],
   ),
   ImmunizationVaccineCode.cvx173: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://hl7.org/fhir/sid/cvx'),
         code: FhirCode('173'),
@@ -1462,7 +1462,7 @@ final codeableConceptFromImmunizationVaccineCode = {
     ],
   ),
   ImmunizationVaccineCode.cvx174: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://hl7.org/fhir/sid/cvx'),
         code: FhirCode('174'),
@@ -1471,7 +1471,7 @@ final codeableConceptFromImmunizationVaccineCode = {
     ],
   ),
   ImmunizationVaccineCode.cvx175: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://hl7.org/fhir/sid/cvx'),
         code: FhirCode('175'),
@@ -1480,7 +1480,7 @@ final codeableConceptFromImmunizationVaccineCode = {
     ],
   ),
   ImmunizationVaccineCode.cvx176: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://hl7.org/fhir/sid/cvx'),
         code: FhirCode('176'),
@@ -1489,7 +1489,7 @@ final codeableConceptFromImmunizationVaccineCode = {
     ],
   ),
   ImmunizationVaccineCode.cvx177: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://hl7.org/fhir/sid/cvx'),
         code: FhirCode('177'),
@@ -1498,7 +1498,7 @@ final codeableConceptFromImmunizationVaccineCode = {
     ],
   ),
   ImmunizationVaccineCode.cvx178: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://hl7.org/fhir/sid/cvx'),
         code: FhirCode('178'),
@@ -1507,7 +1507,7 @@ final codeableConceptFromImmunizationVaccineCode = {
     ],
   ),
   ImmunizationVaccineCode.cvx179: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://hl7.org/fhir/sid/cvx'),
         code: FhirCode('179'),
@@ -1516,7 +1516,7 @@ final codeableConceptFromImmunizationVaccineCode = {
     ],
   ),
   ImmunizationVaccineCode.cvx18: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://hl7.org/fhir/sid/cvx'),
         code: FhirCode('18'),
@@ -1525,7 +1525,7 @@ final codeableConceptFromImmunizationVaccineCode = {
     ],
   ),
   ImmunizationVaccineCode.cvx180: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://hl7.org/fhir/sid/cvx'),
         code: FhirCode('180'),
@@ -1534,7 +1534,7 @@ final codeableConceptFromImmunizationVaccineCode = {
     ],
   ),
   ImmunizationVaccineCode.cvx181: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://hl7.org/fhir/sid/cvx'),
         code: FhirCode('181'),
@@ -1543,7 +1543,7 @@ final codeableConceptFromImmunizationVaccineCode = {
     ],
   ),
   ImmunizationVaccineCode.cvx182: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://hl7.org/fhir/sid/cvx'),
         code: FhirCode('182'),
@@ -1552,7 +1552,7 @@ final codeableConceptFromImmunizationVaccineCode = {
     ],
   ),
   ImmunizationVaccineCode.cvx183: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://hl7.org/fhir/sid/cvx'),
         code: FhirCode('183'),
@@ -1561,7 +1561,7 @@ final codeableConceptFromImmunizationVaccineCode = {
     ],
   ),
   ImmunizationVaccineCode.cvx184: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://hl7.org/fhir/sid/cvx'),
         code: FhirCode('184'),
@@ -1570,7 +1570,7 @@ final codeableConceptFromImmunizationVaccineCode = {
     ],
   ),
   ImmunizationVaccineCode.cvx185: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://hl7.org/fhir/sid/cvx'),
         code: FhirCode('185'),
@@ -1579,7 +1579,7 @@ final codeableConceptFromImmunizationVaccineCode = {
     ],
   ),
   ImmunizationVaccineCode.cvx186: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://hl7.org/fhir/sid/cvx'),
         code: FhirCode('186'),
@@ -1588,7 +1588,7 @@ final codeableConceptFromImmunizationVaccineCode = {
     ],
   ),
   ImmunizationVaccineCode.cvx187: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://hl7.org/fhir/sid/cvx'),
         code: FhirCode('187'),
@@ -1597,7 +1597,7 @@ final codeableConceptFromImmunizationVaccineCode = {
     ],
   ),
   ImmunizationVaccineCode.cvx188: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://hl7.org/fhir/sid/cvx'),
         code: FhirCode('188'),
@@ -1606,7 +1606,7 @@ final codeableConceptFromImmunizationVaccineCode = {
     ],
   ),
   ImmunizationVaccineCode.cvx189: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://hl7.org/fhir/sid/cvx'),
         code: FhirCode('189'),
@@ -1615,7 +1615,7 @@ final codeableConceptFromImmunizationVaccineCode = {
     ],
   ),
   ImmunizationVaccineCode.cvx19: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://hl7.org/fhir/sid/cvx'),
         code: FhirCode('19'),
@@ -1624,7 +1624,7 @@ final codeableConceptFromImmunizationVaccineCode = {
     ],
   ),
   ImmunizationVaccineCode.cvx20: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://hl7.org/fhir/sid/cvx'),
         code: FhirCode('20'),
@@ -1633,7 +1633,7 @@ final codeableConceptFromImmunizationVaccineCode = {
     ],
   ),
   ImmunizationVaccineCode.cvx21: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://hl7.org/fhir/sid/cvx'),
         code: FhirCode('21'),
@@ -1642,7 +1642,7 @@ final codeableConceptFromImmunizationVaccineCode = {
     ],
   ),
   ImmunizationVaccineCode.cvx22: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://hl7.org/fhir/sid/cvx'),
         code: FhirCode('22'),
@@ -1651,7 +1651,7 @@ final codeableConceptFromImmunizationVaccineCode = {
     ],
   ),
   ImmunizationVaccineCode.cvx23: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://hl7.org/fhir/sid/cvx'),
         code: FhirCode('23'),
@@ -1660,7 +1660,7 @@ final codeableConceptFromImmunizationVaccineCode = {
     ],
   ),
   ImmunizationVaccineCode.cvx24: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://hl7.org/fhir/sid/cvx'),
         code: FhirCode('24'),
@@ -1669,7 +1669,7 @@ final codeableConceptFromImmunizationVaccineCode = {
     ],
   ),
   ImmunizationVaccineCode.cvx25: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://hl7.org/fhir/sid/cvx'),
         code: FhirCode('25'),
@@ -1678,7 +1678,7 @@ final codeableConceptFromImmunizationVaccineCode = {
     ],
   ),
   ImmunizationVaccineCode.cvx26: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://hl7.org/fhir/sid/cvx'),
         code: FhirCode('26'),
@@ -1687,7 +1687,7 @@ final codeableConceptFromImmunizationVaccineCode = {
     ],
   ),
   ImmunizationVaccineCode.cvx27: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://hl7.org/fhir/sid/cvx'),
         code: FhirCode('27'),
@@ -1696,7 +1696,7 @@ final codeableConceptFromImmunizationVaccineCode = {
     ],
   ),
   ImmunizationVaccineCode.cvx28: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://hl7.org/fhir/sid/cvx'),
         code: FhirCode('28'),
@@ -1705,7 +1705,7 @@ final codeableConceptFromImmunizationVaccineCode = {
     ],
   ),
   ImmunizationVaccineCode.cvx29: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://hl7.org/fhir/sid/cvx'),
         code: FhirCode('29'),
@@ -1714,7 +1714,7 @@ final codeableConceptFromImmunizationVaccineCode = {
     ],
   ),
   ImmunizationVaccineCode.cvx30: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://hl7.org/fhir/sid/cvx'),
         code: FhirCode('30'),
@@ -1723,7 +1723,7 @@ final codeableConceptFromImmunizationVaccineCode = {
     ],
   ),
   ImmunizationVaccineCode.cvx31: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://hl7.org/fhir/sid/cvx'),
         code: FhirCode('31'),
@@ -1732,7 +1732,7 @@ final codeableConceptFromImmunizationVaccineCode = {
     ],
   ),
   ImmunizationVaccineCode.cvx32: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://hl7.org/fhir/sid/cvx'),
         code: FhirCode('32'),
@@ -1741,7 +1741,7 @@ final codeableConceptFromImmunizationVaccineCode = {
     ],
   ),
   ImmunizationVaccineCode.cvx33: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://hl7.org/fhir/sid/cvx'),
         code: FhirCode('33'),
@@ -1750,7 +1750,7 @@ final codeableConceptFromImmunizationVaccineCode = {
     ],
   ),
   ImmunizationVaccineCode.cvx34: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://hl7.org/fhir/sid/cvx'),
         code: FhirCode('34'),
@@ -1759,7 +1759,7 @@ final codeableConceptFromImmunizationVaccineCode = {
     ],
   ),
   ImmunizationVaccineCode.cvx35: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://hl7.org/fhir/sid/cvx'),
         code: FhirCode('35'),
@@ -1768,7 +1768,7 @@ final codeableConceptFromImmunizationVaccineCode = {
     ],
   ),
   ImmunizationVaccineCode.cvx36: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://hl7.org/fhir/sid/cvx'),
         code: FhirCode('36'),
@@ -1777,7 +1777,7 @@ final codeableConceptFromImmunizationVaccineCode = {
     ],
   ),
   ImmunizationVaccineCode.cvx37: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://hl7.org/fhir/sid/cvx'),
         code: FhirCode('37'),
@@ -1786,7 +1786,7 @@ final codeableConceptFromImmunizationVaccineCode = {
     ],
   ),
   ImmunizationVaccineCode.cvx38: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://hl7.org/fhir/sid/cvx'),
         code: FhirCode('38'),
@@ -1795,7 +1795,7 @@ final codeableConceptFromImmunizationVaccineCode = {
     ],
   ),
   ImmunizationVaccineCode.cvx39: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://hl7.org/fhir/sid/cvx'),
         code: FhirCode('39'),
@@ -1804,7 +1804,7 @@ final codeableConceptFromImmunizationVaccineCode = {
     ],
   ),
   ImmunizationVaccineCode.cvx40: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://hl7.org/fhir/sid/cvx'),
         code: FhirCode('40'),
@@ -1813,7 +1813,7 @@ final codeableConceptFromImmunizationVaccineCode = {
     ],
   ),
   ImmunizationVaccineCode.cvx41: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://hl7.org/fhir/sid/cvx'),
         code: FhirCode('41'),
@@ -1822,7 +1822,7 @@ final codeableConceptFromImmunizationVaccineCode = {
     ],
   ),
   ImmunizationVaccineCode.cvx42: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://hl7.org/fhir/sid/cvx'),
         code: FhirCode('42'),
@@ -1831,7 +1831,7 @@ final codeableConceptFromImmunizationVaccineCode = {
     ],
   ),
   ImmunizationVaccineCode.cvx43: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://hl7.org/fhir/sid/cvx'),
         code: FhirCode('43'),
@@ -1840,7 +1840,7 @@ final codeableConceptFromImmunizationVaccineCode = {
     ],
   ),
   ImmunizationVaccineCode.cvx44: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://hl7.org/fhir/sid/cvx'),
         code: FhirCode('44'),
@@ -1849,7 +1849,7 @@ final codeableConceptFromImmunizationVaccineCode = {
     ],
   ),
   ImmunizationVaccineCode.cvx45: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://hl7.org/fhir/sid/cvx'),
         code: FhirCode('45'),
@@ -1858,7 +1858,7 @@ final codeableConceptFromImmunizationVaccineCode = {
     ],
   ),
   ImmunizationVaccineCode.cvx46: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://hl7.org/fhir/sid/cvx'),
         code: FhirCode('46'),
@@ -1867,7 +1867,7 @@ final codeableConceptFromImmunizationVaccineCode = {
     ],
   ),
   ImmunizationVaccineCode.cvx47: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://hl7.org/fhir/sid/cvx'),
         code: FhirCode('47'),
@@ -1876,7 +1876,7 @@ final codeableConceptFromImmunizationVaccineCode = {
     ],
   ),
   ImmunizationVaccineCode.cvx48: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://hl7.org/fhir/sid/cvx'),
         code: FhirCode('48'),
@@ -1885,7 +1885,7 @@ final codeableConceptFromImmunizationVaccineCode = {
     ],
   ),
   ImmunizationVaccineCode.cvx49: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://hl7.org/fhir/sid/cvx'),
         code: FhirCode('49'),
@@ -1894,7 +1894,7 @@ final codeableConceptFromImmunizationVaccineCode = {
     ],
   ),
   ImmunizationVaccineCode.cvx50: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://hl7.org/fhir/sid/cvx'),
         code: FhirCode('50'),
@@ -1903,7 +1903,7 @@ final codeableConceptFromImmunizationVaccineCode = {
     ],
   ),
   ImmunizationVaccineCode.cvx51: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://hl7.org/fhir/sid/cvx'),
         code: FhirCode('51'),
@@ -1912,7 +1912,7 @@ final codeableConceptFromImmunizationVaccineCode = {
     ],
   ),
   ImmunizationVaccineCode.cvx52: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://hl7.org/fhir/sid/cvx'),
         code: FhirCode('52'),
@@ -1921,7 +1921,7 @@ final codeableConceptFromImmunizationVaccineCode = {
     ],
   ),
   ImmunizationVaccineCode.cvx53: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://hl7.org/fhir/sid/cvx'),
         code: FhirCode('53'),
@@ -1930,7 +1930,7 @@ final codeableConceptFromImmunizationVaccineCode = {
     ],
   ),
   ImmunizationVaccineCode.cvx54: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://hl7.org/fhir/sid/cvx'),
         code: FhirCode('54'),
@@ -1939,7 +1939,7 @@ final codeableConceptFromImmunizationVaccineCode = {
     ],
   ),
   ImmunizationVaccineCode.cvx55: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://hl7.org/fhir/sid/cvx'),
         code: FhirCode('55'),
@@ -1948,7 +1948,7 @@ final codeableConceptFromImmunizationVaccineCode = {
     ],
   ),
   ImmunizationVaccineCode.cvx62: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://hl7.org/fhir/sid/cvx'),
         code: FhirCode('62'),
@@ -1957,7 +1957,7 @@ final codeableConceptFromImmunizationVaccineCode = {
     ],
   ),
   ImmunizationVaccineCode.cvx66: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://hl7.org/fhir/sid/cvx'),
         code: FhirCode('66'),
@@ -1966,7 +1966,7 @@ final codeableConceptFromImmunizationVaccineCode = {
     ],
   ),
   ImmunizationVaccineCode.cvx69: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://hl7.org/fhir/sid/cvx'),
         code: FhirCode('69'),
@@ -1975,7 +1975,7 @@ final codeableConceptFromImmunizationVaccineCode = {
     ],
   ),
   ImmunizationVaccineCode.cvx71: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://hl7.org/fhir/sid/cvx'),
         code: FhirCode('71'),
@@ -1984,7 +1984,7 @@ final codeableConceptFromImmunizationVaccineCode = {
     ],
   ),
   ImmunizationVaccineCode.cvx74: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://hl7.org/fhir/sid/cvx'),
         code: FhirCode('74'),
@@ -1993,7 +1993,7 @@ final codeableConceptFromImmunizationVaccineCode = {
     ],
   ),
   ImmunizationVaccineCode.cvx75: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://hl7.org/fhir/sid/cvx'),
         code: FhirCode('75'),
@@ -2002,7 +2002,7 @@ final codeableConceptFromImmunizationVaccineCode = {
     ],
   ),
   ImmunizationVaccineCode.cvx76: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://hl7.org/fhir/sid/cvx'),
         code: FhirCode('76'),
@@ -2011,7 +2011,7 @@ final codeableConceptFromImmunizationVaccineCode = {
     ],
   ),
   ImmunizationVaccineCode.cvx77: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://hl7.org/fhir/sid/cvx'),
         code: FhirCode('77'),
@@ -2020,7 +2020,7 @@ final codeableConceptFromImmunizationVaccineCode = {
     ],
   ),
   ImmunizationVaccineCode.cvx78: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://hl7.org/fhir/sid/cvx'),
         code: FhirCode('78'),
@@ -2029,7 +2029,7 @@ final codeableConceptFromImmunizationVaccineCode = {
     ],
   ),
   ImmunizationVaccineCode.cvx79: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://hl7.org/fhir/sid/cvx'),
         code: FhirCode('79'),
@@ -2038,7 +2038,7 @@ final codeableConceptFromImmunizationVaccineCode = {
     ],
   ),
   ImmunizationVaccineCode.cvx80: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://hl7.org/fhir/sid/cvx'),
         code: FhirCode('80'),
@@ -2047,7 +2047,7 @@ final codeableConceptFromImmunizationVaccineCode = {
     ],
   ),
   ImmunizationVaccineCode.cvx801: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://hl7.org/fhir/sid/cvx'),
         code: FhirCode('801'),
@@ -2056,7 +2056,7 @@ final codeableConceptFromImmunizationVaccineCode = {
     ],
   ),
   ImmunizationVaccineCode.cvx81: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://hl7.org/fhir/sid/cvx'),
         code: FhirCode('81'),
@@ -2065,7 +2065,7 @@ final codeableConceptFromImmunizationVaccineCode = {
     ],
   ),
   ImmunizationVaccineCode.cvx82: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://hl7.org/fhir/sid/cvx'),
         code: FhirCode('82'),
@@ -2074,7 +2074,7 @@ final codeableConceptFromImmunizationVaccineCode = {
     ],
   ),
   ImmunizationVaccineCode.cvx83: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://hl7.org/fhir/sid/cvx'),
         code: FhirCode('83'),
@@ -2083,7 +2083,7 @@ final codeableConceptFromImmunizationVaccineCode = {
     ],
   ),
   ImmunizationVaccineCode.cvx84: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://hl7.org/fhir/sid/cvx'),
         code: FhirCode('84'),
@@ -2092,7 +2092,7 @@ final codeableConceptFromImmunizationVaccineCode = {
     ],
   ),
   ImmunizationVaccineCode.cvx85: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://hl7.org/fhir/sid/cvx'),
         code: FhirCode('85'),
@@ -2101,7 +2101,7 @@ final codeableConceptFromImmunizationVaccineCode = {
     ],
   ),
   ImmunizationVaccineCode.cvx86: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://hl7.org/fhir/sid/cvx'),
         code: FhirCode('86'),
@@ -2110,7 +2110,7 @@ final codeableConceptFromImmunizationVaccineCode = {
     ],
   ),
   ImmunizationVaccineCode.cvx87: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://hl7.org/fhir/sid/cvx'),
         code: FhirCode('87'),
@@ -2119,7 +2119,7 @@ final codeableConceptFromImmunizationVaccineCode = {
     ],
   ),
   ImmunizationVaccineCode.cvx88: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://hl7.org/fhir/sid/cvx'),
         code: FhirCode('88'),
@@ -2128,7 +2128,7 @@ final codeableConceptFromImmunizationVaccineCode = {
     ],
   ),
   ImmunizationVaccineCode.cvx89: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://hl7.org/fhir/sid/cvx'),
         code: FhirCode('89'),
@@ -2137,7 +2137,7 @@ final codeableConceptFromImmunizationVaccineCode = {
     ],
   ),
   ImmunizationVaccineCode.cvx90: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://hl7.org/fhir/sid/cvx'),
         code: FhirCode('90'),
@@ -2146,7 +2146,7 @@ final codeableConceptFromImmunizationVaccineCode = {
     ],
   ),
   ImmunizationVaccineCode.cvx91: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://hl7.org/fhir/sid/cvx'),
         code: FhirCode('91'),
@@ -2155,7 +2155,7 @@ final codeableConceptFromImmunizationVaccineCode = {
     ],
   ),
   ImmunizationVaccineCode.cvx92: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://hl7.org/fhir/sid/cvx'),
         code: FhirCode('92'),
@@ -2164,7 +2164,7 @@ final codeableConceptFromImmunizationVaccineCode = {
     ],
   ),
   ImmunizationVaccineCode.cvx93: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://hl7.org/fhir/sid/cvx'),
         code: FhirCode('93'),
@@ -2173,7 +2173,7 @@ final codeableConceptFromImmunizationVaccineCode = {
     ],
   ),
   ImmunizationVaccineCode.cvx94: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://hl7.org/fhir/sid/cvx'),
         code: FhirCode('94'),
@@ -2182,7 +2182,7 @@ final codeableConceptFromImmunizationVaccineCode = {
     ],
   ),
   ImmunizationVaccineCode.cvx95: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://hl7.org/fhir/sid/cvx'),
         code: FhirCode('95'),
@@ -2191,7 +2191,7 @@ final codeableConceptFromImmunizationVaccineCode = {
     ],
   ),
   ImmunizationVaccineCode.cvx96: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://hl7.org/fhir/sid/cvx'),
         code: FhirCode('96'),
@@ -2200,7 +2200,7 @@ final codeableConceptFromImmunizationVaccineCode = {
     ],
   ),
   ImmunizationVaccineCode.cvx97: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://hl7.org/fhir/sid/cvx'),
         code: FhirCode('97'),
@@ -2209,7 +2209,7 @@ final codeableConceptFromImmunizationVaccineCode = {
     ],
   ),
   ImmunizationVaccineCode.cvx98: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://hl7.org/fhir/sid/cvx'),
         code: FhirCode('98'),
@@ -2218,7 +2218,7 @@ final codeableConceptFromImmunizationVaccineCode = {
     ],
   ),
   ImmunizationVaccineCode.cvx998: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://hl7.org/fhir/sid/cvx'),
         code: FhirCode('998'),

@@ -1,3 +1,5 @@
+// ignore_for_file: sort_unnamed_constructors_first
+
 // Package imports:
 import 'package:fhir/r4.dart';
 
@@ -97,7 +99,7 @@ class ObservationUsCore extends Resource {
     category ??= <CodeableConcept>[];
     category.add(
       CodeableConcept(
-        coding: [
+        coding: <Coding>[
           Coding(
             system: FhirUri(
                 'http://terminology.hl7.org/CodeSystem/observation-category'),
@@ -146,7 +148,7 @@ class ObservationUsCore extends Resource {
       ObservationUsCore(
         subject: subject,
         code: CodeableConcept(
-          coding: [
+          coding: <Coding>[
             Coding(
               system: FhirUri('http://loinc.org'),
               code: FhirCode('59576-9'),
@@ -171,7 +173,7 @@ class ObservationUsCore extends Resource {
         category: _vitalSignsCategory,
         subject: subject,
         code: CodeableConcept(
-          coding: [
+          coding: <Coding>[
             Coding(
               system: FhirUri('http://loinc.org'),
               code: FhirCode('8289-1'),
@@ -196,7 +198,7 @@ class ObservationUsCore extends Resource {
         category: _vitalSignsCategory,
         subject: subject,
         code: CodeableConcept(
-          coding: [
+          coding: <Coding>[
             Coding(
               system: FhirUri('http://loinc.org'),
               code: FhirCode('77606-2'),
@@ -225,7 +227,7 @@ class ObservationUsCore extends Resource {
       obsComp.add(
         ObservationComponent(
           code: CodeableConcept(
-            coding: [
+            coding: <Coding>[
               Coding(
                 system: FhirUri('http://loinc.org'),
                 code: FhirCode('3151-8'),
@@ -247,7 +249,7 @@ class ObservationUsCore extends Resource {
       obsComp.add(
         ObservationComponent(
           code: CodeableConcept(
-            coding: [
+            coding: <Coding>[
               Coding(
                 system: FhirUri('http://loinc.org'),
                 code: FhirCode('3150-0'),
@@ -269,7 +271,7 @@ class ObservationUsCore extends Resource {
     return ObservationUsCore(
         category: _vitalSignsCategory,
         code: CodeableConcept(
-          coding: [
+          coding: <Coding>[
             Coding(
               system: FhirUri('http://loinc.org'),
               code: FhirCode('59408-5'),
@@ -297,7 +299,7 @@ class ObservationUsCore extends Resource {
     return ObservationUsCore(
       status: status,
       code: CodeableConcept(
-        coding: [
+        coding: <Coding>[
           Coding(
               system: FhirUri('http://loinc.org'),
               code: FhirCode('72166-2'),
@@ -319,7 +321,7 @@ class ObservationUsCore extends Resource {
       ObservationUsCore(
         category: _vitalSignsCategory,
         code: CodeableConcept(
-          coding: [
+          coding: <Coding>[
             Coding(
               system: FhirUri('http://loinc.org'),
               code: FhirCode('9279-1'),
@@ -346,7 +348,7 @@ class ObservationUsCore extends Resource {
       ObservationUsCore(
         category: _vitalSignsCategory,
         code: CodeableConcept(
-          coding: [
+          coding: <Coding>[
             Coding(
               system: FhirUri('http://loinc.org'),
               code: FhirCode('8867-4'),
@@ -373,7 +375,7 @@ class ObservationUsCore extends Resource {
       ObservationUsCore(
         category: _vitalSignsCategory,
         code: CodeableConcept(
-          coding: [
+          coding: <Coding>[
             Coding(
               system: FhirUri('http://loinc.org'),
               code: FhirCode('8310-5'),
@@ -400,7 +402,7 @@ class ObservationUsCore extends Resource {
       ObservationUsCore(
         category: _vitalSignsCategory,
         code: CodeableConcept(
-          coding: [
+          coding: <Coding>[
             Coding(
               system: FhirUri('http://loinc.org'),
               code: FhirCode('8302-2'),
@@ -427,7 +429,7 @@ class ObservationUsCore extends Resource {
       ObservationUsCore(
         category: _vitalSignsCategory,
         code: CodeableConcept(
-          coding: [
+          coding: <Coding>[
             Coding(
               system: FhirUri('http://loinc.org'),
               code: FhirCode('9843-4'),
@@ -454,7 +456,7 @@ class ObservationUsCore extends Resource {
       ObservationUsCore(
         category: _vitalSignsCategory,
         code: CodeableConcept(
-          coding: [
+          coding: <Coding>[
             Coding(
               system: FhirUri('http://loinc.org'),
               code: FhirCode('29463-7'),
@@ -491,7 +493,7 @@ class ObservationUsCore extends Resource {
       ObservationUsCore(
         category: _vitalSignsCategory,
         code: CodeableConcept(
-          coding: [
+          coding: <Coding>[
             Coding(
               system: FhirUri('http://loinc.org'),
               code: FhirCode('39456-5'),
@@ -521,7 +523,7 @@ class ObservationUsCore extends Resource {
     component.add(
       ObservationComponent(
         code: CodeableConcept(
-          coding: [
+          coding: <Coding>[
             Coding(
               system: FhirUri('http://loinc.org'),
               code: FhirCode('8480-6'),
@@ -546,7 +548,7 @@ class ObservationUsCore extends Resource {
       component.add(
         ObservationComponent(
           code: CodeableConcept(
-            coding: [
+            coding: <Coding>[
               Coding(
                 system: FhirUri('http://loinc.org'),
                 code: FhirCode('8462-4'),
@@ -566,7 +568,7 @@ class ObservationUsCore extends Resource {
     return ObservationUsCore(
       category: _vitalSignsCategory,
       code: CodeableConcept(
-        coding: [
+        coding: <Coding>[
           Coding(
             system: FhirUri('http://loinc.org'),
             code: FhirCode('85354-9'),
@@ -585,8 +587,11 @@ class ObservationUsCore extends Resource {
 
   Observation _observation;
   Observation get value => _observation;
+  @override
   String? get id => _observation.id;
+  @override
   FhirMeta? get meta => _observation.meta;
+  @override
   Narrative? get text => _observation.text;
   List<Identifier>? get identifier => _observation.identifier;
   FhirCode? get status => _observation.status;
@@ -725,7 +730,7 @@ class ObservationComponentUsCore {
 
 final _vitalSignsCategory = [
   CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri(
             'http://terminology.hl7.org/CodeSystem/observation-category'),

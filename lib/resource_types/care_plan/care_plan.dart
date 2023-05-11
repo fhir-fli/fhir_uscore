@@ -1,3 +1,5 @@
+// ignore_for_file: sort_unnamed_constructors_first
+
 // Package imports:
 import 'package:fhir/r4.dart';
 
@@ -141,7 +143,7 @@ class CarePlanUsCore extends Resource {
     required Reference subject,
   }) {
     category ??= <CodeableConcept>[];
-    category.add(CodeableConcept(coding: [
+    category.add(CodeableConcept(coding: <Coding>[
       Coding(
         system:
             FhirUri('http://hl7.org/fhir/us/core/CodeSystem/careplan-category'),

@@ -21,19 +21,19 @@ final codeFromAllergyIntoleranceClinicalStatus = {
 
 /// [codeableConceptFromAllergyIntoleranceClinicalStatus] - enum to CodeableConcept map
 final codeableConceptFromAllergyIntoleranceClinicalStatus = {
-  AllergyIntoleranceClinicalStatus.active: CodeableConcept(coding: [
+  AllergyIntoleranceClinicalStatus.active: CodeableConcept(coding: <Coding>[
     Coding(
         system: FhirUri(
             'http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical'),
         code: FhirCode('active'))
   ]),
-  AllergyIntoleranceClinicalStatus.inactive: CodeableConcept(coding: [
+  AllergyIntoleranceClinicalStatus.inactive: CodeableConcept(coding: <Coding>[
     Coding(
         system: FhirUri(
             'http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical'),
         code: FhirCode('inactive'))
   ]),
-  AllergyIntoleranceClinicalStatus.resolved: CodeableConcept(coding: [
+  AllergyIntoleranceClinicalStatus.resolved: CodeableConcept(coding: <Coding>[
     Coding(
         system: FhirUri(
             'http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical'),
@@ -55,26 +55,29 @@ enum AllergyIntoleranceVerificationStatus {
 
 /// [codeableConceptAllergyIntoleranceVerificationStatus] - enum to CodeableConcept map
 final codeableConceptFromAllergyIntoleranceVerificationStatus = {
-  AllergyIntoleranceVerificationStatus.unconfirmed: CodeableConcept(coding: [
+  AllergyIntoleranceVerificationStatus.unconfirmed:
+      CodeableConcept(coding: <Coding>[
     Coding(
         system: FhirUri(
             'http://terminology.hl7.org/CodeSystem/allergyintolerance-verification'),
         code: FhirCode('unconfirmed'))
   ]),
-  AllergyIntoleranceVerificationStatus.confirmed: CodeableConcept(coding: [
+  AllergyIntoleranceVerificationStatus.confirmed:
+      CodeableConcept(coding: <Coding>[
     Coding(
         system: FhirUri(
             'http://terminology.hl7.org/CodeSystem/allergyintolerance-verification'),
         code: FhirCode('confirmed'))
   ]),
-  AllergyIntoleranceVerificationStatus.refuted: CodeableConcept(coding: [
+  AllergyIntoleranceVerificationStatus.refuted:
+      CodeableConcept(coding: <Coding>[
     Coding(
         system: FhirUri(
             'http://terminology.hl7.org/CodeSystem/allergyintolerance-verification'),
         code: FhirCode('refuted'))
   ]),
   AllergyIntoleranceVerificationStatus.entered_in_error:
-      CodeableConcept(coding: [
+      CodeableConcept(coding: <Coding>[
     Coding(
         system: FhirUri(
             'http://terminology.hl7.org/CodeSystem/allergyintolerance-verification'),
@@ -1639,7 +1642,7 @@ enum AllergyIntoleranceIdentity {
 /// [codeableConceptAllergyIntoleranceIdentity] - enum to CodeableConcept map
 final codeableConceptFromAllergyIntoleranceIdentity = {
   AllergyIntoleranceIdentity.formoterol_mometasone: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('1002293'),
@@ -1648,7 +1651,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.lactase_rennet: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('1007388'),
@@ -1659,7 +1662,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
   AllergyIntoleranceIdentity
           .acetaminophen_caffeine_chlorpheniramine_hydrocodone_phenylephrine:
       CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('1008298'),
@@ -1669,7 +1672,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.guaiacolsulfonate_hydrocodone: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('1008519'),
@@ -1678,7 +1681,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.ampicillin_sulbactam: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('1009148'),
@@ -1687,7 +1690,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.streptomycin: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('10109'),
@@ -1696,7 +1699,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.succinylcholine: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('10154'),
@@ -1705,7 +1708,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.sucralfate: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('10156'),
@@ -1714,7 +1717,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.sulfacetamide: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('10169'),
@@ -1723,7 +1726,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.sulfadiazine: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('10171'),
@@ -1732,7 +1735,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.sulfamethoxazole: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('10180'),
@@ -1741,7 +1744,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.sulfisoxazole: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('10207'),
@@ -1750,7 +1753,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.sulfur: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('10223'),
@@ -1759,7 +1762,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.sulindac: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('10237'),
@@ -1768,7 +1771,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.tamoxifen: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('10324'),
@@ -1777,7 +1780,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.temazepam: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('10355'),
@@ -1786,7 +1789,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.terbutaline: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('10368'),
@@ -1795,7 +1798,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.dabigatran_etexilate: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('1037042'),
@@ -1804,7 +1807,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.testosterone: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('10379'),
@@ -1813,7 +1816,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.tetracycline: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('10395'),
@@ -1822,7 +1825,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.carbidopa_levodopa: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('103990'),
@@ -1831,7 +1834,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.lurasidone: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('1040028'),
@@ -1840,7 +1843,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.theophylline: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('10438'),
@@ -1849,7 +1852,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.thimerosal: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('10472'),
@@ -1858,7 +1861,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.thiopental: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('10493'),
@@ -1867,7 +1870,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.thioridazine: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('10502'),
@@ -1876,7 +1879,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.thiothixene: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('10510'),
@@ -1885,7 +1888,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.levothyroxine: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('10582'),
@@ -1894,7 +1897,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.ticlopidine: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('10594'),
@@ -1903,7 +1906,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.timolol: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('10600'),
@@ -1912,7 +1915,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.tobramycin: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('10627'),
@@ -1921,7 +1924,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.tolmetin: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('10636'),
@@ -1930,7 +1933,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.tramadol: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('10689'),
@@ -1939,7 +1942,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.trazodone: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('10737'),
@@ -1948,7 +1951,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.triamcinolone: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('10759'),
@@ -1957,7 +1960,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.epinephrine_lidocaine: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('107602'),
@@ -1966,7 +1969,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.triamterene: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('10763'),
@@ -1975,7 +1978,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.triazolam: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('10767'),
@@ -1984,7 +1987,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.trifluoperazine: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('10800'),
@@ -1993,7 +1996,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.mometasone: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('108118'),
@@ -2002,7 +2005,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.trimethoprim: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('10829'),
@@ -2011,7 +2014,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.sulfamethoxazole_trimethoprim: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('10831'),
@@ -2020,7 +2023,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.vancomycin: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('11124'),
@@ -2029,7 +2032,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.rivaroxaban: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('1114195'),
@@ -2038,7 +2041,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.ticagrelor: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('1116632'),
@@ -2047,7 +2050,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.verapamil: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('11170'),
@@ -2056,7 +2059,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.vitamin_b_12: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('11248'),
@@ -2065,7 +2068,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.vitamin_d: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('11253'),
@@ -2074,7 +2077,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.vitamin_e: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('11256'),
@@ -2083,7 +2086,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.warfarin: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('11289'),
@@ -2092,7 +2095,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.erythromycin_sulfisoxazole: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('113588'),
@@ -2101,7 +2104,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.zinc: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('11416'),
@@ -2110,7 +2113,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.zinc_oxide: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('11423'),
@@ -2119,7 +2122,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.levetiracetam: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('114477'),
@@ -2128,7 +2131,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.zafirlukast: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('114970'),
@@ -2137,7 +2140,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.rabeprazole: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('114979'),
@@ -2146,7 +2149,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.ascorbic_acid: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('1151'),
@@ -2155,7 +2158,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.ibandronate: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('115264'),
@@ -2164,7 +2167,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.trovafloxacin: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('115552'),
@@ -2173,7 +2176,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.ziprasidone: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('115698'),
@@ -2182,7 +2185,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.aspirin: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('1191'),
@@ -2191,7 +2194,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.tolterodine: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('119565'),
@@ -2200,7 +2203,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.atenolol: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('1202'),
@@ -2209,7 +2212,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.rituximab: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('121191'),
@@ -2218,7 +2221,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.atropine: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('1223'),
@@ -2227,7 +2230,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.azathioprine: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('1256'),
@@ -2236,7 +2239,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.aztreonam: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('1272'),
@@ -2245,7 +2248,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.bacitracin: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('1291'),
@@ -2254,7 +2257,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.baclofen: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('1292'),
@@ -2263,7 +2266,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.gadolinium: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('1310171'),
@@ -2272,7 +2275,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.xanthine: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('1311085'),
@@ -2281,7 +2284,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.aspartame: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('1311524'),
@@ -2290,7 +2293,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.nickel: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('1311629'),
@@ -2299,7 +2302,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.latex: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('1314891'),
@@ -2308,7 +2311,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.barium_sulfate: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('1331'),
@@ -2317,7 +2320,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.brimonidine: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('134615'),
@@ -2326,7 +2329,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.beclomethasone: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('1347'),
@@ -2335,7 +2338,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.donepezil: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('135447'),
@@ -2344,7 +2347,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.zolmitriptan: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('135775'),
@@ -2353,7 +2356,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.belladonna_alkaloids: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('1359'),
@@ -2362,7 +2365,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.sulfur_dioxide: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('1362879'),
@@ -2371,7 +2374,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.ethyl_ether: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('1363043'),
@@ -2380,7 +2383,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.sildenafil: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('136411'),
@@ -2389,7 +2392,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.apixaban: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('1364430'),
@@ -2398,7 +2401,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.gemifloxacin: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('138099'),
@@ -2407,7 +2410,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.moxifloxacin: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('139462'),
@@ -2416,7 +2419,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.benzocaine: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('1399'),
@@ -2425,7 +2428,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.celecoxib: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('140587'),
@@ -2434,7 +2437,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.benzoin_resin: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('1406'),
@@ -2443,7 +2446,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.colesevelam: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('141626'),
@@ -2452,7 +2455,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.benzoyl_peroxide: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('1418'),
@@ -2461,7 +2464,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.benztropine: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('1424'),
@@ -2470,7 +2473,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.betamethasone: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('1514'),
@@ -2479,7 +2482,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.hyoscyamine: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('153970'),
@@ -2488,7 +2491,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.gentamicin: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('1596450'),
@@ -2497,7 +2500,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.mirtazapine: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('15996'),
@@ -2506,7 +2509,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.acetaminophen: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('161'),
@@ -2515,7 +2518,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.acarbose: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('16681'),
@@ -2524,7 +2527,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.acetazolamide: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('167'),
@@ -2533,7 +2536,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.lansoprazole: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('17128'),
@@ -2542,7 +2545,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.tetanus_immune_globulin: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('1727875'),
@@ -2551,7 +2554,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.alfuzosin: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('17300'),
@@ -2560,7 +2563,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.amlodipine: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('17767'),
@@ -2569,7 +2572,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.buspirone: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('1827'),
@@ -2578,7 +2581,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.rivastigmine: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('183379'),
@@ -2587,7 +2590,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.butorphanol: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('1841'),
@@ -2596,7 +2599,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.azithromycin: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('18631'),
@@ -2605,7 +2608,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.pregabalin: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('187832'),
@@ -2614,7 +2617,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.caffeine: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('1886'),
@@ -2623,7 +2626,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.benazepril: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('18867'),
@@ -2632,7 +2635,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.calcium: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('1895'),
@@ -2641,7 +2644,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.calcium_carbonate: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('1897'),
@@ -2650,7 +2653,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.benzonatate: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('18993'),
@@ -2659,7 +2662,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.linezolid: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('190376'),
@@ -2668,7 +2671,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.infliximab: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('191831'),
@@ -2677,7 +2680,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.bismuth_subsalicylate: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('19478'),
@@ -2686,7 +2689,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.cefprozil: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('19552'),
@@ -2695,7 +2698,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.amoxicillin_clavulanate: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('19711'),
@@ -2704,7 +2707,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.budesonide: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('19831'),
@@ -2713,7 +2716,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.captopril: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('1998'),
@@ -2722,7 +2725,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.carbamazepine: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('2002'),
@@ -2731,7 +2734,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.carvedilol: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('20352'),
@@ -2740,7 +2743,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.cefepime: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('20481'),
@@ -2749,7 +2752,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.cefpodoxime: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('20489'),
@@ -2758,7 +2761,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.cetirizine: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('20610'),
@@ -2767,7 +2770,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.carisoprodol: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('2101'),
@@ -2776,7 +2779,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.cilostazol: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('21107'),
@@ -2785,7 +2788,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.citric_acid: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('21183'),
@@ -2794,7 +2797,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.clarithromycin: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('21212'),
@@ -2803,7 +2806,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.acetaminophen_butalbital_caffeine: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('214130'),
@@ -2813,7 +2816,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
   ),
   AllergyIntoleranceIdentity.acetaminophen_dichloralphenazone_isometheptene:
       CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('214153'),
@@ -2822,7 +2825,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.aspirin_butalbital_caffeine: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('214159'),
@@ -2832,7 +2835,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
   ),
   AllergyIntoleranceIdentity.aspirin_butalbital_caffeine_codeine:
       CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('214160'),
@@ -2841,7 +2844,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.acetaminophen_diphenhydramine: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('214181'),
@@ -2850,7 +2853,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.acetaminophen_hydrocodone: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('214182'),
@@ -2859,7 +2862,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.acetaminophen_oxycodone: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('214183'),
@@ -2868,7 +2871,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.albuterol_ipratropium: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('214199'),
@@ -2877,7 +2880,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.amlodipine_benazepril: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('214223'),
@@ -2886,7 +2889,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.aspirin_caffeine: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('214250'),
@@ -2895,7 +2898,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.aspirin_oxycodone: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('214256'),
@@ -2904,7 +2907,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.aspirin_pentazocine: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('214257'),
@@ -2913,7 +2916,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.bisoprolol_hydrochlorothiazide: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('214317'),
@@ -2922,7 +2925,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.caffeine_ergotamine: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('214336'),
@@ -2931,7 +2934,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.candesartan: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('214354'),
@@ -2940,7 +2943,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.carbinoxamine_pseudoephedrine: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('214364'),
@@ -2949,7 +2952,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.chlorpheniramine_hydrocodone: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('214392'),
@@ -2958,7 +2961,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.codeine_guaifenesin: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('214442'),
@@ -2967,7 +2970,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.codeine_pseudoephedrine: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('214445'),
@@ -2976,7 +2979,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.dextromethorphan_guaifenesin: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('214488'),
@@ -2985,7 +2988,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.diclofenac_misoprostol: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('214502'),
@@ -2994,7 +2997,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.etanercept: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('214555'),
@@ -3003,7 +3006,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.ethinyl_estradiol_levonorgestrel: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('214558'),
@@ -3012,7 +3015,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.fexofenadine_pseudoephedrine: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('214565'),
@@ -3021,7 +3024,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.guaifenesin_pseudoephedrine: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('214599'),
@@ -3030,7 +3033,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.homatropine_hydrocodone: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('214614'),
@@ -3039,7 +3042,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.hydrochlorothiazide_irbesartan: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('214617'),
@@ -3048,7 +3051,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.hydrochlorothiazide_lisinopril: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('214618'),
@@ -3057,7 +3060,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.hydrochlorothiazide_losartan: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('214619'),
@@ -3066,7 +3069,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.hydrochlorothiazide_valsartan: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('214626'),
@@ -3075,7 +3078,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.hydrocodone_ibuprofen: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('214627'),
@@ -3084,7 +3087,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.hydrocodone_pseudoephedrine: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('214631'),
@@ -3093,7 +3096,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.loratadine_pseudoephedrine: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('214682'),
@@ -3102,7 +3105,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.naloxone_pentazocine: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('214721'),
@@ -3111,7 +3114,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.pseudoephedrine_triprolidine: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('214807'),
@@ -3120,7 +3123,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.cefaclor: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('2176'),
@@ -3130,7 +3133,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
   ),
   AllergyIntoleranceIdentity.hydrocortisone_neomycin_polymyxin_b:
       CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('217627'),
@@ -3139,7 +3142,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.cefadroxil: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('2177'),
@@ -3148,7 +3151,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.cefazolin: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('2180'),
@@ -3157,7 +3160,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.cefoxitin: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('2189'),
@@ -3166,7 +3169,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.ceftazidime: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('2191'),
@@ -3175,7 +3178,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.ceftriaxone: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('2193'),
@@ -3184,7 +3187,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.polymyxin_b_trimethoprim: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('219314'),
@@ -3193,7 +3196,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.iron_polysaccharide: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('219315'),
@@ -3202,7 +3205,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.cefuroxime: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('2194'),
@@ -3211,7 +3214,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.cyclobenzaprine: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('21949'),
@@ -3220,7 +3223,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.polyethylene_glycol_3350: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('221147'),
@@ -3229,7 +3232,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.daptomycin: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('22299'),
@@ -3238,7 +3241,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.cephalexin: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('2231'),
@@ -3247,7 +3250,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.aspirin_dipyridamole: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('226716'),
@@ -3256,7 +3259,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.gatifloxacin: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('228476'),
@@ -3265,7 +3268,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.dutasteride: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('228790'),
@@ -3274,7 +3277,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.rofecoxib: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('232158'),
@@ -3283,7 +3286,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.dronedarone: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('233698'),
@@ -3292,7 +3295,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.chloramphenicol: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('2348'),
@@ -3301,7 +3304,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.chlordiazepoxide: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('2356'),
@@ -3310,7 +3313,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.chlorhexidine: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('2358'),
@@ -3319,7 +3322,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.trospium: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('236778'),
@@ -3328,7 +3331,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.levalbuterol: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('237159'),
@@ -3337,7 +3340,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.chloroquine: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('2393'),
@@ -3346,7 +3349,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.chlorpheniramine: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('2400'),
@@ -3355,7 +3358,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.chlorpromazine: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('2403'),
@@ -3364,7 +3367,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.chlorthalidone: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('2409'),
@@ -3373,7 +3376,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.chlorzoxazone: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('2410'),
@@ -3382,7 +3385,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.cholecalciferol: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('2418'),
@@ -3391,7 +3394,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.cholestyramine_resin: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('2447'),
@@ -3400,7 +3403,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.etodolac: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('24605'),
@@ -3409,7 +3412,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.ferrous_sulfate: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('24947'),
@@ -3418,7 +3421,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.finasteride: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('25025'),
@@ -3427,7 +3430,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.cefixime: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('25033'),
@@ -3436,7 +3439,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.cefdinir: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('25037'),
@@ -3445,7 +3448,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.flunisolide: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('25120'),
@@ -3454,7 +3457,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.formoterol: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('25255'),
@@ -3463,7 +3466,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.bee_pollen: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('253157'),
@@ -3472,7 +3475,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.cimetidine: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('2541'),
@@ -3481,7 +3484,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.gabapentin: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('25480'),
@@ -3490,7 +3493,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.ciprofloxacin: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('2551'),
@@ -3499,7 +3502,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.citalopram: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('2556'),
@@ -3508,7 +3511,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.glimepiride: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('25789'),
@@ -3517,7 +3520,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.clindamycin: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('2582'),
@@ -3526,7 +3529,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.hydrochlorothiazide_triamterene: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('258337'),
@@ -3535,7 +3538,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.clonazepam: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('2598'),
@@ -3544,7 +3547,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.clonidine: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('2599'),
@@ -3553,7 +3556,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.oseltamivir: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('260101'),
@@ -3562,7 +3565,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.ondansetron: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('26225'),
@@ -3571,7 +3574,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.clotrimazole: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('2623'),
@@ -3580,7 +3583,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.codeine: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('2670'),
@@ -3589,7 +3592,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.colchicine: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('2683'),
@@ -3598,7 +3601,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.colestipol: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('2685'),
@@ -3607,7 +3610,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.leflunomide: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('27169'),
@@ -3616,7 +3619,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.insulin_glargine: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('274783'),
@@ -3625,7 +3628,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.telithromycin: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('274786'),
@@ -3634,7 +3637,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.iodinated_glycerol: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('27723'),
@@ -3643,7 +3646,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.valdecoxib: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('278567'),
@@ -3652,7 +3655,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.itraconazole: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('28031'),
@@ -3661,7 +3664,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.acyclovir: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('281'),
@@ -3670,7 +3673,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.esomeprazole: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('283742'),
@@ -3679,7 +3682,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.travoprost: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('283809'),
@@ -3688,7 +3691,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.lamotrigine: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('28439'),
@@ -3697,7 +3700,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.fluticasone_salmeterol: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('284635'),
@@ -3706,7 +3709,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.cortisone: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('2878'),
@@ -3715,7 +3718,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.loratadine: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('28889'),
@@ -3724,7 +3727,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.loracarbef: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('28981'),
@@ -3733,7 +3736,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.lisinopril: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('29046'),
@@ -3742,7 +3745,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.mercury_ammoniated: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('29542'),
@@ -3751,7 +3754,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.meropenem: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('29561'),
@@ -3760,7 +3763,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.adenosine: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('296'),
@@ -3769,7 +3772,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.cyclosporine: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('3008'),
@@ -3778,7 +3781,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.rosuvastatin: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('301542'),
@@ -3787,7 +3790,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.vardenafil: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('306674'),
@@ -3796,7 +3799,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.dapsone: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('3108'),
@@ -3805,7 +3808,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.prasterone: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('3143'),
@@ -3814,7 +3817,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.nabumetone: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('31448'),
@@ -3823,7 +3826,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.nebivolol: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('31555'),
@@ -3832,7 +3835,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.nefazodone: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('31565'),
@@ -3841,7 +3844,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.nickel_sulfate: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('31738'),
@@ -3850,7 +3853,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.aloe_vera_preparation: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('318340'),
@@ -3859,7 +3862,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.olmesartan: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('321064'),
@@ -3868,7 +3871,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.escitalopram: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('321988'),
@@ -3877,7 +3880,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.solifenacin: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('322167'),
@@ -3886,7 +3889,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.desipramine: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('3247'),
@@ -3895,7 +3898,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.ertapenem: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('325642'),
@@ -3904,7 +3907,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.oxaliplatin: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('32592'),
@@ -3913,7 +3916,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.oxaprozin: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('32613'),
@@ -3922,7 +3925,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.oxcarbazepine: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('32624'),
@@ -3931,7 +3934,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.dexamethasone: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('3264'),
@@ -3940,7 +3943,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.oxybutynin: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('32675'),
@@ -3949,7 +3952,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.adalimumab: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('327361'),
@@ -3958,7 +3961,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.dextromethorphan: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('3289'),
@@ -3967,7 +3970,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.paroxetine: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('32937'),
@@ -3976,7 +3979,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.clopidogrel: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('32968'),
@@ -3985,7 +3988,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.diazepam: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('3322'),
@@ -3994,7 +3997,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.phenyltoloxamine: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('33408'),
@@ -4003,7 +4006,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.diclofenac: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('3355'),
@@ -4012,7 +4015,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.dicloxacillin: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('3356'),
@@ -4021,7 +4024,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.dicyclomine: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('3361'),
@@ -4030,7 +4033,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.pioglitazone: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('33738'),
@@ -4039,7 +4042,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.diflunisal: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('3393'),
@@ -4048,7 +4051,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.digoxin: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('3407'),
@@ -4057,7 +4060,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.ezetimibe: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('341248'),
@@ -4066,7 +4069,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.dihydroergotamine: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('3418'),
@@ -4075,7 +4078,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.hydromorphone: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('3423'),
@@ -4084,7 +4087,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.diltiazem: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('3443'),
@@ -4093,7 +4096,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.dimenhydrinate: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('3444'),
@@ -4102,7 +4105,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.diphenhydramine: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('3498'),
@@ -4111,7 +4114,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.quinapril: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('35208'),
@@ -4120,7 +4123,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.dipyridamole: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('3521'),
@@ -4129,7 +4132,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.acetaminophen_tramadol: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('352362'),
@@ -4138,7 +4141,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.ramipril: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('35296'),
@@ -4147,7 +4150,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.resorcinol: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('35382'),
@@ -4156,7 +4159,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.risperidone: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('35636'),
@@ -4165,7 +4168,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.tadalafil: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('358263'),
@@ -4174,7 +4177,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.ketorolac: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('35827'),
@@ -4183,7 +4186,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.ranolazine: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('35829'),
@@ -4192,7 +4195,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.salsalate: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('36108'),
@@ -4201,7 +4204,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.salmeterol: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('36117'),
@@ -4210,7 +4213,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.dobutamine: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('3616'),
@@ -4219,7 +4222,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.doxepin: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('3638'),
@@ -4228,7 +4231,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.doxycycline: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('3640'),
@@ -4237,7 +4240,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.sertraline: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('36437'),
@@ -4246,7 +4249,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.droperidol: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('3648'),
@@ -4255,7 +4258,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.simvastatin: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('36567'),
@@ -4264,7 +4267,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.sumatriptan: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('37418'),
@@ -4273,7 +4276,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.tazobactam: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('37617'),
@@ -4282,7 +4285,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.terazosin: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('37798'),
@@ -4291,7 +4294,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.terbinafine: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('37801'),
@@ -4300,7 +4303,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.enalapril: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('3827'),
@@ -4309,7 +4312,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.enalaprilat: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('3829'),
@@ -4318,7 +4321,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.atomoxetine: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('38400'),
@@ -4327,7 +4330,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.topiramate: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('38404'),
@@ -4336,7 +4339,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.torsemide: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('38413'),
@@ -4345,7 +4348,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.trichloroacetaldehyde: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('38574'),
@@ -4354,7 +4357,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.trimethobenzamide: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('38685'),
@@ -4363,7 +4366,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.budesonide_formoterol: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('389132'),
@@ -4372,7 +4375,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.ephedrine: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('3966'),
@@ -4381,7 +4384,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.venlafaxine: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('39786'),
@@ -4390,7 +4393,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.epinephrine: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('3992'),
@@ -4399,7 +4402,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.zolpidem: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('39993'),
@@ -4408,7 +4411,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.zonisamide: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('39998'),
@@ -4417,7 +4420,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.carboplatin: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('40048'),
@@ -4427,7 +4430,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
   ),
   AllergyIntoleranceIdentity.dexbrompheniramine_pseudoephedrine:
       CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('400674'),
@@ -4436,7 +4439,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.ergotamine: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('4025'),
@@ -4445,7 +4448,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.valproate: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('40254'),
@@ -4454,7 +4457,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.erythromycin: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('4053'),
@@ -4463,7 +4466,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.zileuton: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('40575'),
@@ -4472,7 +4475,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.pantoprazole: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('40790'),
@@ -4481,7 +4484,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.estradiol: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('4083'),
@@ -4490,7 +4493,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.estrogens_conjugated_usp: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('4099'),
@@ -4499,7 +4502,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.fluticasone: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('41126'),
@@ -4508,7 +4511,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.fluvastatin: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('41127'),
@@ -4517,7 +4520,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.ethinyl_estradiol: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('4124'),
@@ -4526,7 +4529,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.lactase: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('41397'),
@@ -4535,7 +4538,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.meloxicam: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('41493'),
@@ -4544,7 +4547,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.terfenadine: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('42330'),
@@ -4553,7 +4556,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.misoprostol: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('42331'),
@@ -4562,7 +4565,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.bupropion: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('42347'),
@@ -4571,7 +4574,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.lithium_carbonate: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('42351'),
@@ -4580,7 +4583,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.mupirocin: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('42372'),
@@ -4589,7 +4592,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.pravastatin: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('42463'),
@@ -4598,7 +4601,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.famotidine: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('4278'),
@@ -4607,7 +4610,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.felodipine: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('4316'),
@@ -4616,7 +4619,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.fentanyl: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('4337'),
@@ -4625,7 +4628,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.albuterol: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('435'),
@@ -4634,7 +4637,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.latanoprost: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('43611'),
@@ -4643,7 +4646,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.fish_oils: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('4419'),
@@ -4652,7 +4655,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.flecainide: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('4441'),
@@ -4661,7 +4664,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.fluconazole: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('4450'),
@@ -4670,7 +4673,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.ethanol: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('448'),
@@ -4679,7 +4682,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.fluorouracil: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('4492'),
@@ -4688,7 +4691,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.fluoxetine: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('4493'),
@@ -4697,7 +4700,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.fluphenazine: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('4496'),
@@ -4706,7 +4709,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.flurandrenolide: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('4500'),
@@ -4715,7 +4718,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.formaldehyde: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('4530'),
@@ -4724,7 +4727,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.furosemide: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('4603'),
@@ -4733,7 +4736,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.alendronate: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('46041'),
@@ -4742,7 +4745,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.eszopiclone: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('461016'),
@@ -4751,7 +4754,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.galantamine: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('4637'),
@@ -4760,7 +4763,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.ciprofloxacin_dexamethasone: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('465397'),
@@ -4769,7 +4772,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.diphenhydramine_zinc_acetate: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('466522'),
@@ -4778,7 +4781,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.neomycin_polymyxin_b: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('466541'),
@@ -4787,7 +4790,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.aspirin_caffeine_orphenadrine: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('466549'),
@@ -4797,7 +4800,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
   ),
   AllergyIntoleranceIdentity.penicillin_g_benzathine_penicillin_g_procaine:
       CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('466553'),
@@ -4808,7 +4811,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
   AllergyIntoleranceIdentity
           .acetaminophen_dextromethorphan_diphenhydramine_pseudoephedrine:
       CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('466566'),
@@ -4818,7 +4821,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.acetaminophen_aspirin_caffeine: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('466584'),
@@ -4827,7 +4830,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.gemfibrozil: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('4719'),
@@ -4836,7 +4839,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.liraglutide: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('475968'),
@@ -4845,7 +4848,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.glyburide: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('4815'),
@@ -4854,7 +4857,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.clavulanate: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('48203'),
@@ -4863,7 +4866,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.glipizide: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('4821'),
@@ -4872,7 +4875,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.acetaminophen_propoxyphene: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('48274'),
@@ -4881,7 +4884,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.chlorhexidine_isopropyl_alcohol: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('484139'),
@@ -4890,7 +4893,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.ezetimibe_simvastatin: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('484211'),
@@ -4899,7 +4902,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.glucose: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('4850'),
@@ -4908,7 +4911,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.nitroglycerin: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('4917'),
@@ -4917,7 +4920,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.doxazosin: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('49276'),
@@ -4926,7 +4929,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.fosinopril: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('50166'),
@@ -4935,7 +4938,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.griseofulvin: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('5021'),
@@ -4944,7 +4947,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.guaifenesin: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('5032'),
@@ -4953,7 +4956,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.haloperidol: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('5093'),
@@ -4962,7 +4965,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.quetiapine: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('51272'),
@@ -4971,7 +4974,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.allopurinol: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('519'),
@@ -4980,7 +4983,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.losartan: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('52175'),
@@ -4989,7 +4992,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.heparin: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('5224'),
@@ -4998,7 +5001,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.mesalamine: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('52582'),
@@ -5007,7 +5010,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.hydralazine: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('5470'),
@@ -5016,7 +5019,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.hydrochlorothiazide: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('5487'),
@@ -5025,7 +5028,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.hydrocodone: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('5489'),
@@ -5034,7 +5037,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.hydrocortisone: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('5492'),
@@ -5043,7 +5046,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.hydrogen_peroxide: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('5499'),
@@ -5052,7 +5055,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.hydroxychloroquine: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('5521'),
@@ -5061,7 +5064,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.hydroxyzine: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('5553'),
@@ -5070,7 +5073,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.ibuprofen: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('5640'),
@@ -5079,7 +5082,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.imipramine: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('5691'),
@@ -5088,7 +5091,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.paclitaxel: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('56946'),
@@ -5097,7 +5100,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.tizanidine: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('57258'),
@@ -5106,7 +5109,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.indapamide: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('5764'),
@@ -5115,7 +5118,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.indomethacin: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('5781'),
@@ -5124,7 +5127,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.milnacipran: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('588250'),
@@ -5133,7 +5136,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.metaxalone: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('59078'),
@@ -5142,7 +5145,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.varenicline: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('591622'),
@@ -5151,7 +5154,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.iodine: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('5933'),
@@ -5160,7 +5163,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.sitagliptin: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('593411'),
@@ -5169,7 +5172,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.atropine_diphenoxylate: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('594040'),
@@ -5178,7 +5181,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.iohexol: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('5956'),
@@ -5187,7 +5190,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.alprazolam: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('596'),
@@ -5196,7 +5199,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.cerivastatin: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('596723'),
@@ -5205,7 +5208,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.brimonidine_timolol: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('597142'),
@@ -5214,7 +5217,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.iron_dextran_complex: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('5992'),
@@ -5223,7 +5226,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.dorzolamide: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('60207'),
@@ -5232,7 +5235,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.isoniazid: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('6038'),
@@ -5241,7 +5244,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.exenatide: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('60548'),
@@ -5250,7 +5253,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.isosorbide: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('6057'),
@@ -5259,7 +5262,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.isosorbide_dinitrate: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('6058'),
@@ -5268,7 +5271,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.chlordiazepoxide_clidinium: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('611854'),
@@ -5277,7 +5280,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.ketamine: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('6130'),
@@ -5286,7 +5289,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.ketoconazole: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('6135'),
@@ -5295,7 +5298,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.olanzapine: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('61381'),
@@ -5304,7 +5307,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.ketoprofen: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('6142'),
@@ -5313,7 +5316,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.labetalol: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('6185'),
@@ -5322,7 +5325,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.amantadine: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('620'),
@@ -5331,7 +5334,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.lactulose: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('6218'),
@@ -5340,7 +5343,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.lanolin: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('6227'),
@@ -5349,7 +5352,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.lidocaine: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('6387'),
@@ -5358,7 +5361,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.lincomycin: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('6398'),
@@ -5367,7 +5370,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.lithium: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('6448'),
@@ -5376,7 +5379,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.bacitracin_polymyxin_b: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('645555'),
@@ -5385,7 +5388,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.loperamide: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('6468'),
@@ -5394,7 +5397,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.lorazepam: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('6470'),
@@ -5403,7 +5406,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.lovastatin: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('6472'),
@@ -5412,7 +5415,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.magnesium: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('6574'),
@@ -5421,7 +5424,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.magnesium_sulfate: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('6585'),
@@ -5430,7 +5433,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.dorzolamide_timolol: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('662263'),
@@ -5439,7 +5442,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.meclizine: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('6676'),
@@ -5448,7 +5451,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.medroxyprogesterone: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('6691'),
@@ -5457,7 +5460,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.enoxaparin: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('67108'),
@@ -5466,7 +5469,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.melatonin: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('6711'),
@@ -5475,7 +5478,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.memantine: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('6719'),
@@ -5484,7 +5487,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.menthol: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('6750'),
@@ -5493,7 +5496,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.meperidine: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('6754'),
@@ -5502,7 +5505,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.metformin: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('6809'),
@@ -5511,7 +5514,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.methadone: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('6813'),
@@ -5520,7 +5523,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.methimazole: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('6835'),
@@ -5529,7 +5532,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.methocarbamol: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('6845'),
@@ -5538,7 +5541,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.methotrexate: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('6851'),
@@ -5547,7 +5550,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.methyldopa: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('6876'),
@@ -5556,7 +5559,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.aminophylline: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('689'),
@@ -5565,7 +5568,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.oxytetracycline_polymyxin_b: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('689467'),
@@ -5574,7 +5577,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.aspirin_caffeine_propoxyphene: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('689518'),
@@ -5584,7 +5587,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
   ),
   AllergyIntoleranceIdentity.acetaminophen_aspirin_phenylpropanolamine:
       CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('689556'),
@@ -5594,7 +5597,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
   ),
   AllergyIntoleranceIdentity.acetaminophen_brompheniramine_pseudoephedrine:
       CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('689558'),
@@ -5604,7 +5607,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
   ),
   AllergyIntoleranceIdentity.acetaminophen_butalbital_caffeine_codeine:
       CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('689561'),
@@ -5615,7 +5618,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
   AllergyIntoleranceIdentity
           .acetaminophen_chlorpheniramine_dextromethorphan_pseudoephedrine:
       CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('689582'),
@@ -5626,7 +5629,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
   ),
   AllergyIntoleranceIdentity.atropine_hyoscyamine_phenobarbital_scopolamine:
       CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('689606'),
@@ -5636,7 +5639,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
   ),
   AllergyIntoleranceIdentity.bacitracin_hydrocortisone_neomycin_polymyxin_b:
       CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('689623'),
@@ -5645,7 +5648,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.benzalkonium_lidocaine: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('690077'),
@@ -5654,7 +5657,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.methylphenidate: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('6901'),
@@ -5663,7 +5666,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.methylprednisolone: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('6902'),
@@ -5672,7 +5675,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.diphenhydramine_phenylephrine: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('690693'),
@@ -5682,7 +5685,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
   ),
   AllergyIntoleranceIdentity.brompheniramine_dextromethorphan_pseudoephedrine:
       CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('690808'),
@@ -5691,7 +5694,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.tiotropium: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('69120'),
@@ -5700,7 +5703,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.metoclopramide: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('6915'),
@@ -5709,7 +5712,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.metolazone: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('6916'),
@@ -5718,7 +5721,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.metoprolol: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('6918'),
@@ -5727,7 +5730,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.metronidazole: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('6922'),
@@ -5736,7 +5739,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.bacitracin_neomycin_polymyxin_b: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('692572'),
@@ -5745,7 +5748,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.gramicidin_neomycin_polymyxin_b: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('692794'),
@@ -5754,7 +5757,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.miconazole: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('6932'),
@@ -5763,7 +5766,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.midazolam: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('6960'),
@@ -5772,7 +5775,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.valsartan: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('69749'),
@@ -5781,7 +5784,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.minocycline: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('6980'),
@@ -5790,7 +5793,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.minoxidil: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('6984'),
@@ -5799,7 +5802,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.amiodarone: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('703'),
@@ -5808,7 +5811,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.amitriptyline: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('704'),
@@ -5817,7 +5820,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.morphine: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('7052'),
@@ -5827,7 +5830,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
   ),
   AllergyIntoleranceIdentity.acetaminophen_dextromethorphan_doxylamine:
       CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('705258'),
@@ -5836,7 +5839,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.ipratropium: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('7213'),
@@ -5845,7 +5848,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.raloxifene: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('72143'),
@@ -5854,7 +5857,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.fosphenytoin: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('72236'),
@@ -5863,7 +5866,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.amoxicillin: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('723'),
@@ -5872,7 +5875,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.ropinirole: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('72302'),
@@ -5881,7 +5884,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.nafcillin: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('7233'),
@@ -5890,7 +5893,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.nalbuphine: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('7238'),
@@ -5899,7 +5902,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.naltrexone: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('7243'),
@@ -5908,7 +5911,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.amphetamine: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('725'),
@@ -5917,7 +5920,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.naproxen: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('7258'),
@@ -5926,7 +5929,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.duloxetine: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('72625'),
@@ -5935,7 +5938,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.neomycin: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('7299'),
@@ -5944,7 +5947,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.risedronate: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('73056'),
@@ -5953,7 +5956,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.ampicillin: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('733'),
@@ -5962,7 +5965,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.telmisartan: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('73494'),
@@ -5971,7 +5974,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.valacyclovir: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('73645'),
@@ -5980,7 +5983,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.niacin: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('7393'),
@@ -5989,7 +5992,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.nicotine: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('7407'),
@@ -5998,7 +6001,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.piperacillin_tazobactam: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('74169'),
@@ -6007,7 +6010,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.nifedipine: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('7417'),
@@ -6016,7 +6019,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.nitrofurantoin: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('7454'),
@@ -6025,7 +6028,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.pramipexole: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('746741'),
@@ -6034,7 +6037,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.nitrous_oxide: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('7486'),
@@ -6043,7 +6046,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.norfloxacin: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('7517'),
@@ -6052,7 +6055,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.nortriptyline: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('7531'),
@@ -6061,7 +6064,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.nystatin: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('7597'),
@@ -6070,7 +6073,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.ofloxacin: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('7623'),
@@ -6079,7 +6082,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.omeprazole: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('7646'),
@@ -6088,7 +6091,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.opium: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('7676'),
@@ -6097,7 +6100,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.orphenadrine: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('7715'),
@@ -6106,7 +6109,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.tamsulosin: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('77492'),
@@ -6115,7 +6118,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.oxycodone: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('7804'),
@@ -6124,7 +6127,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.oxytetracycline: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('7821'),
@@ -6133,7 +6136,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.tapentadol: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('787390'),
@@ -6142,7 +6145,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.penicillamine: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('7975'),
@@ -6151,7 +6154,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.isopropyl_alcohol: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('797541'),
@@ -6160,7 +6163,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.penicillin_g: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('7980'),
@@ -6169,7 +6172,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.penicillin_v: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('7984'),
@@ -6178,7 +6181,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.pentamidine: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('7994'),
@@ -6187,7 +6190,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.pentazocine: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('8001'),
@@ -6196,7 +6199,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.phenazopyridine: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('8120'),
@@ -6205,7 +6208,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.phenobarbital: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('8134'),
@@ -6214,7 +6217,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.dextromethorphan_doxylamine: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('815166'),
@@ -6223,7 +6226,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.phenylephrine: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('8163'),
@@ -6232,7 +6235,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.dexlansoprazole: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('816346'),
@@ -6241,7 +6244,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.phenylpropanolamine: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('8175'),
@@ -6250,7 +6253,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.acetaminophen_codeine: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('817579'),
@@ -6259,7 +6262,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.aspirin_calcium_carbonate: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('817958'),
@@ -6268,7 +6271,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.phenytoin: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('8183'),
@@ -6277,7 +6280,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.levofloxacin: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('82122'),
@@ -6288,7 +6291,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
   AllergyIntoleranceIdentity
           .amphetamine_aspartate_amphetamine_sulfate_dextroamphetamine_saccharate_dextroamphetamine_sulfate:
       CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('822929'),
@@ -6298,7 +6301,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.atorvastatin: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('83367'),
@@ -6307,7 +6310,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.piroxicam: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('8356'),
@@ -6316,7 +6319,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.irbesartan: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('83818'),
@@ -6325,7 +6328,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.rosiglitazone: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('84108'),
@@ -6334,7 +6337,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.polymyxin_b: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('8536'),
@@ -6343,7 +6346,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.saxagliptin: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('857974'),
@@ -6352,7 +6355,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.potassium: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('8588'),
@@ -6361,7 +6364,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.potassium_chloride: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('8591'),
@@ -6370,7 +6373,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.povidone: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('8610'),
@@ -6379,7 +6382,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.povidone_iodine: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('8611'),
@@ -6388,7 +6391,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.pitavastatin: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('861634'),
@@ -6397,7 +6400,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.prazosin: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('8629'),
@@ -6406,7 +6409,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.prednisolone: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('8638'),
@@ -6415,7 +6418,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.prednisone: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('8640'),
@@ -6424,7 +6427,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.primaquine: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('8687'),
@@ -6433,7 +6436,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.primidone: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('8691'),
@@ -6442,7 +6445,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.probenecid: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('8698'),
@@ -6451,7 +6454,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.procainamide: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('8700'),
@@ -6460,7 +6463,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.procaine: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('8701'),
@@ -6469,7 +6472,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.fenofibrate: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('8703'),
@@ -6478,7 +6481,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.prochlorperazine: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('8704'),
@@ -6487,7 +6490,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.progesterone: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('8727'),
@@ -6496,7 +6499,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.promethazine: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('8745'),
@@ -6505,7 +6508,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.propafenone: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('8754'),
@@ -6514,7 +6517,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.fexofenadine: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('87636'),
@@ -6523,7 +6526,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.propofol: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('8782'),
@@ -6532,7 +6535,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.propoxyphene: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('8785'),
@@ -6541,7 +6544,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.propranolol: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('8787'),
@@ -6550,7 +6553,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.propylthiouracil: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('8794'),
@@ -6559,7 +6562,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.rizatriptan: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('88014'),
@@ -6568,7 +6571,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.montelukast: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('88249'),
@@ -6577,7 +6580,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.dexamethasone_tobramycin: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('883815'),
@@ -6586,7 +6589,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.pseudoephedrine: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('8896'),
@@ -6595,7 +6598,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.aripiprazole: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('89013'),
@@ -6604,7 +6607,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.psyllium: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('8928'),
@@ -6614,7 +6617,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
   ),
   AllergyIntoleranceIdentity.purified_protein_derivative_of_tuberculin:
       CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('8948'),
@@ -6623,7 +6626,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.iron: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('90176'),
@@ -6632,7 +6635,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.quinidine: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('9068'),
@@ -6641,7 +6644,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.quinine: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('9071'),
@@ -6650,7 +6653,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.aloe_extract: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('91263'),
@@ -6659,7 +6662,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.ranitidine: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('9143'),
@@ -6668,7 +6671,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.rifampin: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('9384'),
@@ -6677,7 +6680,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.sulfasalazine: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('9524'),
@@ -6686,7 +6689,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.scopolamine: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('9601'),
@@ -6695,7 +6698,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.silicones: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('9778'),
@@ -6704,7 +6707,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.silver_sulfadiazine: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('9793'),
@@ -6713,7 +6716,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.sotalol: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('9947'),
@@ -6722,7 +6725,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.spironolactone: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://www.nlm.nih.gov/research/umls/rxnorm'),
         code: FhirCode('9997'),
@@ -6731,7 +6734,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.citrus_fruit_substance: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('102259006'),
@@ -6740,7 +6743,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.strawberry_substance: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('102261002'),
@@ -6749,7 +6752,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.chocolate_substance: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('102262009'),
@@ -6758,7 +6761,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.eggs_edible_substance: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('102263004'),
@@ -6767,7 +6770,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.cheese_substance: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('102264005'),
@@ -6776,7 +6779,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.latex_substance: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('111088007'),
@@ -6785,7 +6788,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.anabolic_steroid_substance: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('111151007'),
@@ -6794,7 +6797,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.aspartame_substance: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('11526002'),
@@ -6803,7 +6806,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.artificial_sweetener_substance: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('116274004'),
@@ -6812,7 +6815,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.steroid_substance: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('116566001'),
@@ -6821,7 +6824,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.nut_substance: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('13577000'),
@@ -6832,7 +6835,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
   AllergyIntoleranceIdentity
           .substance_with_aminoglycoside_structure_and_antibacterial_mechanism_of_action_substance:
       CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('14443002'),
@@ -6842,7 +6845,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.buckwheat_cereal_substance: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('226723006'),
@@ -6851,7 +6854,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.wheatgerm_substance: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('226734009'),
@@ -6860,7 +6863,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.dairy_foods_substance: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('226760005'),
@@ -6869,7 +6872,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.red_meat_substance: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('226915003'),
@@ -6878,7 +6881,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.beef_substance: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('226916002'),
@@ -6887,7 +6890,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.pork_substance: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('226934003'),
@@ -6896,7 +6899,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.chicken_meat_substance: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('226955001'),
@@ -6905,7 +6908,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.turkey_meat_substance: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('226967004'),
@@ -6914,7 +6917,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.tuna_fish_substance: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('227144008'),
@@ -6923,7 +6926,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.prawns_substance: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('227151004'),
@@ -6932,7 +6935,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.abalone_canned_in_brine_substance: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('227208008'),
@@ -6941,7 +6944,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.aubergine_substance: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('227219006'),
@@ -6950,7 +6953,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.pulse_vegetables_substance: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('227313005'),
@@ -6959,7 +6962,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.cinnamon_substance: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('227388008'),
@@ -6968,7 +6971,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.ginger_substance: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('227400003'),
@@ -6977,7 +6980,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.cranberries_substance: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('227421003'),
@@ -6986,7 +6989,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.raspberries_substance: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('227444000'),
@@ -6995,7 +6998,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.cashew_nut_substance: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('227493005'),
@@ -7004,7 +7007,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.pistachio_nut_substance: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('227512001'),
@@ -7013,7 +7016,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.honey_substance: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('227598003'),
@@ -7022,7 +7025,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.sodium_nitrate_substance: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('228102000'),
@@ -7031,7 +7034,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.anticonvulsant_substance: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('255632006'),
@@ -7040,7 +7043,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.salicylate_substance: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('255637000'),
@@ -7049,7 +7052,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.caffeine_substance: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('255641001'),
@@ -7058,7 +7061,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.pollen_substance: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('256259004'),
@@ -7067,7 +7070,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.grass_pollen_substance: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('256277009'),
@@ -7076,7 +7079,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.orange_fruit_substance: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('256306003'),
@@ -7085,7 +7088,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.banana_substance: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('256307007'),
@@ -7094,7 +7097,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.pineapple_substance: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('256313003'),
@@ -7103,7 +7106,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.grapefruit_substance: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('256315005'),
@@ -7112,7 +7115,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.grapes_substance: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('256317002'),
@@ -7121,7 +7124,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.carrot_substance: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('256319004'),
@@ -7130,7 +7133,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.celery_substance: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('256326004'),
@@ -7139,7 +7142,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.spinach_substance: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('256329006'),
@@ -7148,7 +7151,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.almond_substance: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('256350002'),
@@ -7157,7 +7160,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.brazil_nut_substance: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('256351003'),
@@ -7166,7 +7169,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.walnut_nut_substance: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('256352005'),
@@ -7175,7 +7178,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.hazelnut_substance: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('256353000'),
@@ -7184,7 +7187,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.bean_substance: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('256354006'),
@@ -7193,7 +7196,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.horse_dander_substance: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('256417003'),
@@ -7202,7 +7205,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.wasp_venom_substance: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('256440004'),
@@ -7212,7 +7215,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
   ),
   AllergyIntoleranceIdentity.varicella_zoster_virus_antibody_substance:
       CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('259858000'),
@@ -7221,7 +7224,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.cat_dander_substance: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('260152009'),
@@ -7230,7 +7233,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.dog_dander_substance: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('260154005'),
@@ -7239,7 +7242,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.sesame_seed_substance: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('260167008'),
@@ -7248,7 +7251,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.kiwi_fruit_substance: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('260176001'),
@@ -7257,7 +7260,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.melon_substance: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('260177005'),
@@ -7266,7 +7269,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.mango_fruit_substance: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('260179008'),
@@ -7275,7 +7278,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.peas_substance: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('260184002'),
@@ -7284,7 +7287,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.pecan_nut_substance: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('260189007'),
@@ -7293,7 +7296,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.sunflower_seed_substance: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('260205009'),
@@ -7302,7 +7305,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.animal_dander_substance: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('264287008'),
@@ -7311,7 +7314,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.seed_substance: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('264337003'),
@@ -7320,7 +7323,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.poultry_substance: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('28230009'),
@@ -7329,7 +7332,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.bee_venom_substance: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('288328004'),
@@ -7338,7 +7341,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.coconut_oil_substance: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('28942008'),
@@ -7347,7 +7350,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.coffee_substance: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('29263009'),
@@ -7357,7 +7360,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
   ),
   AllergyIntoleranceIdentity
       .corticosteroid_and_corticosteroid_derivative_substance: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('304275008'),
@@ -7366,7 +7369,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.dust_substance: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('33008008'),
@@ -7375,7 +7378,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.diptheria_tetanus_vaccine_product: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('350327004'),
@@ -7384,7 +7387,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.wine_substance: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('35748005'),
@@ -7393,7 +7396,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.nitrofuran_derivative_substance: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('360201004'),
@@ -7402,7 +7405,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.sodium_sulfite_substance: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('3692009'),
@@ -7413,7 +7416,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
   AllergyIntoleranceIdentity
           .substance_with_macrolide_structure_and_antibacterial_mechanism_of_action_substance:
       CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('372480009'),
@@ -7423,7 +7426,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.benzodiazepine_substance: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('372664007'),
@@ -7433,7 +7436,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
   ),
   AllergyIntoleranceIdentity.non_steroidal_anti_inflammatory_agent_substance:
       CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('372665008'),
@@ -7442,7 +7445,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.sulfonylurea_substance: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('372711004'),
@@ -7453,7 +7456,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
   AllergyIntoleranceIdentity
           .substance_with_quinolone_structure_and_antibacterial_mechanism_of_action_substance:
       CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('372722000'),
@@ -7465,7 +7468,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
   AllergyIntoleranceIdentity
           .substance_with_angiotensin_converting_enzyme_inhibitor_mechanism_of_action_substance:
       CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('372733002'),
@@ -7475,7 +7478,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.thiazide_diuretic_substance: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('372747003'),
@@ -7484,7 +7487,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.antiparkinsonian_agent_substance: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('372783007'),
@@ -7493,7 +7496,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.barbiturate_substance: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('372798009'),
@@ -7504,7 +7507,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
   AllergyIntoleranceIdentity
           .substance_with_histamine_receptor_antagonist_mechanism_of_action_substance:
       CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('372806008'),
@@ -7515,7 +7518,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
   ),
   AllergyIntoleranceIdentity.first_generation_cephalosporin_substance:
       CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('372889003'),
@@ -7526,7 +7529,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
   AllergyIntoleranceIdentity
           .substance_with_3_hydroxy_3_methylglutaryl_coenzyme_a_reductase_inhibitor_mechanism_of_action_substance:
       CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('372912004'),
@@ -7538,7 +7541,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
   AllergyIntoleranceIdentity
           .substance_with_angiotensin_ii_receptor_antagonist_mechanism_of_action_substance:
       CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('372913009'),
@@ -7550,7 +7553,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
   AllergyIntoleranceIdentity
           .substance_with_tetracycline_structure_and_antibacterial_mechanism_of_action_substance:
       CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('373206009'),
@@ -7561,7 +7564,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
   ),
   AllergyIntoleranceIdentity.tricyclic_antidepressant_substance:
       CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('373253007'),
@@ -7572,7 +7575,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
   AllergyIntoleranceIdentity
           .substance_with_beta_adrenergic_receptor_antagonist_mechanism_of_action_substance:
       CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('373254001'),
@@ -7584,7 +7587,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
   AllergyIntoleranceIdentity
           .substance_with_cephalosporin_structure_and_antibacterial_mechanism_of_action_substance:
       CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('373262009'),
@@ -7596,7 +7599,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
   AllergyIntoleranceIdentity
           .substance_with_penicillin_structure_and_antibacterial_mechanism_of_action_substance:
       CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('373270004'),
@@ -7608,7 +7611,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
   AllergyIntoleranceIdentity
           .substance_with_beta_lactam_structure_and_antibacterial_mechanism_of_action_substance:
       CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('373297006'),
@@ -7620,7 +7623,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
   AllergyIntoleranceIdentity
           .substance_with_calcium_channel_blocker_mechanism_of_action_substance:
       CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('373304005'),
@@ -7630,7 +7633,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.gelatin_substance: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('373531009'),
@@ -7639,7 +7642,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.contrast_media_substance: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('385420005'),
@@ -7648,7 +7651,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.formula_milk_substance: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('386127005'),
@@ -7657,7 +7660,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.plasma_protein_fraction_substance: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('386962001'),
@@ -7668,7 +7671,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
   AllergyIntoleranceIdentity
           .substance_with_prostaglandin_endoperoxide_synthase_isoform_2_inhibitor_mechanism_of_action_substance:
       CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('387050005'),
@@ -7678,7 +7681,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.sulfonamide_substance: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('387406002'),
@@ -7687,7 +7690,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.almond_oil_substance: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('391737006'),
@@ -7696,7 +7699,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.aloe_substance: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('391739009'),
@@ -7705,7 +7708,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.carbapenem_substance: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('396345004'),
@@ -7714,7 +7717,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.anthrax_vaccine_substance: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('396420001'),
@@ -7723,7 +7726,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.influenza_virus_vaccine_substance: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('396425006'),
@@ -7732,7 +7735,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.pertussis_vaccine_substance: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('396433007'),
@@ -7741,7 +7744,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.smallpox_vaccine_substance: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('396439006'),
@@ -7750,7 +7753,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.typhoid_vaccine_substance: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('396441007'),
@@ -7759,7 +7762,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.varicella_virus_vaccine_substance: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('396442000'),
@@ -7768,7 +7771,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.pneumococcal_vaccine_substance: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('398730001'),
@@ -7777,7 +7780,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.hydrocolloid_substance: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('400872007'),
@@ -7788,7 +7791,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
   AllergyIntoleranceIdentity
           .substance_with_opioid_receptor_agonist_mechanism_of_action_substance:
       CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('404642006'),
@@ -7798,7 +7801,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.carbamate_substance: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('406748003'),
@@ -7807,7 +7810,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.no_known_drug_allergy_situation: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('409137002'),
@@ -7816,7 +7819,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.blueberries_substance: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('412061001'),
@@ -7825,7 +7828,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.cantaloupe_substance: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('412062008'),
@@ -7834,7 +7837,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.pepper_substance: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('412066006'),
@@ -7843,7 +7846,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.rye_substance: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('412068007'),
@@ -7852,7 +7855,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.wheat_substance: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('412071004'),
@@ -7861,7 +7864,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.horse_serum_protein_substance: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('412138001'),
@@ -7870,7 +7873,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.corn_substance: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('412357001'),
@@ -7881,7 +7884,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
   AllergyIntoleranceIdentity
           .diphtheria_pertussis_tetanus_haemophilus_influenzae_b_vaccine_product:
       CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('412373007'),
@@ -7891,7 +7894,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.tetanus_vaccine_substance: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('412375000'),
@@ -7900,7 +7903,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.wheat_bran_substance: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('412533000'),
@@ -7909,7 +7912,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.yeast_substance: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('412534006'),
@@ -7918,7 +7921,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.bee_pollen_substance: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('412583005'),
@@ -7927,7 +7930,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.estrogen_substance: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('41598000'),
@@ -7936,7 +7939,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.arachis_oil_substance: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('417889008'),
@@ -7945,7 +7948,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.methadone_analog_substance: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('418000008'),
@@ -7954,7 +7957,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.oats_substance: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('418504009'),
@@ -7963,7 +7966,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.adhesive_agent_substance: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('418920007'),
@@ -7972,7 +7975,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.watermelon_substance: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('419420009'),
@@ -7981,7 +7984,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.glucocorticoid_substance: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('419933005'),
@@ -7991,7 +7994,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
   ),
   AllergyIntoleranceIdentity.diphtheria_pertussis_tetanus_vaccine_product:
       CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('421245007'),
@@ -8001,7 +8004,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
   ),
   AllergyIntoleranceIdentity
       .product_containing_beta_galactosidae_medicinal_product: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('424369009'),
@@ -8011,7 +8014,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
   ),
   AllergyIntoleranceIdentity.iodinated_contrast_media_substance:
       CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('426722004'),
@@ -8021,7 +8024,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
   ),
   AllergyIntoleranceIdentity.no_known_environmental_allergy_situation:
       CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('428607008'),
@@ -8030,7 +8033,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.no_known_food_allergy_situation: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('429625007'),
@@ -8039,7 +8042,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.sulfur_substance: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('43735007'),
@@ -8048,7 +8051,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.nickel_compound_substance: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('43921001'),
@@ -8057,7 +8060,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.seafood_substance: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('44027008'),
@@ -8066,7 +8069,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.blue_food_coloring_substance: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('442381000124103'),
@@ -8075,7 +8078,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.tree_nut_substance: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('442571000124108'),
@@ -8084,7 +8087,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.pepperoni_substance: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('442771000124102'),
@@ -8093,7 +8096,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.iodine_substance: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('44588005'),
@@ -8102,7 +8105,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.red_food_coloring_substance: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('446273004'),
@@ -8111,7 +8114,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.yellow_food_coloring_substance: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('446274005'),
@@ -8120,7 +8123,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.lactose_substance: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('47703008'),
@@ -8129,7 +8132,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.food_preservative_substance: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('51386004'),
@@ -8138,7 +8141,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.mustard_substance: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('51905005'),
@@ -8147,7 +8150,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.alcohol_substance: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('53041004'),
@@ -8156,7 +8159,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.dye_substance: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('61789006'),
@@ -8165,7 +8168,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.berry_substance: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('63045006'),
@@ -8174,7 +8177,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.rice_substance: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('67324005'),
@@ -8183,7 +8186,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.insulin_substance: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('67866001'),
@@ -8192,7 +8195,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.milk_substance: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('70813002'),
@@ -8201,7 +8204,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.lupine_seed_substance: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('710179004'),
@@ -8210,7 +8213,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.no_known_latex_allergy_situation: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('716184000'),
@@ -8219,7 +8222,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.no_known_allergy_situation: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('716186003'),
@@ -8228,7 +8231,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.dust_mite_protein_substance: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('720687003'),
@@ -8237,7 +8240,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.fruit_substance: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('72511004'),
@@ -8246,7 +8249,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.yam_substance: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('726730005'),
@@ -8255,7 +8258,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.tomato_substance: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('734881000'),
@@ -8264,7 +8267,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.squid_substance: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('735006003'),
@@ -8273,7 +8276,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.salmon_substance: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('735009005'),
@@ -8282,7 +8285,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.shellfish_substance: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('735029006'),
@@ -8291,7 +8294,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.garlic_substance: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('735030001'),
@@ -8300,7 +8303,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.mackerel_substance: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('735043001'),
@@ -8309,7 +8312,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.mushroom_substance: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('735045008'),
@@ -8318,7 +8321,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.onion_substance: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('735047000'),
@@ -8327,7 +8330,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.peach_substance: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('735049002'),
@@ -8336,7 +8339,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.pear_substance: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('735050002'),
@@ -8345,7 +8348,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.plum_substance: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('735051003'),
@@ -8354,7 +8357,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.potato_substance: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('735053000'),
@@ -8363,7 +8366,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.broccoli_substance: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('735123009'),
@@ -8372,7 +8375,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.barley_substance: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('735124003'),
@@ -8381,7 +8384,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.coconut_substance: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('735211005'),
@@ -8390,7 +8393,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.papaya_substance: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('735212003'),
@@ -8399,7 +8402,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.cucumber_substance: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('735213008'),
@@ -8408,7 +8411,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.apricot_substance: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('735214002'),
@@ -8417,7 +8420,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.apple_substance: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('735215001'),
@@ -8426,7 +8429,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.cherry_substance: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('735248001'),
@@ -8435,7 +8438,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.avocado_substance: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('735249009'),
@@ -8444,7 +8447,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.lemon_substance: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('735340006'),
@@ -8453,7 +8456,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.marine_mollusk_substance: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('735959004'),
@@ -8462,7 +8465,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.fish_substance: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('735971005'),
@@ -8471,7 +8474,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.marine_crustacean_substance: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('735977009'),
@@ -8480,7 +8483,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.scallop_substance: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('736027000'),
@@ -8489,7 +8492,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.clam_substance: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('736030007'),
@@ -8498,7 +8501,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.oyster_substance: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('736031006'),
@@ -8507,7 +8510,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.crab_substance: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('736159005'),
@@ -8516,7 +8519,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.lobster_substance: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('736162008'),
@@ -8525,7 +8528,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.sugar_substance: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('74801000'),
@@ -8534,7 +8537,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.monosodium_glutamate_substance: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('75665004'),
@@ -8543,7 +8546,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.peanut_substance: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('762952008'),
@@ -8552,7 +8555,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.soy_protein_substance: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('7791007'),
@@ -8561,7 +8564,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.food_flavoring_agent_substance: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('80259003'),
@@ -8570,7 +8573,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.mold_organism: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('84489001'),
@@ -8579,7 +8582,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.nitrate_salt_substance: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('89119000'),
@@ -8588,7 +8591,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.sesame_oil_substance: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('89707004'),
@@ -8597,7 +8600,7 @@ final codeableConceptFromAllergyIntoleranceIdentity = {
     ],
   ),
   AllergyIntoleranceIdentity.gluten_substance: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
         system: FhirUri('http://snomed.info/sct'),
         code: FhirCode('89811004'),

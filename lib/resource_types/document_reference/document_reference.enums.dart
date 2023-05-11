@@ -17,7 +17,7 @@ enum DocumentReferenceType {
 
 final codeableConceptFromDocumentReferenceType = {
   DocumentReferenceType.discharge_summary: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
           system: FhirUri('http://loinc.org'),
           code: FhirCode('18842-5'),
@@ -25,7 +25,7 @@ final codeableConceptFromDocumentReferenceType = {
     ],
   ),
   DocumentReferenceType.consult_note: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
           system: FhirUri('http://loinc.org'),
           code: FhirCode('11488-4'),
@@ -33,7 +33,7 @@ final codeableConceptFromDocumentReferenceType = {
     ],
   ),
   DocumentReferenceType.history_and_physical_note: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
           system: FhirUri('http://loinc.org'),
           code: FhirCode('34117-2'),
@@ -41,7 +41,7 @@ final codeableConceptFromDocumentReferenceType = {
     ],
   ),
   DocumentReferenceType.progress_note: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
           system: FhirUri('http://loinc.org'),
           code: FhirCode('11506-3'),
@@ -49,7 +49,7 @@ final codeableConceptFromDocumentReferenceType = {
     ],
   ),
   DocumentReferenceType.procedure_note: CodeableConcept(
-    coding: [
+    coding: <Coding>[
       Coding(
           system: FhirUri('http://loinc.org'),
           code: FhirCode('28570-0'),

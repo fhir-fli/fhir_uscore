@@ -1,3 +1,5 @@
+// ignore_for_file: sort_unnamed_constructors_first
+
 // Package imports:
 import 'package:fhir/r4.dart';
 
@@ -131,9 +133,13 @@ class PatientUsCore extends Resource {
 
   Patient _patient;
   Patient get value => _patient;
+  @override
   String? get id => _patient.id;
+  @override
   FhirMeta? get meta => _patient.meta;
+  @override
   Narrative? get text => _patient.text;
+  @override
   List<FhirExtension>? get extension_ => _patient.extension_;
   List<Identifier>? get identifier => _patient.identifier;
   FhirBoolean? get active => _patient.active;

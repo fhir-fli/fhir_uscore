@@ -1,3 +1,5 @@
+// ignore_for_file: sort_unnamed_constructors_first
+
 // Package imports:
 import 'package:fhir/r4.dart';
 
@@ -36,8 +38,11 @@ class ProcedureUsCore extends Resource {
 
   Procedure _procedure;
   Procedure get value => _procedure;
+  @override
   String? get id => _procedure.id;
+  @override
   FhirMeta? get meta => _procedure.meta;
+  @override
   Narrative? get text => _procedure.text;
   List<Identifier>? get identifier => _procedure.identifier;
   FhirCode? get status => _procedure.status;
