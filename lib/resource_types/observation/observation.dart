@@ -519,7 +519,7 @@ class ObservationUsCore extends Resource {
     double? diastolic,
     BodySiteForBp? bodySite,
   }) {
-    final component = <ObservationComponent>[];
+    final List<ObservationComponent> component = <ObservationComponent>[];
     component.add(
       ObservationComponent(
         code: CodeableConcept(
@@ -728,7 +728,7 @@ class ObservationComponentUsCore {
       _observationComponent.referenceRange;
 }
 
-final _vitalSignsCategory = [
+final List<CodeableConcept> _vitalSignsCategory = <CodeableConcept>[
   CodeableConcept(
     coding: <Coding>[
       Coding(

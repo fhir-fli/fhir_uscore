@@ -15,7 +15,9 @@ enum DocumentReferenceType {
   procedure_note,
 }
 
-final codeableConceptFromDocumentReferenceType = {
+final Map<DocumentReferenceType, CodeableConcept>
+    codeableConceptFromDocumentReferenceType =
+    <DocumentReferenceType, CodeableConcept>{
   DocumentReferenceType.discharge_summary: CodeableConcept(
     coding: <Coding>[
       Coding(

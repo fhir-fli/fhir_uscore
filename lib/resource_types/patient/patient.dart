@@ -59,21 +59,22 @@ class PatientUsCore extends Resource {
     identifier.add(patientIdentifier);
     name ??= <HumanName>[];
     name.add(patientName);
-    final extension_ = <FhirExtension>[];
+    final List<FhirExtension> extension_ = <FhirExtension>[];
     if (usCoreRace != null ||
         usCoreDetailedRace != null ||
         usCoreRaceText != null) {
-      final raceExtension = FhirExtension(
+      final FhirExtension raceExtension = FhirExtension(
           extension_: <FhirExtension>[],
           url: FhirUri(
               'http://hl7.org/fhir/us/core/StructureDefinition/us-core-race'));
       if (usCoreRace != null) {
-        for (final race in usCoreRace) {
+        for (final PatientUsCoreRace race in usCoreRace) {
           raceExtension.extension_!.add(extensionFromRace[race]!);
         }
       }
       if (usCoreDetailedRace != null) {
-        for (final detailedRace in usCoreDetailedRace) {
+        for (final PatientUsCoreDetailedRace detailedRace
+            in usCoreDetailedRace) {
           raceExtension.extension_!
               .add(extensionFromDetailedRace[detailedRace]!);
         }
@@ -87,7 +88,7 @@ class PatientUsCore extends Resource {
     if (usCoreEthnicity != null ||
         usCoreDetailedEthnicity != null ||
         usCoreEthnicityText != null) {
-      final ethnicityExtension = FhirExtension(
+      final FhirExtension ethnicityExtension = FhirExtension(
           extension_: <FhirExtension>[],
           url: FhirUri(
               'http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity'));
@@ -96,7 +97,8 @@ class PatientUsCore extends Resource {
             .add(extensionFromEthnicity[usCoreEthnicity]!);
       }
       if (usCoreDetailedEthnicity != null) {
-        for (final detailedEthnicity in usCoreDetailedEthnicity) {
+        for (final PatientUsCoreDetailedEthnicity detailedEthnicity
+            in usCoreDetailedEthnicity) {
           ethnicityExtension.extension_!
               .add(extensionFromDetailedEthnicity[detailedEthnicity]!);
         }
@@ -129,7 +131,9 @@ class PatientUsCore extends Resource {
     required FhirCode gender,
   }) =>
       PatientUsCore(
-          identifier: [patientIdentifier], name: [patientName], gender: gender);
+          identifier: <Identifier>[patientIdentifier],
+          name: <HumanName>[patientName],
+          gender: gender);
 
   Patient _patient;
   Patient get value => _patient;

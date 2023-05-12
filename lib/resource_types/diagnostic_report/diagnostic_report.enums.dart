@@ -34,7 +34,8 @@ enum DiagnosticReportStatus {
   unknown,
 }
 
-const diagnosticReportStatusToCode = {
+const Map<DiagnosticReportStatus, String> diagnosticReportStatusToCode =
+    <DiagnosticReportStatus, String>{
   DiagnosticReportStatus.registered: 'registered',
   DiagnosticReportStatus.partial: 'partial',
   DiagnosticReportStatus.preliminary: 'preliminary',
@@ -46,7 +47,9 @@ const diagnosticReportStatusToCode = {
   DiagnosticReportStatus.entered_in_error: 'entered-in-error',
 };
 
-final codeableConceptFromDiagnosticReportCategory = {
+final Map<DiagnosticReportCategory, CodeableConcept>
+    codeableConceptFromDiagnosticReportCategory =
+    <DiagnosticReportCategory, CodeableConcept>{
   DiagnosticReportCategory.radiology: CodeableConcept(
     coding: <Coding>[
       Coding(

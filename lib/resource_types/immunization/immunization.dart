@@ -72,8 +72,11 @@ class ImmunizationUsCore extends Resource {
 
   Immunization _immunization;
   Immunization get value => _immunization;
+  @override
   String? get id => _immunization.id;
+  @override
   FhirMeta? get meta => _immunization.meta;
+  @override
   Narrative? get text => _immunization.text;
   FhirCode? get status => _immunization.status;
   CodeableConcept? get statusReason => _immunization.statusReason;

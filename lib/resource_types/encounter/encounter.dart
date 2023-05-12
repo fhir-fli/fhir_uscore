@@ -78,14 +78,19 @@ class EncounterUsCore extends Resource {
       EncounterUsCore(
         status: status,
         class_: class_,
-        type: [codeableConceptFromEncounterType[encounterType]!],
+        type: <CodeableConcept>[
+          codeableConceptFromEncounterType[encounterType]!
+        ],
         subject: subject,
       );
 
   Encounter _encounter;
   Encounter get value => _encounter;
+  @override
   String? get id => _encounter.id;
+  @override
   FhirMeta? get meta => _encounter.meta;
+  @override
   Narrative? get text => _encounter.text;
   List<Identifier>? get identifier => _encounter.identifier;
   FhirCode? get status => _encounter.status;

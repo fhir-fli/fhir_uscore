@@ -208,11 +208,13 @@ class CarePlanUsCore extends Resource {
 
   /// [id] The logical id of the resource, as used in the URL for the resource.
   ///  Once assigned, this value never changes.
+  @override
   String? get id => _carePlan.id;
 
   /// [meta] The metadata about the resource. This is content that is
   /// maintained by the infrastructure. Changes to the content might not always
   ///  be associated with version changes to the resource.
+  @override
   FhirMeta? get meta => _carePlan.meta;
 
   /// [text] A human-readable narrative that contains a summary of the resource
@@ -221,12 +223,14 @@ class CarePlanUsCore extends Resource {
   /// contain sufficient detail to make it "clinically safe" for a human to just
   /// read the narrative. Resource definitions may define what content should be
   ///  represented in the narrative to ensure clinical safety.
+  @override
   Narrative? get text => _carePlan.text;
 
   /// [contained] These resources do not have an independent existence apart
   /// from the resource that contains them - they cannot be identified
   /// independently, and nor can they have their own independent transaction
   ///  scope.
+  @override
   List<Resource>? get contained => _carePlan.contained;
 
   /// [status] Indicates whether the plan is currently being acted upon,

@@ -33,7 +33,7 @@ Future<Resource?> allergyIntoleranceRequest(
   if (getProvenanceResources ?? false) {
     parameters.add('_revinclude=Provenance:target');
   }
-  return await makeRequest(
+  return makeRequest(
     requestType,
     base,
     R4ResourceType.AllergyIntolerance,

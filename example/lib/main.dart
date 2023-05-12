@@ -1,10 +1,28 @@
 //ignore_for_file: always_specify_types
 
 import 'package:fhir/r4.dart';
+import 'package:fhir_uscore/resource_types/patient/patient.dart';
 
 void main() {
-  final patient = Patient(
+  final patient = PatientUsCore(
     id: '12345',
+    identifier: [
+      Identifier(
+          use: IdentifierUse.usual,
+          type: CodeableConcept(
+            coding: [
+              Coding(
+                system:
+                    FhirUri('http://terminology.hl7.org/CodeSystem/v2-0203'),
+                code: FhirCode('MR'),
+                display: 'Medical Record Number',
+              ),
+            ],
+            text: 'Medical Record Number',
+          ),
+          system: FhirUri('http://hospital.smarthealthit.org'),
+          value: '1305871'),
+    ],
     active: FhirBoolean(true),
     name: <HumanName>[
       HumanName(
@@ -132,3 +150,5 @@ void main() {
 
   print(observation.toYaml());
 }
+
+class Patient {}

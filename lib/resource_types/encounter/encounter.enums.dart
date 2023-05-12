@@ -338,7 +338,7 @@ enum EncounterType {
   consultation_for_suicide_risk_management,
 }
 
-final codeableConceptFromEncounterType = {
+final Map<EncounterType, CodeableConcept> codeableConceptFromEncounterType = <EncounterType, CodeableConcept>{
   EncounterType.patient_encounter_procedure: CodeableConcept(
     coding: <Coding>[
       Coding(

@@ -243,26 +243,31 @@ class CapabilityStatementUsCore extends Resource {
 
   /// [id] The logical id of the resource, as used in the URL for the resource.
   ///  Once assigned, this value never changes.
+  @override
   String? get id => _capabilityStatement.id;
 
   /// [meta] The metadata about the resource. This is content that is
   /// maintained by the infrastructure. Changes to the content might not always
   ///  be associated with version changes to the resource.
+  @override
   FhirMeta? get meta => _capabilityStatement.meta;
 
   /// [implicitRules] A reference to a set of rules that were followed when the
   /// resource was constructed, and which must be understood when processing the
   /// content. Often, this is a reference to an implementation guide that
   ///  defines the special rules along with other profiles etc.
+  @override
   FhirUri? get implicitRules => _capabilityStatement.implicitRules;
 
   /// [language] The base language in which the resource is written.
+  @override
   FhirCode? get language => _capabilityStatement.language;
 
   /// [contained] These resources do not have an independent existence apart
   /// from the resource that contains them - they cannot be identified
   /// independently, and nor can they have their own independent transaction
   ///  scope.
+  @override
   List<Resource>? get contained => _capabilityStatement.contained;
 
   /// [extension_] May be used to represent additional information that is not
@@ -271,6 +276,7 @@ class CapabilityStatementUsCore extends Resource {
   /// applied to the definition and use of extensions. Though any implementer
   /// can define an extension, there is a set of requirements that SHALL be met
   ///  as part of the definition of the extension.
+  @override
   List<FhirExtension>? get extension_ => _capabilityStatement.extension_;
 
   /// [modifierExtension] May be used to represent additional information that
@@ -286,6 +292,7 @@ class CapabilityStatementUsCore extends Resource {
   /// Modifier extensions SHALL NOT change the meaning of any elements on
   /// Resource or DomainResource (including cannot change the meaning of
   ///  modifierExtension itself).
+  @override
   List<FhirExtension>? get modifierExtension =>
       _capabilityStatement.modifierExtension;
 
@@ -295,6 +302,7 @@ class CapabilityStatementUsCore extends Resource {
   /// contain sufficient detail to make it "clinically safe" for a human to just
   /// read the narrative. Resource definitions may define what content should be
   ///  represented in the narrative to ensure clinical safety.
+  @override
   Narrative? get text => _capabilityStatement.text;
 
   /// [url] An absolute URI that is used to identify this capability statement

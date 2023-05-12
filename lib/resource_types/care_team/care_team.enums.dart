@@ -17,7 +17,8 @@ enum CareTeamStatus {
   unknown,
 }
 
-final codeFromCareTeamStatus = {
+final Map<CareTeamStatus, String> codeFromCareTeamStatus =
+    <CareTeamStatus, String>{
   CareTeamStatus.proposed: 'proposed',
   CareTeamStatus.active: 'active',
   CareTeamStatus.suspended: 'suspended',
@@ -2987,7 +2988,8 @@ enum CareTeamProviderRole {
   dialysis_service,
 }
 
-final codeableConceptFromProviderRole = {
+final Map<CareTeamProviderRole, CodeableConcept>
+    codeableConceptFromProviderRole = <CareTeamProviderRole, CodeableConcept>{
   CareTeamProviderRole.counselor: CodeableConcept(
     coding: <Coding>[
       Coding(

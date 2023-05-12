@@ -43,9 +43,13 @@ class EndpointUsCore extends Resource {
 
   Endpoint _endpoint;
   Endpoint get value => _endpoint;
+  @override
   String? get id => _endpoint.id;
+  @override
   FhirMeta? get meta => _endpoint.meta;
+  @override
   Narrative? get text => _endpoint.text;
+  @override
   List<Resource>? get contained => _endpoint.contained;
   List<Identifier>? get identifier => _endpoint.identifier;
   FhirCode? get status => _endpoint.status;

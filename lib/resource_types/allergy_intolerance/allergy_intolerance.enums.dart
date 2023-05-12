@@ -13,14 +13,18 @@ enum AllergyIntoleranceClinicalStatus {
 }
 
 /// [codeAllergyIntoleranceClinicalStatus] - enum to String map
-final codeFromAllergyIntoleranceClinicalStatus = {
+final Map<AllergyIntoleranceClinicalStatus, String>
+    codeFromAllergyIntoleranceClinicalStatus =
+    <AllergyIntoleranceClinicalStatus, String>{
   AllergyIntoleranceClinicalStatus.active: 'active',
   AllergyIntoleranceClinicalStatus.inactive: 'inactive',
   AllergyIntoleranceClinicalStatus.resolved: 'resolved',
 };
 
 /// [codeableConceptFromAllergyIntoleranceClinicalStatus] - enum to CodeableConcept map
-final codeableConceptFromAllergyIntoleranceClinicalStatus = {
+final Map<AllergyIntoleranceClinicalStatus, CodeableConcept>
+    codeableConceptFromAllergyIntoleranceClinicalStatus =
+    <AllergyIntoleranceClinicalStatus, CodeableConcept>{
   AllergyIntoleranceClinicalStatus.active: CodeableConcept(coding: <Coding>[
     Coding(
         system: FhirUri(
@@ -54,7 +58,9 @@ enum AllergyIntoleranceVerificationStatus {
 }
 
 /// [codeableConceptAllergyIntoleranceVerificationStatus] - enum to CodeableConcept map
-final codeableConceptFromAllergyIntoleranceVerificationStatus = {
+final Map<AllergyIntoleranceVerificationStatus, CodeableConcept>
+    codeableConceptFromAllergyIntoleranceVerificationStatus =
+    <AllergyIntoleranceVerificationStatus, CodeableConcept>{
   AllergyIntoleranceVerificationStatus.unconfirmed:
       CodeableConcept(coding: <Coding>[
     Coding(
@@ -1640,7 +1646,9 @@ enum AllergyIntoleranceIdentity {
 }
 
 /// [codeableConceptAllergyIntoleranceIdentity] - enum to CodeableConcept map
-final codeableConceptFromAllergyIntoleranceIdentity = {
+final Map<AllergyIntoleranceIdentity, CodeableConcept>
+    codeableConceptFromAllergyIntoleranceIdentity =
+    <AllergyIntoleranceIdentity, CodeableConcept>{
   AllergyIntoleranceIdentity.formoterol_mometasone: CodeableConcept(
     coding: <Coding>[
       Coding(

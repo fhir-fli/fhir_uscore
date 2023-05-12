@@ -102,8 +102,11 @@ class DocumentReferenceUsCore extends Resource {
 
   DocumentReference _documentReference;
   DocumentReference get value => _documentReference;
+  @override
   String? get id => _documentReference.id;
+  @override
   FhirMeta? get meta => _documentReference.meta;
+  @override
   Narrative? get text => _documentReference.text;
   List<Identifier>? get identifier => _documentReference.identifier;
   FhirCode? get status => _documentReference.status;

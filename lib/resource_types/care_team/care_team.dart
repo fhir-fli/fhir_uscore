@@ -38,8 +38,8 @@ class CareTeamUsCore extends Resource {
     participant ??= <CareTeamParticipant>[];
     participant.add(CareTeamParticipant(
         role: codeableConceptFromProviderRole[role] == null
-            ? []
-            : [codeableConceptFromProviderRole[role]!],
+            ? <CodeableConcept>[]
+            : <CodeableConcept>[codeableConceptFromProviderRole[role]!],
         member: member));
     return CareTeamUsCore(
       status: status,
@@ -56,8 +56,11 @@ class CareTeamUsCore extends Resource {
 
   CareTeam _careTeam;
   CareTeam get value => _careTeam;
+  @override
   String? get id => _careTeam.id;
+  @override
   FhirMeta? get meta => _careTeam.meta;
+  @override
   Narrative? get text => _careTeam.text;
   String? get name => _careTeam.name;
   FhirCode? get status => _careTeam.status;

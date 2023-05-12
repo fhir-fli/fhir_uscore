@@ -206,16 +206,16 @@ Future<Resource?> makeRequest(
       }
       break;
   }
-  Map<String, String> finalHeaders = headers ?? {};
+  final Map<String, String> finalHeaders = headers ?? <String, String>{};
   if (!finalHeaders.keys.contains('Content-Type')) {
     finalHeaders['Content-Type'] = 'application/fhir+json';
   }
-  return await request.request(headers: finalHeaders);
+  return request.request(headers: finalHeaders);
 }
 
 /// Default format for failed request
 OperationOutcome _operationOutcome(String errorString) =>
-    OperationOutcome(issue: [
+    OperationOutcome(issue: <OperationOutcomeIssue>[
       OperationOutcomeIssue(
         severity: FhirCode('error'),
         code: FhirCode('unknown'),

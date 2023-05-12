@@ -53,8 +53,11 @@ class GoalUsCore extends Resource {
 
   Goal _goal;
   Goal get value => _goal;
+  @override
   String? get id => _goal.id;
+  @override
   FhirMeta? get meta => _goal.meta;
+  @override
   Narrative? get text => _goal.text;
   FhirCode? get lifecycleStatus => _goal.lifecycleStatus;
   CodeableConcept? get achievementStatus => _goal.achievementStatus;

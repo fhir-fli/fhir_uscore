@@ -51,7 +51,7 @@ class DeviceUsCore extends Resource {
     required Reference patient,
   }) =>
       DeviceUsCore(
-        udiCarrier: udiCarrier == null ? null : [udiCarrier],
+        udiCarrier: udiCarrier == null ? null : <DeviceUdiCarrier>[udiCarrier],
         distinctIdentifier: distinctIdentifier,
         manufactureDate: manufactureDate,
         expirationDate: expirationDate,
@@ -68,8 +68,11 @@ class DeviceUsCore extends Resource {
 
   Device _device;
   Device get value => _device;
+  @override
   String? get id => _device.id;
+  @override
   FhirMeta? get meta => _device.meta;
+  @override
   Narrative? get text => _device.text;
   List<DeviceUdiCarrier>? get udiCarrier => _device.udiCarrier;
   String? get distinctIdentifier => _device.distinctIdentifier;

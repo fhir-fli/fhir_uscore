@@ -35,7 +35,9 @@ enum ObservationDataAbsentReason {
   not_permitted,
 }
 
-final codeableConceptFromObservationDataAbsentReason = {
+final Map<ObservationDataAbsentReason, CodeableConcept>
+    codeableConceptFromObservationDataAbsentReason =
+    <ObservationDataAbsentReason, CodeableConcept>{
   ObservationDataAbsentReason.unknown: CodeableConcept(
     coding: <Coding>[
       Coding(
@@ -207,7 +209,8 @@ enum SmokingStatus {
   current_light_tobacco_smoker,
 }
 
-final codeableConceptFromSmokingStatus = {
+final Map<SmokingStatus, CodeableConcept> codeableConceptFromSmokingStatus =
+    <SmokingStatus, CodeableConcept>{
   SmokingStatus.current_every_day_smoker: CodeableConcept(
     coding: <Coding>[
       Coding(
@@ -309,7 +312,8 @@ enum BodySiteForBp {
   left_calf,
 }
 
-final codeableConceptFromBodySiteForBp = {
+final Map<BodySiteForBp, CodeableConcept> codeableConceptFromBodySiteForBp =
+    <BodySiteForBp, CodeableConcept>{
   BodySiteForBp.right_arm: CodeableConcept(coding: <Coding>[
     Coding(
       system: FhirUri('http://snomed.info/sct'),

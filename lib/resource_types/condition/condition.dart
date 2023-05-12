@@ -63,8 +63,11 @@ class ConditionUsCore extends Resource {
 
   Condition _condition;
   Condition get value => _condition;
+  @override
   String? get id => _condition.id;
+  @override
   FhirMeta? get meta => _condition.meta;
+  @override
   Narrative? get text => _condition.text;
   CodeableConcept? get clinicalStatus => _condition.clinicalStatus;
   CodeableConcept? get verificationStatus => _condition.verificationStatus;

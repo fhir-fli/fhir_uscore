@@ -9,14 +9,14 @@ Future<Resource?> capabilityStatementRequest(
   Client? client,
   List<String> parameters = const <String>[],
 }) async {
-  var request = FhirRequest.capabilities(
+  final FhirRequest request = FhirRequest.capabilities(
     base: base,
     parameters: parameters,
     client: client,
   );
-  Map<String, String> finalHeaders = headers ?? {};
+  final Map<String, String> finalHeaders = headers ?? <String, String>{};
   if (!finalHeaders.keys.contains('Content-Type')) {
     finalHeaders['Content-Type'] = 'application/fhir+json';
   }
-  return await request.request(headers: finalHeaders);
+  return request.request(headers: finalHeaders);
 }

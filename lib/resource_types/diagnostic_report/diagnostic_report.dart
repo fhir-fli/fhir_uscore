@@ -54,7 +54,7 @@ class DiagnosticReportUsCore extends Resource {
   }) =>
       DiagnosticReportUsCore(
         status: status,
-        category: [
+        category: <CodeableConcept>[
           CodeableConcept(coding: <Coding>[
             Coding(
                 system:
@@ -103,8 +103,11 @@ class DiagnosticReportUsCore extends Resource {
 
   DiagnosticReport _diagnosticReport;
   DiagnosticReport get value => _diagnosticReport;
+  @override
   String? get id => _diagnosticReport.id;
+  @override
   FhirMeta? get meta => _diagnosticReport.meta;
+  @override
   Narrative? get text => _diagnosticReport.text;
   FhirCode? get status => _diagnosticReport.status;
   List<CodeableConcept>? get category => _diagnosticReport.category;

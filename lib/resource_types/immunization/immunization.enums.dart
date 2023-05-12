@@ -75,7 +75,9 @@ enum ImmunizationStatusReason {
   no_consent_for_3rd_hib_booster,
 }
 
-final codeableConceptFromImmunizationStatusReason = {
+final Map<ImmunizationStatusReason, CodeableConcept>
+    codeableConceptFromImmunizationStatusReason =
+    <ImmunizationStatusReason, CodeableConcept>{
   ImmunizationStatusReason.immunity: CodeableConcept(
     coding: <Coding>[
       Coding(
@@ -677,7 +679,9 @@ enum ImmunizationVaccineCode {
   cvx998,
 }
 
-final codeableConceptFromImmunizationVaccineCode = {
+final Map<ImmunizationVaccineCode, CodeableConcept>
+    codeableConceptFromImmunizationVaccineCode =
+    <ImmunizationVaccineCode, CodeableConcept>{
   ImmunizationVaccineCode.cvx01: CodeableConcept(
     coding: <Coding>[
       Coding(

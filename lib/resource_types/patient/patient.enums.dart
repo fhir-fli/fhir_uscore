@@ -19,14 +19,15 @@ enum PatientUsCoreRace {
   asked_but_no_answer,
 }
 
-final codeconept = CodeableConcept(coding: <Coding>[
+final CodeableConcept codeconept = CodeableConcept(coding: <Coding>[
   Coding(
       system: FhirUri(
           'http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical'),
       code: FhirCode('active'))
 ]);
 
-final extensionFromRace = {
+final Map<PatientUsCoreRace, FhirExtension> extensionFromRace =
+    <PatientUsCoreRace, FhirExtension>{
   PatientUsCoreRace.american_indian_or_alaska_native: FhirExtension(
       url: FhirUri('ombCategory'),
       valueCoding: Coding(
@@ -1913,7 +1914,8 @@ enum PatientUsCoreDetailedRace {
   other_race,
 }
 
-final extensionFromDetailedRace = {
+final Map<PatientUsCoreDetailedRace, FhirExtension> extensionFromDetailedRace =
+    <PatientUsCoreDetailedRace, FhirExtension>{
   PatientUsCoreDetailedRace.american_indian: FhirExtension(
       url: FhirUri('detailed'),
       valueCoding: Coding(

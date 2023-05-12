@@ -214,11 +214,13 @@ class AllergyIntoleranceUsCore extends Resource {
 
   /// [id] The logical id of the resource, as used in the URL for the resource.
   ///  Once assigned, this value never changes.
+  @override
   String? get id => _allergyIntolerance.id;
 
   /// [meta] The metadata about the resource. This is content that is
   /// maintained by the infrastructure. Changes to the content might not always
   ///  be associated with version changes to the resource.
+  @override
   FhirMeta? get meta => _allergyIntolerance.meta;
 
   /// [text] A human-readable narrative that contains a summary of the resource
@@ -227,6 +229,7 @@ class AllergyIntoleranceUsCore extends Resource {
   /// contain sufficient detail to make it "clinically safe" for a human to just
   /// read the narrative. Resource definitions may define what content should be
   ///  represented in the narrative to ensure clinical safety.
+  @override
   Narrative? get text => _allergyIntolerance.text;
 
   /// [clinicalStatus] The clinical status of the allergy or intolerance.

@@ -27,13 +27,15 @@ Future<Resource?> conditionRequest(
 }) async {
   if (category != null &&
       codeableConceptFromConditionCategory[category] != null) {
-    final concept = codeableConceptFromConditionCategory[category];
+    final CodeableConcept? concept =
+        codeableConceptFromConditionCategory[category];
     parameters.add(
         'category=${concept!.coding![0].system}|${concept.coding![0].code}');
   }
   if (status != null &&
       codeableConceptFromConditionClinicalStatus[status] != null) {
-    final clinicalStatus = codeableConceptFromConditionClinicalStatus[status];
+    final CodeableConcept? clinicalStatus =
+        codeableConceptFromConditionClinicalStatus[status];
     parameters.add(
         'clinical-status=${clinicalStatus!.coding![0].system}|${clinicalStatus.coding![0].code}');
   }
@@ -54,7 +56,7 @@ Future<Resource?> conditionRequest(
   if (getProvenanceResources ?? false) {
     parameters.add('_revinclude=Provenance:target');
   }
-  return await makeRequest(
+  return makeRequest(
     requestType,
     base,
     R4ResourceType.Condition,

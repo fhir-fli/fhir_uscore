@@ -17,7 +17,9 @@ enum ConditionClinicalStatus {
   resolved,
 }
 
-final codeableConceptFromConditionClinicalStatus = {
+final Map<ConditionClinicalStatus, CodeableConcept>
+    codeableConceptFromConditionClinicalStatus =
+    <ConditionClinicalStatus, CodeableConcept>{
   ConditionClinicalStatus.active: CodeableConcept(
     coding: <Coding>[
       Coding(
@@ -95,7 +97,9 @@ enum ConditionVerificationStatus {
   entered_in_error,
 }
 
-final codeableConceptFromConditionVerificationStatus = {
+final Map<ConditionVerificationStatus, CodeableConcept>
+    codeableConceptFromConditionVerificationStatus =
+    <ConditionVerificationStatus, CodeableConcept>{
   ConditionVerificationStatus.unconfirmed: CodeableConcept(
     coding: <Coding>[
       Coding(
@@ -167,7 +171,8 @@ enum ConditionCategory {
   health_concern,
 }
 
-final codeableConceptFromConditionCategory = {
+final Map<ConditionCategory, CodeableConcept>
+    codeableConceptFromConditionCategory = <ConditionCategory, CodeableConcept>{
   ConditionCategory.problem_list_item: CodeableConcept(
     coding: <Coding>[
       Coding(
