@@ -1,4 +1,4 @@
-//ignore_for_file: always_specify_types
+//ignore_for_file: always_specify_types, avoid_print
 
 import 'package:fhir/r4.dart';
 import 'package:fhir_uscore/resource_types/patient/patient.dart';
