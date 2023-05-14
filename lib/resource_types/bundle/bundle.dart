@@ -37,7 +37,7 @@ class BundleUsCore extends Resource {
   factory BundleUsCore({
     /// [id] The logical id of the resource, as used in the URL for the resource.
     ///  Once assigned, this value never changes.
-    String? id,
+    String? fhirId,
 
     /// [meta] The metadata about the resource. This is content that is
     /// maintained by the infrastructure. Changes to the content might not always
@@ -69,7 +69,7 @@ class BundleUsCore extends Resource {
     Signature? signature,
   }) =>
       BundleUsCore._(Bundle(
-        id: id,
+        fhirId: fhirId,
         meta: meta,
         type: type,
         timestamp: timestamp,
@@ -88,7 +88,7 @@ class BundleUsCore extends Resource {
   /// [id] The logical id of the resource, as used in the URL for the resource.
   ///  Once assigned, this value never changes.
   @override
-  String? get id => _bundle.id;
+  String? get fhirId => _bundle.fhirId;
 
   /// [meta] The metadata about the resource. This is content that is
   /// maintained by the infrastructure. Changes to the content might not always
@@ -139,7 +139,7 @@ class BundleLinkUsCore {
     /// [id] Unique id for the element within a resource (for internal
     ///  references). This may be any string value that does not contain spaces.
 
-    String? id,
+    FhirId? fhirId,
 
     /// [relation] A name which details the functional use for this link - see
     /// (http://www.iana.org/assignments/link-relations/link-relations.xhtml#link-relations-1).
@@ -149,7 +149,8 @@ class BundleLinkUsCore {
     /// [url] The reference details for the link.
     FhirUri? url,
   }) =>
-      BundleLinkUsCore._(BundleLink(id: id, relation: relation, url: url));
+      BundleLinkUsCore._(
+          BundleLink(fhirId: fhirId, relation: relation, url: url));
 
   /// [BundleLink] A container for a collection of resources.
   BundleLink _bundleLink;
@@ -159,7 +160,7 @@ class BundleLinkUsCore {
 
   /// [id] Unique id for the element within a resource (for internal
   ///  references). This may be any string value that does not contain spaces.
-  String? get id => _bundleLink.id;
+  FhirId? get fhirId => _bundleLink.fhirId;
 
   /// [relation] A name which details the functional use for this link - see
   /// (http://www.iana.org/assignments/link-relations/link-relations.xhtml#link-relations-1).
@@ -207,7 +208,7 @@ class BundleEntryUsCore {
   factory BundleEntryUsCore({
     /// [id] Unique id for the element within a resource (for internal
     ///  references). This may be any string value that does not contain spaces.
-    String? id,
+    FhirId? fhirId,
 
     /// [link] A series of links that provide context to this entry.
     List<BundleLink>? link,
@@ -241,7 +242,7 @@ class BundleEntryUsCore {
     BundleResponse? response,
   }) =>
       BundleEntryUsCore._(BundleEntry(
-        id: id,
+        fhirId: fhirId,
         link: link,
         fullUrl: fullUrl,
         resource: resource,
@@ -258,7 +259,7 @@ class BundleEntryUsCore {
 
   /// [id] Unique id for the element within a resource (for internal
   ///  references). This may be any string value that does not contain spaces.
-  String? get id => _bundleEntry.id;
+  FhirId? get fhirId => _bundleEntry.fhirId;
 
   /// [link] A series of links that provide context to this entry.
   List<BundleLink>? link;
@@ -310,7 +311,7 @@ class BundleSearchUsCore {
   factory BundleSearchUsCore({
     /// [id] Unique id for the element within a resource (for internal
     ///  references). This may be any string value that does not contain spaces.
-    String? id,
+    FhirId? fhirId,
 
     /// [mode] Why this entry is in the result set - whether it's included as a
     /// match or because of an _include requirement, or to convey information or
@@ -320,7 +321,8 @@ class BundleSearchUsCore {
     /// [score] When searching, the server's search ranking score for the entry.
     FhirDecimal? score,
   }) =>
-      BundleSearchUsCore._(BundleSearch(id: id, mode: mode, score: score));
+      BundleSearchUsCore._(
+          BundleSearch(fhirId: fhirId, mode: mode, score: score));
 
   /// [BundleSearch] A container for a collection of resources.
   BundleSearch _bundleSearch;
@@ -330,7 +332,7 @@ class BundleSearchUsCore {
 
   /// [id] Unique id for the element within a resource (for internal
   ///  references). This may be any string value that does not contain spaces.
-  String? get id => _bundleSearch.id;
+  FhirId? get fhirId => _bundleSearch.fhirId;
 
   /// [mode] Why this entry is in the result set - whether it's included as a
   /// match or because of an _include requirement, or to convey information or
@@ -377,7 +379,7 @@ class BundleRequestUsCore {
   factory BundleRequestUsCore({
     /// [id] Unique id for the element within a resource (for internal
     ///  references). This may be any string value that does not contain spaces.
-    String? id,
+    FhirId? fhirId,
 
     /// [method] In a transaction or batch, this is the HTTP action to be
     /// executed for this entry. In a history bundle, this indicates the HTTP
@@ -410,7 +412,7 @@ class BundleRequestUsCore {
     String? ifNoneExist,
   }) =>
       BundleRequestUsCore._(BundleRequest(
-        id: id,
+        fhirId: fhirId,
         method: method,
         url: url,
         ifNoneMatch: ifNoneMatch,
@@ -424,7 +426,7 @@ class BundleRequestUsCore {
 
   /// [id] Unique id for the element within a resource (for internal
   ///  references). This may be any string value that does not contain spaces.
-  String? get id => _bundleRequest.id;
+  FhirId? get fhirId => _bundleRequest.fhirId;
 
   /// [method] In a transaction or batch, this is the HTTP action to be
   /// executed for this entry. In a history bundle, this indicates the HTTP
@@ -483,7 +485,7 @@ class BundleResponseUsCore {
   factory BundleResponseUsCore({
     /// [id] Unique id for the element within a resource (for internal
     ///  references). This may be any string value that does not contain spaces.
-    String? id,
+    FhirId? fhirId,
 
     /// [status] The status code returned by processing this entry. The status
     /// SHALL start with a 3 digit HTTP code (e.g. 404) and may contain the
@@ -509,7 +511,7 @@ class BundleResponseUsCore {
     Resource? outcome,
   }) =>
       BundleResponseUsCore._(BundleResponse(
-        id: id,
+        fhirId: fhirId,
         status: status,
         location: location,
         etag: etag,
@@ -522,7 +524,7 @@ class BundleResponseUsCore {
 
   /// [id] Unique id for the element within a resource (for internal
   ///  references). This may be any string value that does not contain spaces.
-  String? get id => _bundleResponse.id;
+  FhirId? get fhirId => _bundleResponse.fhirId;
 
   /// [status] The status code returned by processing this entry. The status
   /// SHALL start with a 3 digit HTTP code (e.g. 404) and may contain the

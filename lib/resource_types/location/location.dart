@@ -69,20 +69,20 @@ class LocationPositionUsCore {
   LocationPositionUsCore._(this._locationPosition);
 
   factory LocationPositionUsCore({
-    String? id,
+    String? fhirId,
     FhirDecimal? longitude,
     FhirDecimal? latitude,
     FhirDecimal? altitude,
   }) =>
       LocationPositionUsCore._(LocationPosition(
-          id: id,
+          fhirId: fhirId,
           longitude: longitude,
           latitude: latitude,
           altitude: altitude));
 
   LocationPosition _locationPosition;
   LocationPosition get value => _locationPosition;
-  String? get id => _locationPosition.id;
+  String? get id => _locationPosition.fhirId;
   FhirDecimal? get longitute => _locationPosition.longitude;
   FhirDecimal? get latitude => _locationPosition.latitude;
   FhirDecimal? get altitude => _locationPosition.altitude;

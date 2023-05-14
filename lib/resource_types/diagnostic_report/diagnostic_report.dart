@@ -10,7 +10,7 @@ class DiagnosticReportUsCore extends Resource {
   DiagnosticReportUsCore._(this._diagnosticReport);
 
   factory DiagnosticReportUsCore({
-    String? id,
+    String? fhirId,
     FhirMeta? meta,
     Narrative? text,
     required DiagnosticReportStatus status,
@@ -26,7 +26,7 @@ class DiagnosticReportUsCore extends Resource {
     List<Attachment>? presentedForm,
   }) =>
       DiagnosticReportUsCore._(DiagnosticReport(
-        id: id,
+        fhirId: fhirId,
         meta: meta,
         text: text,
         status: FhirCode(diagnosticReportStatusToCode[status]),
@@ -104,7 +104,7 @@ class DiagnosticReportUsCore extends Resource {
   DiagnosticReport _diagnosticReport;
   DiagnosticReport get value => _diagnosticReport;
   @override
-  String? get id => _diagnosticReport.id;
+  String? get fhirId => _diagnosticReport.fhirId;
   @override
   FhirMeta? get meta => _diagnosticReport.meta;
   @override

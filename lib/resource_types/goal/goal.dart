@@ -7,7 +7,7 @@ class GoalUsCore extends Resource {
   GoalUsCore._(this._goal);
 
   factory GoalUsCore({
-    String? id,
+    String? fhirId,
     FhirMeta? meta,
     Narrative? text,
     required FhirCode lifecycleStatus,
@@ -17,7 +17,7 @@ class GoalUsCore extends Resource {
     List<GoalTarget>? target,
   }) =>
       GoalUsCore._(Goal(
-        id: id,
+        fhirId: fhirId,
         meta: meta,
         text: text,
         lifecycleStatus: lifecycleStatus,
@@ -54,7 +54,7 @@ class GoalUsCore extends Resource {
   Goal _goal;
   Goal get value => _goal;
   @override
-  String? get id => _goal.id;
+  String? get fhirId => _goal.fhirId;
   @override
   FhirMeta? get meta => _goal.meta;
   @override
@@ -70,13 +70,13 @@ class GoalTargetUsCore {
   GoalTargetUsCore._(this._goalTarget);
 
   factory GoalTargetUsCore({
-    String? id,
+    FhirId? fhirId,
     FhirDate? dueDate,
   }) =>
-      GoalTargetUsCore._(GoalTarget(id: id, dueDate: dueDate));
+      GoalTargetUsCore._(GoalTarget(fhirId: fhirId, dueDate: dueDate));
 
   GoalTarget _goalTarget;
   GoalTarget get value => _goalTarget;
-  String? get id => _goalTarget.id;
+  FhirId? get fhirId => _goalTarget.fhirId;
   FhirDate? get dueDate => _goalTarget.dueDate;
 }

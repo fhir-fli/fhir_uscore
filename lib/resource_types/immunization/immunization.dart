@@ -10,7 +10,7 @@ class ImmunizationUsCore extends Resource {
   ImmunizationUsCore._(this._immunization);
 
   factory ImmunizationUsCore({
-    String? id,
+    String? fhirId,
     FhirMeta? meta,
     Narrative? text,
     required ImmunizationStatus status,
@@ -22,7 +22,7 @@ class ImmunizationUsCore extends Resource {
     required FhirBoolean primarySource,
   }) =>
       ImmunizationUsCore._(Immunization(
-        id: id,
+        fhirId: fhirId,
         meta: meta,
         text: text,
         status: codeFromImmunizationStatus(status),
@@ -73,7 +73,7 @@ class ImmunizationUsCore extends Resource {
   Immunization _immunization;
   Immunization get value => _immunization;
   @override
-  String? get id => _immunization.id;
+  String? get fhirId => _immunization.fhirId;
   @override
   FhirMeta? get meta => _immunization.meta;
   @override

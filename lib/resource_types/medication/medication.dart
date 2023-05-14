@@ -7,13 +7,13 @@ class MedicationUsCore extends Resource {
   MedicationUsCore._(this._medication);
 
   factory MedicationUsCore({
-    String? id,
+    String? fhirId,
     FhirMeta? meta,
     Narrative? text,
     required CodeableConcept code,
   }) =>
       MedicationUsCore._(
-          Medication(id: id, meta: meta, text: text, code: code));
+          Medication(fhirId: fhirId, meta: meta, text: text, code: code));
 
   factory MedicationUsCore.minimum({required CodeableConcept code}) =>
       MedicationUsCore(code: code);
@@ -21,7 +21,7 @@ class MedicationUsCore extends Resource {
   Medication _medication;
   Medication get value => _medication;
   @override
-  String? get id => _medication.id;
+  String? get fhirId => _medication.fhirId;
   @override
   FhirMeta? get meta => _medication.meta;
   @override

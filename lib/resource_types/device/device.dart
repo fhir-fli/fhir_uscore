@@ -7,7 +7,7 @@ class DeviceUsCore extends Resource {
   DeviceUsCore._(this._device);
 
   factory DeviceUsCore({
-    String? id,
+    String? fhirId,
     FhirMeta? meta,
     Narrative? text,
     List<DeviceUdiCarrier>? udiCarrier,
@@ -24,7 +24,7 @@ class DeviceUsCore extends Resource {
     required Reference patient,
   }) =>
       DeviceUsCore._(Device(
-        id: id,
+        fhirId: fhirId,
         meta: meta,
         text: text,
         udiCarrier: udiCarrier,
@@ -69,7 +69,7 @@ class DeviceUsCore extends Resource {
   Device _device;
   Device get value => _device;
   @override
-  String? get id => _device.id;
+  String? get fhirId => _device.fhirId;
   @override
   FhirMeta? get meta => _device.meta;
   @override
@@ -92,14 +92,14 @@ class DeviceUdiCarrierUsCore {
   DeviceUdiCarrierUsCore._(this._deviceUdiCarrier);
 
   factory DeviceUdiCarrierUsCore({
-    String? id,
+    String? fhirId,
     String? deviceIdentifier,
     FhirBase64Binary? carrierAIDC,
     String? carrierHRF,
     FhirCode? entryType,
   }) =>
       DeviceUdiCarrierUsCore._(DeviceUdiCarrier(
-        id: id,
+        fhirId: fhirId,
         deviceIdentifier: deviceIdentifier,
         carrierAIDC: carrierAIDC,
         carrierHRF: carrierHRF,
@@ -108,7 +108,7 @@ class DeviceUdiCarrierUsCore {
 
   DeviceUdiCarrier _deviceUdiCarrier;
   DeviceUdiCarrier get value => _deviceUdiCarrier;
-  String? get id => _deviceUdiCarrier.id;
+  String? get id => _deviceUdiCarrier.fhirId;
   String? get deviceIdentifier => _deviceUdiCarrier.deviceIdentifier;
   FhirBase64Binary? get carrierAIDC => _deviceUdiCarrier.carrierAIDC;
   String? get carrierHRF => _deviceUdiCarrier.carrierHRF;
@@ -119,16 +119,16 @@ class DeviceDeviceNameUsCore {
   DeviceDeviceNameUsCore._(this._deviceDeviceName);
 
   factory DeviceDeviceNameUsCore({
-    String? id,
+    String? fhirId,
     String? name,
     FhirCode? type,
   }) =>
       DeviceDeviceNameUsCore._(
-          DeviceDeviceName(id: id, name: name, type: type));
+          DeviceDeviceName(fhirId: fhirId, name: name, type: type));
 
   DeviceDeviceName _deviceDeviceName;
   DeviceDeviceName get value => _deviceDeviceName;
-  String? get id => _deviceDeviceName.id;
+  String? get id => _deviceDeviceName.fhirId;
   String? get name => _deviceDeviceName.name;
   FhirCode? get type => _deviceDeviceName.type;
 }

@@ -10,7 +10,7 @@ class ObservationUsCore extends Resource {
   ObservationUsCore._(this._observation);
 
   factory ObservationUsCore({
-    String? id,
+    String? fhirId,
     FhirMeta? meta,
     Narrative? text,
     List<Identifier>? identifier,
@@ -43,7 +43,7 @@ class ObservationUsCore extends Resource {
     FhirInstant? issued,
   }) =>
       ObservationUsCore._(Observation(
-        id: id,
+        fhirId: fhirId,
         meta: meta,
         text: text,
         identifier: identifier,
@@ -588,7 +588,7 @@ class ObservationUsCore extends Resource {
   Observation _observation;
   Observation get value => _observation;
   @override
-  String? get id => _observation.id;
+  String? get fhirId => _observation.fhirId;
   @override
   FhirMeta? get meta => _observation.meta;
   @override
@@ -628,7 +628,7 @@ class ObservationUsCore extends Resource {
 class ObservationReferenceRangeUsCore {
   ObservationReferenceRangeUsCore._(this._observationReferenceRange);
   factory ObservationReferenceRangeUsCore({
-    String? id,
+    FhirId? fhirId,
     Quantity? low,
     Quantity? high,
     CodeableConcept? type,
@@ -637,7 +637,7 @@ class ObservationReferenceRangeUsCore {
     String? text,
   }) =>
       ObservationReferenceRangeUsCore._(ObservationReferenceRange(
-        id: id,
+        fhirId: fhirId,
         low: low,
         high: high,
         type: type,
@@ -648,7 +648,7 @@ class ObservationReferenceRangeUsCore {
 
   ObservationReferenceRange _observationReferenceRange;
   ObservationReferenceRange get value => _observationReferenceRange;
-  String? get id => _observationReferenceRange.id;
+  FhirId? get fhirId => _observationReferenceRange.fhirId;
   Quantity? get low => _observationReferenceRange.low;
   Quantity? get high => _observationReferenceRange.high;
   CodeableConcept? get type => _observationReferenceRange.type;
@@ -661,7 +661,7 @@ class ObservationComponentUsCore {
   ObservationComponentUsCore._(this._observationComponent);
 
   factory ObservationComponentUsCore({
-    String? id,
+    FhirId? fhirId,
     List<FhirExtension>? extension_,
     List<FhirExtension>? modifierExtension,
     required CodeableConcept code,
@@ -681,7 +681,7 @@ class ObservationComponentUsCore {
     List<ObservationReferenceRange>? referenceRange,
   }) =>
       ObservationComponentUsCore._(ObservationComponent(
-        id: id,
+        fhirId: fhirId,
         extension_: extension_,
         modifierExtension: modifierExtension,
         code: code,
@@ -703,7 +703,7 @@ class ObservationComponentUsCore {
 
   ObservationComponent _observationComponent;
   ObservationComponent get value => _observationComponent;
-  String? get id => _observationComponent.id;
+  FhirId? get fhirId => _observationComponent.fhirId;
   List<FhirExtension>? get extension_ => _observationComponent.extension_;
   List<FhirExtension>? get modifierExtension =>
       _observationComponent.modifierExtension;

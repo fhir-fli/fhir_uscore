@@ -12,7 +12,7 @@ class CapabilityStatementUsCore extends Resource {
   factory CapabilityStatementUsCore({
     /// [id] The logical id of the resource, as used in the URL for the resource.
     ///  Once assigned, this value never changes.
-    String? id,
+    String? fhirId,
 
     /// [meta] The metadata about the resource. This is content that is
     /// maintained by the infrastructure. Changes to the content might not always
@@ -199,7 +199,7 @@ class CapabilityStatementUsCore extends Resource {
     List<CapabilityStatementDocument>? document,
   }) =>
       CapabilityStatementUsCore._(CapabilityStatement(
-        id: id,
+        fhirId: fhirId,
         meta: meta,
         implicitRules: implicitRules,
         language: language,
@@ -244,7 +244,7 @@ class CapabilityStatementUsCore extends Resource {
   /// [id] The logical id of the resource, as used in the URL for the resource.
   ///  Once assigned, this value never changes.
   @override
-  String? get id => _capabilityStatement.id;
+  String? get fhirId => _capabilityStatement.fhirId;
 
   /// [meta] The metadata about the resource. This is content that is
   /// maintained by the infrastructure. Changes to the content might not always
@@ -462,7 +462,7 @@ class CapabilityStatementSoftwareUsCore {
   factory CapabilityStatementSoftwareUsCore({
     /// [id] Unique id for the element within a resource (for internal
     ///  references). This may be any string value that does not contain spaces.
-    String? id,
+    FhirId? fhirId,
 
     /// [extension_] May be used to represent additional information that is not
     /// part of the basic definition of the element. To make the use of extensions
@@ -498,7 +498,7 @@ class CapabilityStatementSoftwareUsCore {
     FhirDateTime? releaseDate,
   }) =>
       CapabilityStatementSoftwareUsCore._(CapabilityStatementSoftware(
-          id: id,
+          fhirId: fhirId,
           extension_: extension_,
           modifierExtension: modifierExtension,
           name: name,
@@ -519,7 +519,7 @@ class CapabilityStatementSoftwareUsCore {
 
   /// [id] Unique id for the element within a resource (for internal
   ///  references). This may be any string value that does not contain spaces.
-  String? get id => _capabilityStatementSoftware.id;
+  FhirId? get fhirId => _capabilityStatementSoftware.fhirId;
 
   /// [extension_] May be used to represent additional information that is not
   /// part of the basic definition of the element. To make the use of extensions
@@ -576,7 +576,7 @@ class CapabilityStatementImplementationUsCore {
   factory CapabilityStatementImplementationUsCore({
     /// [id] Unique id for the element within a resource (for internal
     ///  references). This may be any string value that does not contain spaces.
-    String? id,
+    FhirId? fhirId,
 
     /// [extension_] May be used to represent additional information that is not
     /// part of the basic definition of the element. To make the use of extensions
@@ -615,7 +615,7 @@ class CapabilityStatementImplementationUsCore {
   }) =>
       CapabilityStatementImplementationUsCore._(
           CapabilityStatementImplementation(
-        id: id,
+        fhirId: fhirId,
         extension_: extension_,
         modifierExtension: modifierExtension,
         description: description,
@@ -638,7 +638,7 @@ class CapabilityStatementImplementationUsCore {
 
   /// [id] Unique id for the element within a resource (for internal
   ///  references). This may be any string value that does not contain spaces.
-  String? get id => _capabilityStatementImplementation.id;
+  FhirId? get fhirId => _capabilityStatementImplementation.fhirId;
 
   /// [extension_] May be used to represent additional information that is not
   /// part of the basic definition of the element. To make the use of extensions
@@ -696,7 +696,7 @@ class CapabilityStatementRestUsCore {
   factory CapabilityStatementRestUsCore({
     /// [id] Unique id for the element within a resource (for internal
     ///  references). This may be any string value that does not contain spaces.
-    String? id,
+    FhirId? fhirId,
 
     /// [extension_] May be used to represent additional information that is not
     /// part of the basic definition of the element. To make the use of extensions
@@ -757,7 +757,7 @@ class CapabilityStatementRestUsCore {
     List<FhirCanonical>? compartment,
   }) =>
       CapabilityStatementRestUsCore._(CapabilityStatementRest(
-        id: id,
+        fhirId: fhirId,
         extension_: extension_,
         modifierExtension: modifierExtension,
         mode: mode,
@@ -784,7 +784,7 @@ class CapabilityStatementRestUsCore {
 
   /// [id] Unique id for the element within a resource (for internal
   ///  references). This may be any string value that does not contain spaces.
-  String? get id => _capabilityStatementRest.id;
+  FhirId? get fhirId => _capabilityStatementRest.fhirId;
 
   /// [extension_] May be used to represent additional information that is not
   /// part of the basic definition of the element. To make the use of extensions
@@ -869,7 +869,7 @@ class CapabilityStatementSecurityUsCore {
   factory CapabilityStatementSecurityUsCore({
     /// [id] Unique id for the element within a resource (for internal
     ///  references). This may be any string value that does not contain spaces.
-    String? id,
+    FhirId? fhirId,
 
     /// [extension_] May be used to represent additional information that is not
     /// part of the basic definition of the element. To make the use of extensions
@@ -898,7 +898,7 @@ class CapabilityStatementSecurityUsCore {
     FhirMarkdown? description,
   }) =>
       CapabilityStatementSecurityUsCore._(CapabilityStatementSecurity(
-        id: id,
+        fhirId: fhirId,
         extension_: extension_,
         modifierExtension: modifierExtension,
         cors: cors,
@@ -920,7 +920,7 @@ class CapabilityStatementSecurityUsCore {
 
   /// [id] Unique id for the element within a resource (for internal
   ///  references). This may be any string value that does not contain spaces.
-  String? get id => _capabilityStatementSecurity.id;
+  FhirId? get fhirId => _capabilityStatementSecurity.fhirId;
 
   /// [extension_] May be used to represent additional information that is not
   /// part of the basic definition of the element. To make the use of extensions
@@ -977,7 +977,7 @@ class CapabilityStatementResourceUsCore {
   factory CapabilityStatementResourceUsCore({
     /// [id] Unique id for the element within a resource (for internal
     ///  references). This may be any string value that does not contain spaces.
-    String? id,
+    FhirId? fhirId,
 
     /// [extension_] May be used to represent additional information that is not
     /// part of the basic definition of the element. To make the use of extensions
@@ -1086,7 +1086,7 @@ class CapabilityStatementResourceUsCore {
     List<CapabilityStatementOperation>? operation,
   }) =>
       CapabilityStatementResourceUsCore._(CapabilityStatementResource(
-        id: id,
+        fhirId: fhirId,
         extension_: extension_,
         modifierExtension: modifierExtension,
         type: type,
@@ -1122,7 +1122,7 @@ class CapabilityStatementResourceUsCore {
 
   /// [id] Unique id for the element within a resource (for internal
   ///  references). This may be any string value that does not contain spaces.
-  String? get id => _capabilityStatementResource.id;
+  FhirId? get fhirId => _capabilityStatementResource.fhirId;
 
   /// [extension_] May be used to represent additional information that is not
   /// part of the basic definition of the element. To make the use of extensions
@@ -1260,7 +1260,7 @@ class CapabilityStatementInteractionUsCore {
   factory CapabilityStatementInteractionUsCore({
     /// [id] Unique id for the element within a resource (for internal
     ///  references). This may be any string value that does not contain spaces.
-    String? id,
+    FhirId? fhirId,
 
     /// [extension_] May be used to represent additional information that is not
     /// part of the basic definition of the element. To make the use of extensions
@@ -1296,7 +1296,7 @@ class CapabilityStatementInteractionUsCore {
     FhirMarkdown? documentation,
   }) =>
       CapabilityStatementInteractionUsCore._(CapabilityStatementInteraction(
-        id: id,
+        fhirId: fhirId,
         extension_: extension_,
         modifierExtension: modifierExtension,
         code: code,
@@ -1317,7 +1317,7 @@ class CapabilityStatementInteractionUsCore {
 
   /// [id] Unique id for the element within a resource (for internal
   ///  references). This may be any string value that does not contain spaces.
-  String? get id => _capabilityStatementInteraction.id;
+  FhirId? get fhirId => _capabilityStatementInteraction.fhirId;
 
   /// [extension_] May be used to represent additional information that is not
   /// part of the basic definition of the element. To make the use of extensions
@@ -1374,7 +1374,7 @@ class CapabilityStatementSearchParamUsCore {
   factory CapabilityStatementSearchParamUsCore({
     /// [id] Unique id for the element within a resource (for internal
     ///  references). This may be any string value that does not contain spaces.
-    String? id,
+    FhirId? fhirId,
 
     /// [extension_] May be used to represent additional information that is not
     /// part of the basic definition of the element. To make the use of extensions
@@ -1420,7 +1420,7 @@ class CapabilityStatementSearchParamUsCore {
     FhirMarkdown? documentation,
   }) =>
       CapabilityStatementSearchParamUsCore._(CapabilityStatementSearchParam(
-        id: id,
+        fhirId: fhirId,
         extension_: extension_,
         modifierExtension: modifierExtension,
         name: name,
@@ -1443,7 +1443,7 @@ class CapabilityStatementSearchParamUsCore {
 
   /// [id] Unique id for the element within a resource (for internal
   ///  references). This may be any string value that does not contain spaces.
-  String? get id => _capabilityStatementSearchParam.id;
+  FhirId? get fhirId => _capabilityStatementSearchParam.fhirId;
 
   /// [extension_] May be used to represent additional information that is not
   /// part of the basic definition of the element. To make the use of extensions
@@ -1510,7 +1510,7 @@ class CapabilityStatementOperationUsCore {
   factory CapabilityStatementOperationUsCore({
     /// [id] Unique id for the element within a resource (for internal
     ///  references). This may be any string value that does not contain spaces.
-    String? id,
+    FhirId? fhirId,
 
     /// [extension_] May be used to represent additional information that is not
     /// part of the basic definition of the element. To make the use of extensions
@@ -1557,7 +1557,7 @@ class CapabilityStatementOperationUsCore {
     FhirMarkdown? documentation,
   }) =>
       CapabilityStatementOperationUsCore._(CapabilityStatementOperation(
-        id: id,
+        fhirId: fhirId,
         extension_: extension_,
         modifierExtension: modifierExtension,
         name: name,
@@ -1579,7 +1579,7 @@ class CapabilityStatementOperationUsCore {
 
   /// [id] Unique id for the element within a resource (for internal
   ///  references). This may be any string value that does not contain spaces.
-  String? get id => _capabilityStatementOperation.id;
+  FhirId? get fhirId => _capabilityStatementOperation.fhirId;
 
   /// [extension_] May be used to represent additional information that is not
   /// part of the basic definition of the element. To make the use of extensions
@@ -1648,7 +1648,7 @@ class CapabilityStatementInteraction1UsCore {
   factory CapabilityStatementInteraction1UsCore({
     /// [id] Unique id for the element within a resource (for internal
     ///  references). This may be any string value that does not contain spaces.
-    String? id,
+    FhirId? fhirId,
 
     /// [extension_] May be used to represent additional information that is not
     /// part of the basic definition of the element. To make the use of extensions
@@ -1682,7 +1682,7 @@ class CapabilityStatementInteraction1UsCore {
     FhirMarkdown? documentation,
   }) =>
       CapabilityStatementInteraction1UsCore._(CapabilityStatementInteraction1(
-        id: id,
+        fhirId: fhirId,
         extension_: extension_,
         modifierExtension: modifierExtension,
         code: code,
@@ -1703,7 +1703,7 @@ class CapabilityStatementInteraction1UsCore {
 
   /// [id] Unique id for the element within a resource (for internal
   ///  references). This may be any string value that does not contain spaces.
-  String? get id => _capabilityStatementInteraction1.id;
+  FhirId? get fhirId => _capabilityStatementInteraction1.fhirId;
 
   /// [extension_] May be used to represent additional information that is not
   /// part of the basic definition of the element. To make the use of extensions
@@ -1758,7 +1758,7 @@ class CapabilityStatementMessagingUsCore {
   factory CapabilityStatementMessagingUsCore({
     /// [id] Unique id for the element within a resource (for internal
     ///  references). This may be any string value that does not contain spaces.
-    String? id,
+    FhirId? fhirId,
 
     /// [extension_] May be used to represent additional information that is not
     /// part of the basic definition of the element. To make the use of extensions
@@ -1803,7 +1803,7 @@ class CapabilityStatementMessagingUsCore {
     List<CapabilityStatementSupportedMessage>? supportedMessage,
   }) =>
       CapabilityStatementMessagingUsCore._(CapabilityStatementMessaging(
-        id: id,
+        fhirId: fhirId,
         extension_: extension_,
         modifierExtension: modifierExtension,
         endpoint: endpoint,
@@ -1826,7 +1826,7 @@ class CapabilityStatementMessagingUsCore {
 
   /// [id] Unique id for the element within a resource (for internal
   ///  references). This may be any string value that does not contain spaces.
-  String? get id => _capabilityStatementMessaging.id;
+  FhirId? get fhirId => _capabilityStatementMessaging.fhirId;
 
   /// [extension_] May be used to represent additional information that is not
   /// part of the basic definition of the element. To make the use of extensions
@@ -1895,7 +1895,7 @@ class CapabilityStatementEndpointUsCore {
   factory CapabilityStatementEndpointUsCore({
     /// [id] Unique id for the element within a resource (for internal
     ///  references). This may be any string value that does not contain spaces.
-    String? id,
+    FhirId? fhirId,
 
     /// [extension_] May be used to represent additional information that is not
     /// part of the basic definition of the element. To make the use of extensions
@@ -1929,7 +1929,7 @@ class CapabilityStatementEndpointUsCore {
     FhirUrl? address,
   }) =>
       CapabilityStatementEndpointUsCore._(CapabilityStatementEndpoint(
-        id: id,
+        fhirId: fhirId,
         extension_: extension_,
         modifierExtension: modifierExtension,
         protocol: protocol,
@@ -1941,7 +1941,7 @@ class CapabilityStatementEndpointUsCore {
 
   /// [id] Unique id for the element within a resource (for internal
   ///  references). This may be any string value that does not contain spaces.
-  String? get id => _capabilityStatementEndpoint.id;
+  FhirId? get fhirId => _capabilityStatementEndpoint.fhirId;
 
   /// [extension_] May be used to represent additional information that is not
   /// part of the basic definition of the element. To make the use of extensions
@@ -1996,7 +1996,7 @@ class CapabilityStatementSupportedMessageUsCore {
   factory CapabilityStatementSupportedMessageUsCore({
     /// [id] Unique id for the element within a resource (for internal
     ///  references). This may be any string value that does not contain spaces.
-    String? id,
+    FhirId? fhirId,
 
     /// [extension_] May be used to represent additional information that is not
     /// part of the basic definition of the element. To make the use of extensions
@@ -2031,7 +2031,7 @@ class CapabilityStatementSupportedMessageUsCore {
   }) =>
       CapabilityStatementSupportedMessageUsCore._(
           CapabilityStatementSupportedMessage(
-        id: id,
+        fhirId: fhirId,
         extension_: extension_,
         modifierExtension: modifierExtension,
         mode: mode,
@@ -2043,7 +2043,7 @@ class CapabilityStatementSupportedMessageUsCore {
 
   /// [id] Unique id for the element within a resource (for internal
   ///  references). This may be any string value that does not contain spaces.
-  String? get id => _capabilityStatementSupportedMessage.id;
+  FhirId? get fhirId => _capabilityStatementSupportedMessage.fhirId;
 
   /// [extension_] May be used to represent additional information that is not
   /// part of the basic definition of the element. To make the use of extensions
@@ -2098,7 +2098,7 @@ class CapabilityStatementDocumentUsCore {
   factory CapabilityStatementDocumentUsCore({
     /// [id] Unique id for the element within a resource (for internal
     ///  references). This may be any string value that does not contain spaces.
-    String? id,
+    FhirId? fhirId,
 
     /// [extension_] May be used to represent additional information that is not
     /// part of the basic definition of the element. To make the use of extensions
@@ -2137,7 +2137,7 @@ class CapabilityStatementDocumentUsCore {
     required FhirCanonical profile,
   }) =>
       CapabilityStatementDocumentUsCore._(CapabilityStatementDocument(
-        id: id,
+        fhirId: fhirId,
         extension_: extension_,
         modifierExtension: modifierExtension,
         mode: mode,
@@ -2159,7 +2159,7 @@ class CapabilityStatementDocumentUsCore {
 
   /// [id] Unique id for the element within a resource (for internal
   ///  references). This may be any string value that does not contain spaces.
-  String? get id => _capabilityStatementDocument.id;
+  FhirId? get fhirId => _capabilityStatementDocument.fhirId;
 
   /// [extension_] May be used to represent additional information that is not
   /// part of the basic definition of the element. To make the use of extensions

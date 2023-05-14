@@ -10,7 +10,7 @@ class ConditionUsCore extends Resource {
   ConditionUsCore._(this._condition);
 
   factory ConditionUsCore({
-    String? id,
+    String? fhirId,
     FhirMeta? meta,
     Narrative? text,
     CodeableConcept? clinicalStatus,
@@ -21,7 +21,7 @@ class ConditionUsCore extends Resource {
     FhirDateTime? onsetDateTime,
   }) =>
       ConditionUsCore._(Condition(
-        id: id,
+        fhirId: fhirId,
         meta: meta,
         text: text,
         clinicalStatus: clinicalStatus,
@@ -64,7 +64,7 @@ class ConditionUsCore extends Resource {
   Condition _condition;
   Condition get value => _condition;
   @override
-  String? get id => _condition.id;
+  String? get fhirId => _condition.fhirId;
   @override
   FhirMeta? get meta => _condition.meta;
   @override

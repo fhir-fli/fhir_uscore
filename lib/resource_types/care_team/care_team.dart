@@ -10,7 +10,7 @@ class CareTeamUsCore extends Resource {
   CareTeamUsCore._(this._careTeam);
 
   factory CareTeamUsCore({
-    String? id,
+    String? fhirId,
     FhirMeta? meta,
     Narrative? text,
     String? name,
@@ -19,7 +19,7 @@ class CareTeamUsCore extends Resource {
     required List<CareTeamParticipant> participant,
   }) =>
       CareTeamUsCore._(CareTeam(
-        id: id,
+        fhirId: fhirId,
         meta: meta,
         text: text,
         name: name,
@@ -57,7 +57,7 @@ class CareTeamUsCore extends Resource {
   CareTeam _careTeam;
   CareTeam get value => _careTeam;
   @override
-  String? get id => _careTeam.id;
+  String? get fhirId => _careTeam.fhirId;
   @override
   FhirMeta? get meta => _careTeam.meta;
   @override
@@ -72,16 +72,16 @@ class CareTeamParticipantUsCore {
   CareTeamParticipantUsCore._(this._careTeamParticipant);
 
   factory CareTeamParticipantUsCore({
-    String? id,
+    FhirId? fhirId,
     required List<CodeableConcept> role,
     required Reference member,
   }) =>
       CareTeamParticipantUsCore._(
-          CareTeamParticipant(id: id, role: role, member: member));
+          CareTeamParticipant(fhirId: fhirId, role: role, member: member));
 
   CareTeamParticipant _careTeamParticipant;
   CareTeamParticipant get value => _careTeamParticipant;
-  String? get id => _careTeamParticipant.id;
+  FhirId? get id => _careTeamParticipant.fhirId;
   List<CodeableConcept>? get role => _careTeamParticipant.role;
   Reference? get member => _careTeamParticipant.member;
 }

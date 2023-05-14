@@ -10,7 +10,7 @@ class ProcedureUsCore extends Resource {
   ProcedureUsCore._(this._procedure);
 
   factory ProcedureUsCore({
-    String? id,
+    String? fhirId,
     FhirMeta? meta,
     Narrative? text,
     List<Identifier>? identifier,
@@ -23,7 +23,7 @@ class ProcedureUsCore extends Resource {
     List<ProcedureFocalDevice>? focalDevice,
   }) =>
       ProcedureUsCore._(Procedure(
-        id: id,
+        fhirId: fhirId,
         meta: meta,
         text: text,
         identifier: identifier,
@@ -39,7 +39,7 @@ class ProcedureUsCore extends Resource {
   Procedure _procedure;
   Procedure get value => _procedure;
   @override
-  String? get id => _procedure.id;
+  String? get fhirId => _procedure.fhirId;
   @override
   FhirMeta? get meta => _procedure.meta;
   @override
@@ -58,13 +58,13 @@ class ProcedurePerformerUsCore {
   ProcedurePerformerUsCore._(this._procedurePerformer);
 
   factory ProcedurePerformerUsCore({
-    String? id,
+    FhirId? fhirId,
     CodeableConcept? function,
     required Reference actor,
     Reference? onBehalfOf,
   }) =>
       ProcedurePerformerUsCore._(ProcedurePerformer(
-        id: id,
+        fhirId: fhirId,
         function: function,
         actor: actor,
         onBehalfOf: onBehalfOf,
@@ -72,7 +72,7 @@ class ProcedurePerformerUsCore {
 
   ProcedurePerformer _procedurePerformer;
   ProcedurePerformer get value => _procedurePerformer;
-  String? get id => _procedurePerformer.id;
+  FhirId? get fhirId => _procedurePerformer.fhirId;
   CodeableConcept? get function => _procedurePerformer.function;
   Reference get actor => _procedurePerformer.actor;
   Reference? get onBehalfOf => _procedurePerformer.onBehalfOf;
@@ -82,13 +82,13 @@ class ProcedureFocalDeviceUsCore {
   ProcedureFocalDeviceUsCore._(this._procedureFocalDevice);
 
   factory ProcedureFocalDeviceUsCore({
-    String? id,
+    FhirId? fhirId,
     List<FhirExtension>? modifierExtension,
     CodeableConcept? action,
     required Reference manipulated,
   }) =>
       ProcedureFocalDeviceUsCore._(ProcedureFocalDevice(
-        id: id,
+        fhirId: fhirId,
         modifierExtension: modifierExtension,
         action: action,
         manipulated: manipulated,
@@ -96,7 +96,7 @@ class ProcedureFocalDeviceUsCore {
 
   ProcedureFocalDevice _procedureFocalDevice;
   ProcedureFocalDevice get value => _procedureFocalDevice;
-  String? get id => _procedureFocalDevice.id;
+  FhirId? get fhirId => _procedureFocalDevice.fhirId;
   List<FhirExtension>? get modifierExtension =>
       _procedureFocalDevice.modifierExtension;
   CodeableConcept? get action => _procedureFocalDevice.action;

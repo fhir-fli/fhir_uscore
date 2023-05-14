@@ -102,7 +102,7 @@ Future<Resource?> makeRequest(
         request = FhirRequest.read(
           base: base,
           type: resourceType,
-          id: id,
+          fhirId: id,
           parameters: parameters,
           client: client,
         );
@@ -116,7 +116,7 @@ Future<Resource?> makeRequest(
         request = FhirRequest.vRead(
           base: base,
           type: resourceType,
-          id: id,
+          fhirId: id,
           vid: vid,
           parameters: parameters,
           client: client,
@@ -128,7 +128,7 @@ Future<Resource?> makeRequest(
         request = FhirRequest.history(
           base: base,
           type: resourceType,
-          id: id,
+          fhirId: id,
           parameters: parameters,
           count: count,
           since: since,
@@ -185,7 +185,7 @@ Future<Resource?> makeRequest(
         request = FhirRequest.delete(
           base: base,
           type: resourceType,
-          id: id,
+          fhirId: id,
           parameters: parameters,
           client: client,
         );

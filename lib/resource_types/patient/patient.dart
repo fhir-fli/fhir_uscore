@@ -10,7 +10,7 @@ class PatientUsCore extends Resource {
   PatientUsCore._(this._patient);
 
   factory PatientUsCore({
-    String? id,
+    String? fhirId,
     FhirMeta? meta,
     Narrative? text,
     List<FhirExtension>? extension_,
@@ -24,7 +24,7 @@ class PatientUsCore extends Resource {
     List<PatientCommunication>? communication,
   }) =>
       PatientUsCore._(Patient(
-          id: id,
+          fhirId: fhirId,
           meta: meta,
           text: text,
           extension_: extension_,
@@ -138,7 +138,7 @@ class PatientUsCore extends Resource {
   Patient _patient;
   Patient get value => _patient;
   @override
-  String? get id => _patient.id;
+  String? get fhirId => _patient.fhirId;
   @override
   FhirMeta? get meta => _patient.meta;
   @override
@@ -159,16 +159,16 @@ class PatientCommunicationUsCore {
   PatientCommunicationUsCore._(this._patientCommunication);
 
   factory PatientCommunicationUsCore({
-    String? id,
+    String? fhirId,
     required CodeableConcept language,
     FhirBoolean? preferred,
   }) =>
       PatientCommunicationUsCore._(PatientCommunication(
-          id: id, language: language, preferred: preferred));
+          fhirId: fhirId, language: language, preferred: preferred));
 
   PatientCommunication _patientCommunication;
   PatientCommunication get value => _patientCommunication;
-  String? get id => _patientCommunication.id;
+  String? get id => _patientCommunication.fhirId;
   CodeableConcept? get language => _patientCommunication.language;
   FhirBoolean? get preferred => _patientCommunication.preferred;
 }

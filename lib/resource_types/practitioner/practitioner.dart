@@ -10,7 +10,7 @@ class PractitionerUsCore extends Resource {
   PractitionerUsCore._(this._practitioner);
 
   factory PractitionerUsCore({
-    String? id,
+    String? fhirId,
     FhirMeta? meta,
     Narrative? text,
     required List<Identifier> identifier,
@@ -22,7 +22,7 @@ class PractitionerUsCore extends Resource {
     List<PractitionerQualification>? qualification,
   }) =>
       PractitionerUsCore._(Practitioner(
-        id: id,
+        fhirId: fhirId,
         meta: meta,
         text: text,
         identifier: identifier,
@@ -69,7 +69,7 @@ class PractitionerUsCore extends Resource {
   Practitioner _practitioner;
   Practitioner get value => _practitioner;
   @override
-  String? get id => _practitioner.id;
+  String? get fhirId => _practitioner.fhirId;
   @override
   FhirMeta? get meta => _practitioner.meta;
   @override
@@ -88,7 +88,7 @@ class PractitionerRoleUsCore {
   PractitionerRoleUsCore._(this._practitionerRole);
 
   factory PractitionerRoleUsCore({
-    String? id,
+    String? fhirId,
     FhirMeta? meta,
     Narrative? text,
     required Reference practitioner,
@@ -100,7 +100,7 @@ class PractitionerRoleUsCore {
     List<Reference>? endpoint,
   }) =>
       PractitionerRoleUsCore._(PractitionerRole(
-        id: id,
+        fhirId: fhirId,
         meta: meta,
         text: text,
         practitioner: practitioner,
@@ -152,7 +152,7 @@ class PractitionerRoleUsCore {
 
   PractitionerRole _practitionerRole;
   PractitionerRole get value => _practitionerRole;
-  String? get id => _practitionerRole.id;
+  String? get id => _practitionerRole.fhirId;
   FhirMeta? get meta => _practitionerRole.meta;
   Narrative? get text => _practitionerRole.text;
   Reference? get practitioner => _practitionerRole.practitioner;
@@ -168,14 +168,14 @@ class PractitionerQualificationUsCore {
   PractitionerQualificationUsCore._(this._practitionerQualification);
 
   factory PractitionerQualificationUsCore({
-    String? id,
+    String? fhirId,
     List<Identifier>? identifier,
     required CodeableConcept code,
     Period? period,
     Reference? issuer,
   }) =>
       PractitionerQualificationUsCore._(PractitionerQualification(
-        id: id,
+        fhirId: fhirId,
         identifier: identifier,
         code: code,
         period: period,
@@ -184,7 +184,7 @@ class PractitionerQualificationUsCore {
 
   PractitionerQualification _practitionerQualification;
   PractitionerQualification get value => _practitionerQualification;
-  String? get id => _practitionerQualification.id;
+  String? get id => _practitionerQualification.fhirId;
   List<Identifier>? get identifier => _practitionerQualification.identifier;
   CodeableConcept get code => _practitionerQualification.code;
   Period? get period => _practitionerQualification.period;

@@ -10,7 +10,7 @@ class ProvenanceUsCore extends Resource {
   ProvenanceUsCore._(this._provenance);
 
   factory ProvenanceUsCore({
-    String? id,
+    String? fhirId,
     FhirMeta? meta,
     Narrative? text,
     required List<Reference> target,
@@ -18,7 +18,7 @@ class ProvenanceUsCore extends Resource {
     required List<ProvenanceAgent> agent,
   }) =>
       ProvenanceUsCore._(Provenance(
-          id: id,
+          fhirId: fhirId,
           meta: meta,
           text: text,
           target: target,
@@ -39,7 +39,7 @@ class ProvenanceUsCore extends Resource {
   Provenance _provenance;
   Provenance get value => _provenance;
   @override
-  String? get id => _provenance.id;
+  String? get fhirId => _provenance.fhirId;
   @override
   FhirMeta? get meta => _provenance.meta;
   @override
@@ -53,13 +53,13 @@ class ProvenanceAgentUsCore {
   ProvenanceAgentUsCore._(this._provenanceAgent);
 
   factory ProvenanceAgentUsCore({
-    String? id,
+    FhirId? fhirId,
     CodeableConcept? type,
     required Reference who,
     Reference? onBehalfOf,
   }) =>
       ProvenanceAgentUsCore._(ProvenanceAgent(
-          id: id, type: type, who: who, onBehalfOf: onBehalfOf));
+          fhirId: fhirId, type: type, who: who, onBehalfOf: onBehalfOf));
 
   factory ProvenanceAgentUsCore.fromParticipant(
           {required Reference who,
@@ -73,7 +73,7 @@ class ProvenanceAgentUsCore {
 
   ProvenanceAgent _provenanceAgent;
   ProvenanceAgent get value => _provenanceAgent;
-  String? get id => _provenanceAgent.id;
+  FhirId? get fhirId => _provenanceAgent.fhirId;
   CodeableConcept? get type => _provenanceAgent.type;
   Reference get who => _provenanceAgent.who;
   Reference? get onBehalfOf => _provenanceAgent.onBehalfOf;

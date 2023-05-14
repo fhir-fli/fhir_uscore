@@ -70,7 +70,7 @@ class AllergyIntoleranceUsCore extends Resource {
   factory AllergyIntoleranceUsCore({
     /// [id] The logical id of the resource, as used in the URL for the resource.
     ///  Once assigned, this value never changes.
-    String? id,
+    String? fhirId,
 
     /// [meta] The metadata about the resource. This is content that is
     /// maintained by the infrastructure. Changes to the content might not always
@@ -130,7 +130,7 @@ class AllergyIntoleranceUsCore extends Resource {
     FhirDateTime? onsetDateTime,
   }) =>
       AllergyIntoleranceUsCore._(AllergyIntolerance(
-        id: id,
+        fhirId: fhirId,
         meta: meta,
         text: text,
         clinicalStatus: clinicalStatus,
@@ -215,7 +215,7 @@ class AllergyIntoleranceUsCore extends Resource {
   /// [id] The logical id of the resource, as used in the URL for the resource.
   ///  Once assigned, this value never changes.
   @override
-  String? get id => _allergyIntolerance.id;
+  String? get fhirId => _allergyIntolerance.fhirId;
 
   /// [meta] The metadata about the resource. This is content that is
   /// maintained by the infrastructure. Changes to the content might not always

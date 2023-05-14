@@ -7,7 +7,7 @@ class EndpointUsCore extends Resource {
   EndpointUsCore._(this._endpoint);
 
   factory EndpointUsCore({
-    String? id,
+    String? fhirId,
     FhirMeta? meta,
     Narrative? text,
     List<Resource>? contained,
@@ -23,8 +23,8 @@ class EndpointUsCore extends Resource {
     FhirUrl? address,
     List<String>? header,
   }) =>
-      EndpointUsCore._(Endpoint(
-        id: id,
+      EndpointUsCore._(FhirEndpoint(
+        fhirId: fhirId,
         meta: meta,
         text: text,
         contained: contained,
@@ -41,10 +41,10 @@ class EndpointUsCore extends Resource {
         header: header,
       ));
 
-  Endpoint _endpoint;
-  Endpoint get value => _endpoint;
+  FhirEndpoint _endpoint;
+  FhirEndpoint get value => _endpoint;
   @override
-  String? get id => _endpoint.id;
+  String? get fhirId => _endpoint.fhirId;
   @override
   FhirMeta? get meta => _endpoint.meta;
   @override

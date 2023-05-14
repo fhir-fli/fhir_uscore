@@ -56,7 +56,7 @@ class CarePlanUsCore extends Resource {
   factory CarePlanUsCore({
     /// [id] The logical id of the resource, as used in the URL for the resource.
     ///  Once assigned, this value never changes.
-    String? id,
+    String? fhirId,
 
     /// [meta] The metadata about the resource. This is content that is
     /// maintained by the infrastructure. Changes to the content might not always
@@ -95,7 +95,7 @@ class CarePlanUsCore extends Resource {
     required Reference subject,
   }) =>
       CarePlanUsCore._(CarePlan(
-        id: id,
+        fhirId: fhirId,
         meta: meta,
         text: text,
         contained: contained,
@@ -209,7 +209,7 @@ class CarePlanUsCore extends Resource {
   /// [id] The logical id of the resource, as used in the URL for the resource.
   ///  Once assigned, this value never changes.
   @override
-  String? get id => _carePlan.id;
+  String? get fhirId => _carePlan.fhirId;
 
   /// [meta] The metadata about the resource. This is content that is
   /// maintained by the infrastructure. Changes to the content might not always

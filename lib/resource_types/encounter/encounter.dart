@@ -10,7 +10,7 @@ class EncounterUsCore extends Resource {
   EncounterUsCore._(this._encounter);
 
   factory EncounterUsCore({
-    String? id,
+    String? fhirId,
     FhirMeta? meta,
     Narrative? text,
     List<Identifier>? identifier,
@@ -25,7 +25,7 @@ class EncounterUsCore extends Resource {
     List<EncounterLocation>? location,
   }) =>
       EncounterUsCore._(Encounter(
-        id: id,
+        fhirId: fhirId,
         meta: meta,
         text: text,
         identifier: identifier,
@@ -87,7 +87,7 @@ class EncounterUsCore extends Resource {
   Encounter _encounter;
   Encounter get value => _encounter;
   @override
-  String? get id => _encounter.id;
+  String? get fhirId => _encounter.fhirId;
   @override
   FhirMeta? get meta => _encounter.meta;
   @override
@@ -108,17 +108,17 @@ class EncounterParticipantUsCore {
   EncounterParticipantUsCore._(this._encounterParticipant);
 
   factory EncounterParticipantUsCore({
-    String? id,
+    String? fhirId,
     List<CodeableConcept>? type,
     Period? period,
     Reference? individual,
   }) =>
       EncounterParticipantUsCore._(EncounterParticipant(
-          id: id, type: type, period: period, individual: individual));
+          fhirId: fhirId, type: type, period: period, individual: individual));
 
   EncounterParticipant _encounterParticipant;
   EncounterParticipant get value => _encounterParticipant;
-  String? get id => _encounterParticipant.id;
+  String? get id => _encounterParticipant.fhirId;
   List<CodeableConcept>? get type => _encounterParticipant.type;
   Period? get period => _encounterParticipant.period;
   Reference? get individual => _encounterParticipant.individual;
@@ -128,15 +128,15 @@ class EncounterHospitalizationUsCore {
   EncounterHospitalizationUsCore._(this._encounterHospitalization);
 
   factory EncounterHospitalizationUsCore({
-    String? id,
+    String? fhirId,
     CodeableConcept? dischargeDisposition,
   }) =>
       EncounterHospitalizationUsCore._(EncounterHospitalization(
-          id: id, dischargeDisposition: dischargeDisposition));
+          fhirId: fhirId, dischargeDisposition: dischargeDisposition));
 
   EncounterHospitalization _encounterHospitalization;
   EncounterHospitalization get value => _encounterHospitalization;
-  String? get id => _encounterHospitalization.id;
+  String? get id => _encounterHospitalization.fhirId;
   CodeableConcept? get dischargeDisposition =>
       _encounterHospitalization.dischargeDisposition;
 }
@@ -145,13 +145,14 @@ class EncounterLocationUsCore {
   EncounterLocationUsCore._(this._encounterLocation);
 
   factory EncounterLocationUsCore({
-    String? id,
+    String? fhirId,
     required Reference location,
   }) =>
-      EncounterLocationUsCore._(EncounterLocation(id: id, location: location));
+      EncounterLocationUsCore._(
+          EncounterLocation(fhirId: fhirId, location: location));
 
   EncounterLocation _encounterLocation;
   EncounterLocation get value => _encounterLocation;
-  String? get id => _encounterLocation.id;
+  String? get id => _encounterLocation.fhirId;
   Reference get location => _encounterLocation.location;
 }

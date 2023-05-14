@@ -10,7 +10,7 @@ class MedicationRequestUsCore extends Resource {
   MedicationRequestUsCore._(this._medicationRequest);
 
   factory MedicationRequestUsCore({
-    String? id,
+    String? fhirId,
     FhirMeta? meta,
     Narrative? text,
     List<Identifier>? identifier,
@@ -29,7 +29,7 @@ class MedicationRequestUsCore extends Resource {
     MedicationRequestDispenseRequest? dispenseRequest,
   }) =>
       MedicationRequestUsCore._(MedicationRequest(
-        id: id,
+        fhirId: fhirId,
         meta: meta,
         text: text,
         identifier: identifier,
@@ -97,7 +97,7 @@ class MedicationRequestUsCore extends Resource {
   MedicationRequest _medicationRequest;
   MedicationRequest get value => _medicationRequest;
   @override
-  String? get id => _medicationRequest.id;
+  String? get fhirId => _medicationRequest.fhirId;
   @override
   FhirMeta? get meta => _medicationRequest.meta;
   @override
@@ -126,7 +126,7 @@ class MedicationRequestDispenseRequestUsCore {
       this._medicationRequestDispenseRequest);
 
   factory MedicationRequestDispenseRequestUsCore({
-    String? id,
+    FhirId? fhirId,
     MedicationRequestInitialFill? initialFill,
     FhirDuration? dispenseInterval,
     Period? validityPeriod,
@@ -136,7 +136,7 @@ class MedicationRequestDispenseRequestUsCore {
     Reference? performer,
   }) =>
       MedicationRequestDispenseRequestUsCore._(MedicationRequestDispenseRequest(
-        id: id,
+        fhirId: fhirId,
         initialFill: initialFill,
         dispenseInterval: dispenseInterval,
         validityPeriod: validityPeriod,
@@ -149,7 +149,7 @@ class MedicationRequestDispenseRequestUsCore {
   MedicationRequestDispenseRequest _medicationRequestDispenseRequest;
   MedicationRequestDispenseRequest get value =>
       _medicationRequestDispenseRequest;
-  String? get id => _medicationRequestDispenseRequest.id;
+  FhirId? get fhirId => _medicationRequestDispenseRequest.fhirId;
   MedicationRequestInitialFill? get inititalFill =>
       _medicationRequestDispenseRequest.initialFill;
   FhirDuration? get dispenseInterval =>
@@ -168,16 +168,16 @@ class MedicationRequestInitialFillUsCore {
   MedicationRequestInitialFillUsCore._(this._medicationRequestInitialFill);
 
   factory MedicationRequestInitialFillUsCore({
-    String? id,
+    FhirId? fhirId,
     Quantity? quantity,
     FhirDuration? duration,
   }) =>
       MedicationRequestInitialFillUsCore._(MedicationRequestInitialFill(
-          id: id, quantity: quantity, duration: duration));
+          fhirId: fhirId, quantity: quantity, duration: duration));
 
   MedicationRequestInitialFill _medicationRequestInitialFill;
   MedicationRequestInitialFill get value => _medicationRequestInitialFill;
-  String? get id => _medicationRequestInitialFill.id;
+  FhirId? get fhirId => _medicationRequestInitialFill.fhirId;
   Quantity? get quantity => _medicationRequestInitialFill.quantity;
   FhirDuration? get duration => _medicationRequestInitialFill.duration;
 }

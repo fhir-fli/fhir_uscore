@@ -10,7 +10,7 @@ class DocumentReferenceUsCore extends Resource {
   DocumentReferenceUsCore._(this._documentReference);
 
   factory DocumentReferenceUsCore({
-    String? id,
+    String? fhirId,
     FhirMeta? meta,
     Narrative? text,
     List<Identifier>? identifier,
@@ -26,7 +26,7 @@ class DocumentReferenceUsCore extends Resource {
     String? description,
   }) =>
       DocumentReferenceUsCore._(DocumentReference(
-        id: id,
+        fhirId: fhirId,
         meta: meta,
         text: text,
         identifier: identifier,
@@ -103,7 +103,7 @@ class DocumentReferenceUsCore extends Resource {
   DocumentReference _documentReference;
   DocumentReference get value => _documentReference;
   @override
-  String? get id => _documentReference.id;
+  String? get fhirId => _documentReference.fhirId;
   @override
   FhirMeta? get meta => _documentReference.meta;
   @override
@@ -125,16 +125,16 @@ class DocumentReferenceContentUsCore {
   DocumentReferenceContentUsCore._(this._documentReferenceContent);
 
   factory DocumentReferenceContentUsCore({
-    String? id,
+    FhirId? fhirId,
     required Attachment attachment,
     Coding? format,
   }) =>
       DocumentReferenceContentUsCore._(DocumentReferenceContent(
-          id: id, attachment: attachment, format: format));
+          fhirId: fhirId, attachment: attachment, format: format));
 
   DocumentReferenceContent _documentReferenceContent;
   DocumentReferenceContent get value => _documentReferenceContent;
-  String? get id => _documentReferenceContent.id;
+  FhirId? get fhirId => _documentReferenceContent.fhirId;
   Attachment? get attachment => _documentReferenceContent.attachment;
   Coding? get format => _documentReferenceContent.format;
 }
@@ -143,16 +143,16 @@ class DocumentReferenceContextUsCore {
   DocumentReferenceContextUsCore._(this._documentReferenceContext);
 
   factory DocumentReferenceContextUsCore({
-    String? id,
+    FhirId? fhirId,
     List<Reference>? encounter,
     Period? period,
   }) =>
       DocumentReferenceContextUsCore._(DocumentReferenceContext(
-          id: id, encounter: encounter, period: period));
+          fhirId: fhirId, encounter: encounter, period: period));
 
   DocumentReferenceContext _documentReferenceContext;
   DocumentReferenceContext get value => _documentReferenceContext;
-  String? get id => _documentReferenceContext.id;
+  FhirId? get fhirId => _documentReferenceContext.fhirId;
   List<Reference>? get encounter => _documentReferenceContext.encounter;
   Period? get period => _documentReferenceContext.period;
 }

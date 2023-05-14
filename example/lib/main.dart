@@ -5,7 +5,7 @@ import 'package:fhir_uscore/resource_types/patient/patient.dart';
 
 void main() {
   final patient = PatientUsCore(
-    id: '12345',
+    fhirId: '12345',
     identifier: [
       Identifier(
           use: IdentifierUse.usual,

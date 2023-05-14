@@ -7,7 +7,7 @@ class OperationOutcomeUsCore extends Resource {
   OperationOutcomeUsCore._(this._operationOutcome);
 
   factory OperationOutcomeUsCore({
-    String? id,
+    String? fhirId,
     FhirMeta? meta,
     Narrative? text,
     FhirCode? language,
@@ -15,7 +15,7 @@ class OperationOutcomeUsCore extends Resource {
     required List<OperationOutcomeIssue> issue,
   }) =>
       OperationOutcomeUsCore._(OperationOutcome(
-        id: id,
+        fhirId: fhirId,
         meta: meta,
         text: text,
         language: language,
@@ -29,7 +29,7 @@ class OperationOutcomeUsCore extends Resource {
   OperationOutcome _operationOutcome;
   OperationOutcome get value => _operationOutcome;
   @override
-  String? get id => _operationOutcome.id;
+  String? get fhirId => _operationOutcome.fhirId;
   @override
   FhirMeta? get meta => _operationOutcome.meta;
   @override
@@ -45,7 +45,7 @@ class OperationOutcomeIssueUsCore {
   OperationOutcomeIssueUsCore._(this._operationOutcomeIssue);
 
   factory OperationOutcomeIssueUsCore({
-    String? id,
+    FhirId? fhirId,
     FhirCode? severity,
     FhirCode? code,
     CodeableConcept? details,
@@ -54,7 +54,7 @@ class OperationOutcomeIssueUsCore {
     List<String>? expression,
   }) =>
       OperationOutcomeIssueUsCore._(OperationOutcomeIssue(
-        id: id,
+        fhirId: fhirId,
         severity: severity,
         code: code,
         details: details,
@@ -65,7 +65,7 @@ class OperationOutcomeIssueUsCore {
 
   OperationOutcomeIssue _operationOutcomeIssue;
   OperationOutcomeIssue get value => _operationOutcomeIssue;
-  String? get id => _operationOutcomeIssue.id;
+  FhirId? get fhirId => _operationOutcomeIssue.fhirId;
   FhirCode? get severity => _operationOutcomeIssue.severity;
   FhirCode? get code => _operationOutcomeIssue.code;
   CodeableConcept? get details => _operationOutcomeIssue.details;

@@ -7,7 +7,7 @@ class OrganizationUsCore extends Resource {
   OrganizationUsCore._(this._organization);
 
   factory OrganizationUsCore({
-    String? id,
+    String? fhirId,
     FhirMeta? meta,
     Narrative? text,
     List<Resource>? contained,
@@ -20,7 +20,7 @@ class OrganizationUsCore extends Resource {
     List<Reference>? endpoint,
   }) =>
       OrganizationUsCore._(Organization(
-        id: id,
+        fhirId: fhirId,
         meta: meta,
         text: text,
         contained: contained,
@@ -69,7 +69,7 @@ class OrganizationUsCore extends Resource {
   Organization _organization;
   Organization get value => _organization;
   @override
-  String? get id => _organization.id;
+  String? get fhirId => _organization.fhirId;
   @override
   FhirMeta? get meta => _organization.meta;
   @override
